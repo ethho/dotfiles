@@ -1,6 +1,7 @@
 syntax on
 
 set hidden
+set relativenumber
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -32,6 +33,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
+Plug 'nvie/vim-flake8'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -41,6 +43,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mbbill/undotree'
 Plug 'preservim/nerdcommenter'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'stefandtw/quickfix-reflector.vim'
 
 call plug#end()
 
@@ -77,8 +80,6 @@ nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 nnoremap <leader>tn :tabnew<SPACE>
-"vnoremap J :m '>+1<CR>gv=gv
-"vnoremap K :m '<-2<CR>gv=gv
 
 " nav remaps
 nnoremap <silent> n nzz
