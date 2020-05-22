@@ -28,7 +28,7 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" ****** Functions *******
+" ********************************* Functions *********************************
 
 function! ToggleGruvboxBG()
     if &background == 'dark'
@@ -55,7 +55,7 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-" ****** Plugins *******
+" ************************************ Plugins ********************************
 
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
@@ -81,7 +81,7 @@ call plug#end()
 autocmd vimenter * colorscheme gruvbox
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
-set background=dark
+"set background=dark
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -89,7 +89,7 @@ endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" ****** Keymaps *******
+" ************************************ Keymaps ********************************
 
 let mapleader = " "
 
@@ -122,6 +122,8 @@ nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 nnoremap <silent> <C-d> <C-d>zz
 nnoremap <silent> <C-u> <C-u>zz
+nnoremap <leader>tml :tabmove -1<CR>
+nnoremap <leader>tmr :tabmove +1<CR>
 
 " git aliases
 nnoremap <leader>gst :Git<CR>
