@@ -15,7 +15,8 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-filetype plugin indent on
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -27,9 +28,36 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+" ****** Functions *******
 
+function! ToggleGruvboxBG()
+    if &background == 'dark'
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+
+fun! GoYCM()
+    nnoremap <buffer> <leader>gd :YcmCompleter GoTo<CR>
+    nnoremap <buffer> <leader>gr :YcmCompleter GoToReferences<CR>
+    nnoremap <buffer> <leader>rr :YcmCompleter RefactorRename<space>
+endfun
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+" ****** Plugins *******
+
+filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
@@ -47,7 +75,12 @@ Plug 'stefandtw/quickfix-reflector.vim'
 
 call plug#end()
 
-colorscheme gruvbox
+" ****** Colors *******
+
+" gruvbox, baby
+autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_dark='medium'
 set background=dark
 
 if executable('rg')
@@ -55,6 +88,9 @@ if executable('rg')
 endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" ****** Keymaps *******
+
 let mapleader = " "
 
 " netrw
@@ -95,23 +131,7 @@ nnoremap <leader>gco :Git checkout<SPACE>
 nnoremap <leader>gdf :Git diff<SPACE>
 nnoremap <leader>gadd :Git add<SPACE>
 
-fun! GoYCM()
-    nnoremap <buffer> <leader>gd :YcmCompleter GoTo<CR>
-    nnoremap <buffer> <leader>gr :YcmCompleter GoToReferences<CR>
-    nnoremap <buffer> <leader>rr :YcmCompleter RefactorRename<space>
-endfun
-
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
+nnoremap <leader>bg :call ToggleGruvboxBG()<CR>
 autocmd BufWritePre * :call TrimWhitespace()
 " autocmd FileType typescript :call GoYCM()
 call GoYCM()
