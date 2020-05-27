@@ -72,6 +72,7 @@ Plug 'mbbill/undotree'
 Plug 'preservim/nerdcommenter'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
