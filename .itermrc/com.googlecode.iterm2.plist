@@ -816,7 +816,7 @@
 			<key>Text</key>
 			<string>1</string>
 		</dict>
-		<key>0x64-0x40000</key>
+		<key>0x64-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>8</integer>
@@ -865,7 +865,7 @@
 			<key>Text</key>
 			<string>0</string>
 		</dict>
-		<key>0x75-0x40000</key>
+		<key>0x75-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>9</integer>
@@ -1001,7 +1001,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>2080 69 841 470 1920 0 1920 1057 </string>
+	<string>2067 232 841 470 1920 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2570 498 620 392 1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
