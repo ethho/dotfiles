@@ -127,6 +127,10 @@ nnoremap <silent> <C-u> <C-u>zz
 nnoremap <leader>tml :tabmove -1<CR>
 nnoremap <leader>tmr :tabmove +1<CR>
 
+" misc
+noremap <leader>y "*y
+noremap <leader>p "*p
+
 " git aliases
 nnoremap <leader>gst :Git<CR>
 nnoremap <leader>gci :Git commit<CR>
