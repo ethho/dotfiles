@@ -76,21 +76,11 @@ Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
-" ****** Colors *******
-
-" gruvbox, baby
-autocmd vimenter * colorscheme gruvbox
-let g:gruvbox_contrast_light='hard'
-let g:gruvbox_contrast_dark='medium'
-"set background=dark
-
 if executable('rg')
     let g:rg_derive_root='true'
 endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" ************************************ Keymaps ********************************
 
 let mapleader = " "
 
@@ -104,18 +94,28 @@ let g:ctrlp_use_caching = 0
 "let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+" ****** Colors *******
+
+" gruvbox, baby
+autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_dark='medium'
+"set background=dark
+
+" ************************************ Keymaps ********************************
+
 " pane navigation
 nnoremap <silent> <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>j :wincmd j<CR>
 nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
-nnoremap <silent> <C-h> :tabprevious<CR>
-nnoremap <silent> <C-l> :tabnext<CR>
+nnoremap <silent> <leader>b gT
+nnoremap <silent> <leader>w gt
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>ps :Rg<SPACE>
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+nnoremap <silent> <leader>+ :vertical resize +5<CR>
+nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>tn :tabnew<SPACE>
 
 " nav remaps
@@ -134,7 +134,7 @@ nnoremap <leader>gco :Git checkout<SPACE>
 nnoremap <leader>gdf :Git diff<SPACE>
 nnoremap <leader>gadd :Git add<SPACE>
 
-nnoremap <leader>bg :call ToggleGruvboxBG()<CR>
+nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 autocmd BufWritePre * :call TrimWhitespace()
 " autocmd FileType typescript :call GoYCM()
 call GoYCM()
