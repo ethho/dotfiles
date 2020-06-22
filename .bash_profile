@@ -1,15 +1,3 @@
-# Source bashrc
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
-
-# Initialize pyenv
-eval "$(pyenv init -)"
-
-# Commonly used IP
-export ZOOM_DNS=162.255.36.11
-export GOOG_DNS=8.8.8.8
-
 # ************************** $PATH changes ************************************
 
 # Add sd2e-cloud-cli to PATH
@@ -28,6 +16,21 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # iTerm2 shell completion
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# ********************************** Misc. *************************************
+
+# Source bashrc
+if [ -f ~/.bashrc ]; then
+	source ~/.bashrc
+fi
+
+# Initialize pyenv
+eval "$(pyenv init -)"
+
+# Commonly used IP
+export ZOOM_DNS=162.255.36.11
+export GOOG_DNS=8.8.8.8
+
 
 # ********************************** Conda *************************************
 

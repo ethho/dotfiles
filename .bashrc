@@ -35,6 +35,15 @@ alias abe="abaco-track-executions.sh"
 alias jt="jobs-track.sh"
 alias abu="abaco-update-plus.sh"
 
+# uninstall and reinstall openssl
+# fixes "ssl module in Python is not available" error on pip install
+alias reinstall-openssl="""
+    brew uninstall --ignore-dependencies openssl && \
+    rm -rf /usr/local/etc/openssl* && \
+    brew update && brew upgrade && \
+    brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
+    """
+
 # Tapis CLI
 alias sl="systems-list"
 alias appd="apps-deploy"
