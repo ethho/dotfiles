@@ -1,5 +1,6 @@
 syntax on
 
+set nocompatible
 set hidden
 set relativenumber
 set noerrorbells
@@ -61,19 +62,14 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
-Plug 'nvie/vim-flake8'
+Plug 'preservim/nerdcommenter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-utils/vim-man'
-Plug 'lyuts/vim-rtags'
-Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'wincent/command-t'
-Plug 'mbbill/undotree'
-Plug 'preservim/nerdcommenter'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'kshenoy/vim-signature'
+Plug 'Rykka/riv.vim'
 
 call plug#end()
 
@@ -130,6 +126,7 @@ nnoremap <leader>tmr :tabmove +1<CR>
 " misc
 noremap <leader>y "*y
 noremap <leader>p "*p
+noremap <leader>dws :s/\s\+$//g<CR>
 
 " git aliases
 nnoremap <leader>gst :Git<CR>
@@ -139,9 +136,26 @@ nnoremap <leader>gco :Git checkout<SPACE>
 nnoremap <leader>gdf :Git diff<SPACE>
 nnoremap <leader>gadd :Git add<SPACE>
 
+" toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
+
+" vimwiki
+nmap <leader>ii <Plug>VimwikiIndex
+nmap <leader>iw <Plug>VimwikiIndex
+nmap <leader>it <Plug>VimwikiTabIndex
+nmap <leader>is <Plug>VimwikiUISelect
+nmap <leader>ii <Plug>VimwikiDiaryIndex
+nmap <leader>i<leader>w <Plug>VimwikiMakeDiaryNote
+nmap <leader>i<leader>t <Plug>VimwikiTabMakeDiaryNote
+nmap <leader>i<leader>y <Plug>VimwikiMakeYesterdayDiaryNote
+nmap <leader>i<leader>m <Plug>VimwikiMakeTomorrowDiaryNote
+nmap <Leader>ih <Plug>Vimwiki2HTML
+nmap <Leader>ihh  <Plug>Vimwiki2HTMLBrowse
+nmap <Leader>i<Leader>i <Plug>VimwikiDiaryGenerateLinks
+
+" autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
-" autocmd FileType typescript :call GoYCM()
 call GoYCM()
+" autocmd FileType typescript :call GoYCM()
 "autocmd FileType cpp,cxx,h,hpp,c :call GoCoc()
 
