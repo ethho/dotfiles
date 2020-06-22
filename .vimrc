@@ -29,6 +29,9 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+" leader key
+let mapleader = " "
+
 " ********************************* Functions *********************************
 
 function! ToggleGruvboxBG()
@@ -73,13 +76,16 @@ Plug 'Rykka/riv.vim'
 
 call plug#end()
 
+" ripgrep
 if executable('rg')
     let g:rg_derive_root='true'
 endif
 
+" ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-let mapleader = " "
+" riv
+let g:riv_global_leader = '<space>r'
 
 " netrw
 let g:netrw_browse_split = 2
@@ -138,20 +144,6 @@ nnoremap <leader>gadd :Git add<SPACE>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
-
-" vimwiki
-nmap <leader>ii <Plug>VimwikiIndex
-nmap <leader>iw <Plug>VimwikiIndex
-nmap <leader>it <Plug>VimwikiTabIndex
-nmap <leader>is <Plug>VimwikiUISelect
-nmap <leader>ii <Plug>VimwikiDiaryIndex
-nmap <leader>i<leader>w <Plug>VimwikiMakeDiaryNote
-nmap <leader>i<leader>t <Plug>VimwikiTabMakeDiaryNote
-nmap <leader>i<leader>y <Plug>VimwikiMakeYesterdayDiaryNote
-nmap <leader>i<leader>m <Plug>VimwikiMakeTomorrowDiaryNote
-nmap <Leader>ih <Plug>Vimwiki2HTML
-nmap <Leader>ihh  <Plug>Vimwiki2HTMLBrowse
-nmap <Leader>i<Leader>i <Plug>VimwikiDiaryGenerateLinks
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
