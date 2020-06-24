@@ -31,6 +31,9 @@ eval "$(pyenv init -)"
 export ZOOM_DNS=162.255.36.11
 export GOOG_DNS=8.8.8.8
 
+# Use ruby in home directory
+source /usr/local/share/chruby/chruby.sh
+chruby 2.7.1
 
 # ********************************** Conda *************************************
 
