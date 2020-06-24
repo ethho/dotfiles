@@ -72,7 +72,6 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'kshenoy/vim-signature'
-Plug 'Rykka/riv.vim'
 
 call plug#end()
 
@@ -83,9 +82,6 @@ endif
 
 " ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" riv
-let g:riv_global_leader = '<space>r'
 
 " netrw
 let g:netrw_browse_split = 2
