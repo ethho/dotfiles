@@ -809,6 +809,13 @@
 			<key>Text</key>
 			<string>0</string>
 		</dict>
+		<key>0x56-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Text</key>
+			<string>4341A121-7D7B-46E0-A7CD-106CDB601B47</string>
+		</dict>
 		<key>0x57-0xa0000</key>
 		<dict>
 			<key>Action</key>
@@ -885,13 +892,6 @@
 			<integer>9</integer>
 			<key>Text</key>
 			<string></string>
-		</dict>
-		<key>0x76-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>29</integer>
-			<key>Text</key>
-			<string>4341A121-7D7B-46E0-A7CD-106CDB601B47</string>
 		</dict>
 		<key>0x77-0x80000</key>
 		<dict>
@@ -1015,7 +1015,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>164 284 841 470 0 0 1680 1050 </string>
+	<string>160 69 841 470 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 498 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -7835,16 +7835,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1920, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{2189, 595}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7F711AA3-0E7B-45EC-9BBC-E3068F5E12F5</string>
 	<key>NoSyncLastTipTime</key>
 	<real>611779426.00157404</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>126</integer>
+	<integer>127</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
