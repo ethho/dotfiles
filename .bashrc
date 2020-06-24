@@ -53,7 +53,7 @@ alias jl="tapis jobs list"
 alias config='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
 
 # git track vimwiki contents
-alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/ --work-tree=/Users/TASethanho/vimwiki/'
+alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/.git/ --work-tree=/Users/TASethanho/vimwiki/'
 
 # sd2e-cloud-cli autocompletion
 source "$(dirname $(dirname $(which tenants-init)))/completion/agave-cli"
