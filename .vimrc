@@ -1,5 +1,5 @@
 syntax on
-
+filetype plugin on
 set nocompatible
 set hidden
 set relativenumber
@@ -18,9 +18,6 @@ set undofile
 set incsearch
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-" Give more space for displaying messages.
-set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -95,6 +92,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki', 'template_path': '~/vimwiki/template
           \ 'path_html': '~/vimwiki/docs/', 'custom_wiki2html': 'vimwiki_markdown',
           \ 'html_filename_parameterization': 1,
           \ 'template_ext': '.tpl'}]
+" add the pre tag for inserting code snippets
+let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr, pre, script'
 
 " ctrl p
 let g:ctrlp_use_caching = 0
