@@ -72,6 +72,7 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'kshenoy/vim-signature'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -140,6 +141,21 @@ nnoremap <leader>gadd :Git add<SPACE>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
+
+" vimwiki
+nmap ,wi <Plug>VimwikiIndex
+nmap ,ww <Plug>VimwikiIndex
+nmap ,wt <Plug>VimwikiTabIndex
+nmap ,ws <Plug>VimwikiUISelect
+nmap ,wi <Plug>VimwikiDiaryIndex
+nmap ,w,w <Plug>VimwikiMakeDiaryNote
+nmap ,w,t <Plug>VimwikiTabMakeDiaryNote
+nmap ,w,y <Plug>VimwikiMakeYesterdayDiaryNote
+nmap ,w,m <Plug>VimwikiMakeTomorrowDiaryNote
+nmap ,wh <Plug>Vimwiki2HTML
+nmap ,whh  <Plug>Vimwiki2HTMLBrowse
+nmap ,w,wk <Plug>VimwikiDiaryGenerateLinks
+nmap ,w,w <Plug>VimwikiMakeDiaryNote
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
