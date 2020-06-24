@@ -89,12 +89,18 @@ let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
+" vimwiki: use markdown
+let g:vimwiki_list = [{'path': '~/vimwiki', 'template_path': '~/vimwiki/templates/',
+          \ 'template_default': 'default', 'syntax': 'markdown', 'ext': '.md',
+          \ 'path_html': '~/vimwiki/site_html/', 'custom_wiki2html': 'vimwiki_markdown',
+          \ 'html_filename_parameterization': 1,
+          \ 'template_ext': '.tpl'}]
+
 " ctrl p
 let g:ctrlp_use_caching = 0
-"let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" ****** Colors *******
+" ************************************ Colors *********************************
 
 " gruvbox, baby
 autocmd vimenter * colorscheme gruvbox
@@ -156,6 +162,9 @@ nmap ,wh <Plug>Vimwiki2HTML
 nmap ,whh  <Plug>Vimwiki2HTMLBrowse
 nmap ,w,wk <Plug>VimwikiDiaryGenerateLinks
 nmap ,w,w <Plug>VimwikiMakeDiaryNote
+nmap ,wr <Plug>VimwikiRenameFile
+nmap ,wd <Plug>VimwikiDeleteFile
+nmap ,wn <Plug>VimwikiGoto
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
