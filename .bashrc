@@ -50,7 +50,7 @@ alias fl="tapis files list"
 alias jl="tapis jobs list"
 
 # git track dotfiles
-alias config='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
+alias cfg='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
 
 # git track vimwiki contents
 alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/.git/ --work-tree=/Users/TASethanho/vimwiki/'

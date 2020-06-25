@@ -86,6 +86,9 @@ let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
+" enable YCM for all files, notably markdown and vimwiki
+let g:ycm_filetype_blacklist = {}
+
 " vimwiki: use markdown
 let g:vimwiki_list = [{'path': '~/vimwiki', 'template_path': '~/vimwiki/templates/',
           \ 'template_default': 'default', 'syntax': 'markdown', 'ext': '.md',
@@ -148,8 +151,6 @@ nnoremap <leader>gadd :Git add<SPACE>
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 
 " vimwiki
-nmap ,wi <Plug>VimwikiIndex
-nmap ,ww <Plug>VimwikiIndex
 nmap ,wt <Plug>VimwikiTabIndex
 nmap ,ws <Plug>VimwikiUISelect
 nmap ,wi <Plug>VimwikiDiaryIndex
@@ -164,6 +165,8 @@ nmap ,w,w <Plug>VimwikiMakeDiaryNote
 nmap ,wr <Plug>VimwikiRenameFile
 nmap ,wd <Plug>VimwikiDeleteFile
 nmap ,wn <Plug>VimwikiGoto
+nmap ,ww <Plug>VimwikiIndex
+nmap <C-Tab> <Plug>VimwikiNextLink
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
