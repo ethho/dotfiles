@@ -9,7 +9,7 @@
 # from its parent shell.  Both of these facts are standard bash
 # behavior.
 #
-# In a parallel mpi job, this file (~/.bashrc) is sourced on every 
+# In a parallel mpi job, this file (~/.bashrc) is sourced on every
 # node so it is important that actions here not tax the file system.
 # Each nodes' environment during an MPI job has ENVIRONMENT set to
 # "BATCH" and the prompt variable PS1 empty.
