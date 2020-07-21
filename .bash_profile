@@ -1,9 +1,8 @@
 # ************************** $PATH changes ************************************
 
 # Add sd2e-cloud-cli to PATH
-export PATH="/Users/TASethanho/.local/bin/sd2e-cloud-cli/bin:$PATH"
-export PATH="$PATH:/Users/TASethanho/.local/bin"
-export PATH="$PATH:/Users/TASethanho/.local/bin/abaco-cli/"
+export PATH="~/.local/bin/sd2e-cloud-cli/bin:$PATH"
+export PATH="$PATH:~/.local/bin"
 
 # OpenSSL v1.1
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
@@ -14,18 +13,15 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 # Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# ********************************** Misc. *************************************
+
 # iTerm2 shell completion
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-# ********************************** Misc. *************************************
 
 # Source bashrc
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
-
-# Initialize pyenv
-eval "$(pyenv init -)"
 
 # Commonly used IP
 export ZOOM_DNS=162.255.36.11

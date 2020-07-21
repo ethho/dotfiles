@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 
-# vi style bindings
+# vi forever
 set -o vi
 
 # ls colors
@@ -32,7 +32,6 @@ alias jenkins-local="docker run --rm -u root -p 8080:8080 \
 # custom workflows in ~/.local/bin
 alias abe="abaco-track-executions.sh"
 alias jt="jobs-track.sh"
-alias abu="abaco-update-plus.sh"
 
 # uninstall and reinstall openssl
 # fixes "ssl module in Python is not available" error on pip install
@@ -50,10 +49,8 @@ alias fl="tapis files list"
 alias jl="tapis jobs list"
 
 # git track dotfiles
-alias cfg='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
+alias config='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
 
 # git track vimwiki contents
 alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/.git/ --work-tree=/Users/TASethanho/vimwiki/'
 
-# sd2e-cloud-cli autocompletion
-source "$(dirname $(dirname $(which tenants-init)))/completion/agave-cli"
