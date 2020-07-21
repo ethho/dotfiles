@@ -7,3 +7,6 @@
 [submodule ".zsh_custom/plugins/zsh-vim-mode"]
 	path = .zsh_custom/plugins/zsh-vim-mode
 	url = https://github.com/softmoth/zsh-vim-mode
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
