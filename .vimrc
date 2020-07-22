@@ -1,5 +1,6 @@
 syntax on
-filetype plugin on
+filetype plugin indent on
+
 set nocompatible
 set hidden
 set relativenumber
@@ -18,13 +19,6 @@ set undofile
 set incsearch
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=50
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
 
 " leader key
 let mapleader = " "
@@ -58,7 +52,6 @@ endfun
 
 " ************************************ Plugins ********************************
 
-filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
@@ -129,8 +122,6 @@ nnoremap <leader>tn :tabnew<SPACE>
 " nav remaps
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
-nnoremap <silent> <C-d> <C-d>zz
-nnoremap <silent> <C-u> <C-u>zz
 nnoremap <leader>tml :tabmove -1<CR>
 nnoremap <leader>tmr :tabmove +1<CR>
 
@@ -171,6 +162,4 @@ nmap <C-Tab> <Plug>VimwikiNextLink
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
 call GoYCM()
-" autocmd FileType typescript :call GoYCM()
-"autocmd FileType cpp,cxx,h,hpp,c :call GoCoc()
 
