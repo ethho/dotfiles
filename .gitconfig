@@ -1,0 +1,32 @@
+[user]
+	name = Ethan Ho
+	email = ethan.n.ho@gmail.com
+[includeIf "gitdir:~/TACC/"]
+    path = ~/TACC/.gitconfig
+[includeIf "gitdir:~/Ho-Lab-Colostate/"]
+    path = ~/Ho-Lab-Colostate/.gitconfig
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	unstage = reset HEAD --
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	dfs = diff --staged
+	logt = log --graph --oneline --decorate
+    logo = log --oneline
+    mergedry = merge --no-commit --no-ff
+	dfc = diff --compact-summary
+	dfcs = diff --staged --compact-summary
+    sts = stash -u --keep-index
+    discard = checkout --
+    res = reset --soft
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
