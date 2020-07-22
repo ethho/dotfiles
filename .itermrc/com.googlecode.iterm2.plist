@@ -7019,14 +7019,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{291, 810}</string>
+		<string>{246, 748}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7F711AA3-0E7B-45EC-9BBC-E3068F5E12F5</string>
 	<key>NoSyncLastTipTime</key>
 	<real>611779426.00157404</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>154</integer>
+	<integer>157</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7909,7 +7909,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-21T17:45:31Z</date>
+	<date>2020-07-22T17:45:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -7937,7 +7937,7 @@
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<false/>
 	<key>URLHandlersByGuid</key>
