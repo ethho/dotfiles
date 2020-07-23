@@ -1,6 +1,9 @@
 syntax on
+filetype plugin indent on
 
+set nocompatible
 set hidden
+set relativenumber
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -14,45 +17,42 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-filetype plugin indent on
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=50
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" leader key
+let mapleader = " "
+
+" ********************************* Functions *********************************
+
+function! ToggleGruvboxBG()
+    if &background == 'dark'
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+" ************************************ Plugins ********************************
+
 call plug#begin('~/.vim/plugged')
 
-Plug 'ycm-core/YouCompleteMe'
-Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-utils/vim-man'
-Plug 'lyuts/vim-rtags'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mbbill/undotree'
 Plug 'preservim/nerdcommenter'
-Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'morhetz/gruvbox'
+Plug 'kshenoy/vim-signature'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
-
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
-
+" ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let mapleader = " "
 
 " netrw
 let g:netrw_browse_split = 2
@@ -61,30 +61,42 @@ let g:netrw_winsize = 15
 
 " ctrl p
 let g:ctrlp_use_caching = 0
-"let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" ************************************ Colors *********************************
+
+" gruvbox, baby
+autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_dark='medium'
+set background=light
+
+" ************************************ Keymaps ********************************
 
 " pane navigation
 nnoremap <silent> <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>j :wincmd j<CR>
 nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
-nnoremap <silent> <C-h> :tabprevious<CR>
-nnoremap <silent> <C-l> :tabnext<CR>
+nnoremap <silent> <leader>b gT
+nnoremap <silent> <leader>w gt
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>ps :Rg<SPACE>
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+nnoremap <silent> <leader>+ :vertical resize +5<CR>
+nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>tn :tabnew<SPACE>
-"vnoremap J :m '>+1<CR>gv=gv
-"vnoremap K :m '<-2<CR>gv=gv
 
 " nav remaps
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
-nnoremap <silent> <C-d> <C-d>zz
-nnoremap <silent> <C-u> <C-u>zz
+nnoremap <leader>tml :tabmove -1<CR>
+nnoremap <leader>tmr :tabmove +1<CR>
+
+" misc
+noremap <leader>y "*y
+noremap <leader>p "*p
+noremap <leader>dws :s/\s\+$//g<CR>
 
 " git aliases
 nnoremap <leader>gst :Git<CR>
@@ -94,25 +106,27 @@ nnoremap <leader>gco :Git checkout<SPACE>
 nnoremap <leader>gdf :Git diff<SPACE>
 nnoremap <leader>gadd :Git add<SPACE>
 
-fun! GoYCM()
-    nnoremap <buffer> <leader>gd :YcmCompleter GoTo<CR>
-    nnoremap <buffer> <leader>gr :YcmCompleter GoToReferences<CR>
-    nnoremap <buffer> <leader>rr :YcmCompleter RefactorRename<space>
-endfun
+" toggle light/dark BG
+nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+" vimwiki
+nmap ,wt <Plug>VimwikiTabIndex
+nmap ,ws <Plug>VimwikiUISelect
+nmap ,wi <Plug>VimwikiDiaryIndex
+nmap ,w,w <Plug>VimwikiMakeDiaryNote
+nmap ,w,t <Plug>VimwikiTabMakeDiaryNote
+nmap ,w,y <Plug>VimwikiMakeYesterdayDiaryNote
+nmap ,w,m <Plug>VimwikiMakeTomorrowDiaryNote
+nmap ,wh <Plug>Vimwiki2HTML
+nmap ,whh  <Plug>Vimwiki2HTMLBrowse
+nmap ,w,wk <Plug>VimwikiDiaryGenerateLinks
+nmap ,w,w <Plug>VimwikiMakeDiaryNote
+nmap ,wr <Plug>VimwikiRenameFile
+nmap ,wd <Plug>VimwikiDeleteFile
+nmap ,wn <Plug>VimwikiGoto
+nmap ,ww <Plug>VimwikiIndex
+nmap <C-Tab> <Plug>VimwikiNextLink
 
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
+" autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
-" autocmd FileType typescript :call GoYCM()
-call GoYCM()
-"autocmd FileType cpp,cxx,h,hpp,c :call GoCoc()
 
