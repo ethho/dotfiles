@@ -112,31 +112,20 @@ nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
 nnoremap <silent> <leader>b gT
 nnoremap <silent> <leader>w gt
-nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :Vex<CR>
-nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>tn :tabnew<SPACE>
-
-" nav remaps
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 nnoremap <leader>tml :tabmove -1<CR>
 nnoremap <leader>tmr :tabmove +1<CR>
+nnoremap <leader>pv :Vex<CR>
+nnoremap <leader>ps :Rg<SPACE>
 
 " misc
 noremap <leader>y "*y
 noremap <leader>p "*p
 noremap <leader>dws :s/\s\+$//g<CR>
-
-" git aliases
-nnoremap <leader>gst :Git<CR>
-nnoremap <leader>gci :Git commit<CR>
-nnoremap <leader>gbr :Git branch<SPACE>
-nnoremap <leader>gco :Git checkout<SPACE>
-nnoremap <leader>gdf :Git diff<SPACE>
-nnoremap <leader>gadd :Git add<SPACE>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
