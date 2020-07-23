@@ -42,15 +42,9 @@ alias reinstall-openssl="""
     brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
     """
 
-# Tapis CLI
-alias sl="systems-list"
-alias appd="apps-deploy"
-alias fl="tapis files list"
-alias jl="tapis jobs list"
-
 # git track dotfiles
-alias config='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
+alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # git track vimwiki contents
-alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/.git/ --work-tree=/Users/TASethanho/vimwiki/'
+alias vw="git --git-dir=$HOME/vimwiki/.git/ --work-tree=$HOME/vimwiki/"
 
