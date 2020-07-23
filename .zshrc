@@ -32,9 +32,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
     git
     z
-    docker
-    osx
-    web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-vim-mode
