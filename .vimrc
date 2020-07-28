@@ -3,6 +3,7 @@ filetype plugin indent on
 
 set nocompatible
 set hidden
+set autoread
 set relativenumber
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -17,6 +18,9 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -72,7 +76,7 @@ if executable('rg')
 endif
 
 " ctrl-p
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/plugged/ctrlp.vim
 
 " netrw
 let g:netrw_browse_split = 2
