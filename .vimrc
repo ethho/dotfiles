@@ -44,7 +44,6 @@ endfun
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdcommenter'
-Plug 'morhetz/gruvbox'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'kshenoy/vim-signature'
@@ -58,11 +57,8 @@ let g:netrw_winsize = 15
 
 " ************************************ Colors *********************************
 
-" gruvbox, baby
-autocmd vimenter * colorscheme gruvbox
-let g:gruvbox_contrast_light='hard'
-let g:gruvbox_contrast_dark='medium'
-set background=light
+" use terminal colors
+set termguicolors
 
 " ************************************ Keymaps ********************************
 
