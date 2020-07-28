@@ -1,7 +1,7 @@
 # -*- shell-script -*-
 
-# This file is NOT automatically sourced for login shells.
-# Your ~/.profile can and should "source" this file.
+# vi forever
+set -o vi
 
 # Note neither ~/.profile nor ~/.bashrc are sourced automatically by
 # bash scripts. However, a script inherits the environment variables

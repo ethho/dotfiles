@@ -25,14 +25,6 @@ let mapleader = " "
 
 " ********************************* Functions *********************************
 
-function! ToggleGruvboxBG()
-    if &background == 'dark'
-        set background=light
-    else
-        set background=dark
-    endif
-endfunction
-
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
@@ -44,9 +36,6 @@ endfun
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdcommenter'
-Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'stefandtw/quickfix-reflector.vim'
-Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
@@ -54,11 +43,6 @@ call plug#end()
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
-
-" ************************************ Colors *********************************
-
-" use terminal colors
-set termguicolors
 
 " ************************************ Keymaps ********************************
 
@@ -76,16 +60,11 @@ nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 nnoremap <leader>tml :tabmove -1<CR>
 nnoremap <leader>tmr :tabmove +1<CR>
-nnoremap <leader>pv :Vex<CR>
-nnoremap <leader>ps :Rg<SPACE>
 
 " misc
 noremap <leader>y "*y
 noremap <leader>p "*p
 noremap <leader>dws :s/\s\+$//g<CR>
-
-" toggle light/dark BG
-nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
