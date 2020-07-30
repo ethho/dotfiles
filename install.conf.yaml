@@ -29,3 +29,11 @@
 - create:
     - ~/.vim/undodir
 
+- shell:
+    -
+        command: vim +'PlugInstall --sync' +'qa'
+        description: Install vim plugins using plug.vim
+        stdin: true
+        stdout: false
+        stderr: true
+        quiet: true

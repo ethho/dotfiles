@@ -1,8 +1,6 @@
 # ************************** $PATH changes ************************************
 
-# Add sd2e-cloud-cli to PATH
-export PATH="~/.local/bin/sd2e-cloud-cli/bin:$PATH"
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:$HOME/bin"
 
 # OpenSSL v1.1
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
