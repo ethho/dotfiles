@@ -9,11 +9,8 @@
 
 - link:
     ~/.bash_profile:
-        force: true
     ~/.bashrc:
-        force: true
     ~/.zshrc:
-        force: true
     ~/.oh-my-zsh:
     ~/.gitconfig:
     ~/.condarc:
@@ -22,6 +19,7 @@
     ~/.scimrc:
     ~/.vimiumrc.json:
     ~/.vim:
+    ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.zsh_custom:
     ~/.itermrc:
