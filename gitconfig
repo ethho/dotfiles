@@ -13,12 +13,13 @@
     st = status
     co = checkout
     ci = commit
-    br = --no-pager branch
+    br = "!git --no-pager branch"
     df = diff
     dfs = diff --staged
-    dfc = diff --compact-summary
-    dfcs = diff --staged --compact-summary
-    conflicts = diff --name-only --diff-filter=U
+    dfc = "!git --no-pager diff --compact-summary"
+    dfcs = "!git --no-pager diff --staged --compact-summary"
+    edit-unmerged = "!$EDITOR -p `git diff --name-only --diff-filter=U`"
+    add-unmerged = "!git add `git diff --name-only --diff-filter=U`"
     logt = log --graph --oneline --decorate
     logo = log --oneline
     ust = reset HEAD --
