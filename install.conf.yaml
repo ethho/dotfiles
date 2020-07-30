@@ -5,10 +5,16 @@
     shell:
         stderr: true
 
+- shell:
+    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Install oh-my-zsh]
+
 - clean:
     - ~
     - ~/.zsh_custom/plugins
     - ~/.zsh_custom/themes
+    - ~/.zshrc.*
+        force: true
+
 
 - link:
     ~/.bash_profile:
@@ -26,14 +32,8 @@
     ~/.vim:
     ~/.vimrc:
     ~/.zsh_custom:
-    ~/bin:
+    ~/bin: bin/
 
 - create:
     - ~/.vim/undodir
-
-- shell:
-    -
-        - description: Install oh-my-zsh
-        - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 
