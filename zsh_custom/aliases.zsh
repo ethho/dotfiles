@@ -18,8 +18,5 @@ alias reinstall-openssl="""
     brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
     """
 
-# git track dotfiles
-alias config='/usr/bin/git --git-dir=/Users/TASethanho/.cfg/ --work-tree=/Users/TASethanho'
-
 # git track vimwiki contents
 alias vw='/usr/bin/git --git-dir=/Users/TASethanho/vimwiki/.git/ --work-tree=/Users/TASethanho/vimwiki/'

@@ -75,9 +75,6 @@ if executable('rg')
     let g:rg_derive_root='true'
 endif
 
-" ctrl-p
-set runtimepath^=~/.vim/plugged/ctrlp.vim
-
 " netrw
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
@@ -96,6 +93,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/docsrc', 'template_path': '~/vimwiki/t
 let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr, pre, script'
 
 " ctrl p
+set runtimepath^=~/.vim/plugged/ctrlp.vim
 let g:ctrlp_use_caching = 0
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 

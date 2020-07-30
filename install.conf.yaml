@@ -1,0 +1,31 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+    shell:
+        stderr: true
+
+- clean: ['~']
+
+- link:
+    ~/.bash_profile:
+        force: true
+    ~/.bashrc:
+        force: true
+    ~/.zshrc:
+        force: true
+    ~/.oh-my-zsh:
+    ~/.gitconfig:
+    ~/.condarc:
+    ~/.inputrc:
+    ~/.p10k.zsh:
+    ~/.scimrc:
+    ~/.vimiumrc.json:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.zsh_custom:
+    ~/bin: bin
+
+- create:
+    - ~/.vim/undodir
+
