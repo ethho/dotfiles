@@ -1,3 +1,7 @@
 # vim
 vim/plugged
 vim/undodir
+
+# dotbot curls to pull most recent version
+# leave out of git history
+itermrc/shell_integration
