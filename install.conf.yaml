@@ -29,5 +29,5 @@
 - create:
     - ~/.vim/undodir
 
-- shell
+- shell:
     - [vim +'PlugInstall --sync' +qa, Install vim plugins using plug.vim]
