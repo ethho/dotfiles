@@ -5,16 +5,7 @@
     shell:
         stderr: true
 
-- shell:
-    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Install oh-my-zsh]
-
-- clean:
-    - ~
-    - ~/.zsh_custom/plugins
-    - ~/.zsh_custom/themes
-    - ~/.zshrc.*
-        force: true
-
+- clean: ['~']
 
 - link:
     ~/.bash_profile:
@@ -23,7 +14,8 @@
         force: true
     ~/.zshrc:
         force: true
-    ~/.gitconfig: gitconfig
+    ~/.oh-my-zsh:
+    ~/.gitconfig:
     ~/.condarc:
     ~/.inputrc:
     ~/.p10k.zsh:
@@ -32,7 +24,7 @@
     ~/.vim:
     ~/.vimrc:
     ~/.zsh_custom:
-    ~/bin: bin/
+    ~/bin: bin
 
 - create:
     - ~/.vim/undodir
