@@ -9,11 +9,8 @@
 
 - link:
     ~/.bash_profile:
-        force: true
     ~/.bashrc:
-        force: true
     ~/.zshrc:
-        force: true
     ~/.oh-my-zsh:
     ~/.gitconfig:
     ~/.condarc:
@@ -22,18 +19,29 @@
     ~/.scimrc:
     ~/.vimiumrc.json:
     ~/.vim:
+    ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.zsh_custom:
+    ~/.itermrc:
     ~/bin: bin
 
 - create:
     - ~/.vim/undodir
+    - ~/.itermrc/shell_integration
 
 - shell:
     -
         command: vim +'PlugInstall --sync' +'qa'
-        description: Install vim plugins using plug.vim
+        description: Installing vim plugins using plug.vim
         stdin: true
         stdout: false
         stderr: true
+        quiet: true
+    -
+        command: curl -sL https://iterm2.com/shell_integration/zsh -o ~/.itermrc/shell_integration/iterm2_shell_integration.zsh
+        description: Installing iTerm shell integration (zsh)
+        quiet: true
+    -
+        command: curl -sL https://iterm2.com/shell_integration/bash -o ~/.itermrc/shell_integration/iterm2_shell_integration.bash
+        description: Installing iTerm shell integration (bash)
         quiet: true

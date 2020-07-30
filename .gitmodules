@@ -17,3 +17,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "vim/autoload/vim-plug"]
+	path = vim/autoload/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
