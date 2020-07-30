@@ -1,0 +1,39 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+    shell:
+        stderr: true
+
+- clean:
+    - ~
+    - ~/.zsh_custom/plugins
+    - ~/.zsh_custom/themes
+
+- link:
+    ~/.bash_profile:
+        force: true
+    ~/.bashrc:
+        force: true
+    ~/.zshrc:
+        force: true
+    ~/.gitconfig: gitconfig
+    ~/.condarc:
+    ~/.inputrc:
+    ~/.p10k.zsh:
+    ~/.scimrc:
+    ~/.vimiumrc.json:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.zsh_custom:
+    ~/bin:
+
+- create:
+    - ~/.vim/undodir
+
+- shell:
+    -
+        - description: Install oh-my-zsh
+        - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
