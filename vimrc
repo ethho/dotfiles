@@ -103,7 +103,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 autocmd vimenter * colorscheme gruvbox
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
-set background=light
+set background=dark
 
 " ************************************ Keymaps ********************************
 
