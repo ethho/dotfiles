@@ -13,7 +13,7 @@
     st = status
     co = checkout
     ci = commit
-    br = "!git --no-pager branch"
+    br = branch
     df = diff
     dfs = diff --staged
     dfc = "!git --no-pager diff --compact-summary"
