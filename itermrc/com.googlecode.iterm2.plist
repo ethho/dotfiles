@@ -893,28 +893,28 @@
 			<key>Text</key>
 			<string>1</string>
 		</dict>
-		<key>0xf700-0x320000</key>
+		<key>0xf700-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>28</integer>
 			<key>Text</key>
 			<string>4341A121-7D7B-46E0-A7CD-106CDB601B47</string>
 		</dict>
-		<key>0xf701-0x320000</key>
+		<key>0xf701-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>28</integer>
 			<key>Text</key>
 			<string>4341A121-7D7B-46E0-A7CD-106CDB601B47</string>
 		</dict>
-		<key>0xf702-0x320000</key>
+		<key>0xf702-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>29</integer>
 			<key>Text</key>
 			<string>4341A121-7D7B-46E0-A7CD-106CDB601B47</string>
 		</dict>
-		<key>0xf703-0x320000</key>
+		<key>0xf703-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>29</integer>
@@ -985,7 +985,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles/iterm2_color</string>
+	<string>~/.iterm2_color</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1040,7 +1040,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 303 700 622 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 0 1920 1057 1920 0 1920 1057 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1837,6 +1837,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string>1</string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -2784,6 +2786,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string>W</string>
+			<key>Show Mark Indicators</key>
+			<true/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
@@ -3620,6 +3624,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string>F</string>
+			<key>Show Mark Indicators</key>
+			<true/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
@@ -7040,14 +7046,14 @@
 		<key>screenFrame</key>
 		<string>{{1920, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{2054, 656}</string>
+		<string>{2206, 682}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7F711AA3-0E7B-45EC-9BBC-E3068F5E12F5</string>
 	<key>NoSyncLastTipTime</key>
 	<real>611779426.00157404</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>180</integer>
+	<integer>182</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7930,7 +7936,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-29T20:29:57Z</date>
+	<date>2020-07-31T20:29:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
