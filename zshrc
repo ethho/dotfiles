@@ -28,6 +28,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom source scripts
 ZSH_CUSTOM="$HOME/.zsh_custom"
 
+# Extended glob
+setopt extendedglob
+
 # Plugins
 plugins=(
     git
