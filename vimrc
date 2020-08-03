@@ -84,11 +84,16 @@ let g:netrw_winsize = 15
 let g:ycm_filetype_blacklist = {}
 
 " vimwiki: use markdown
-let g:vimwiki_list = [{'path': '~/vimwiki/docsrc', 'template_path': '~/vimwiki/templates/',
-          \ 'template_default': 'default', 'syntax': 'markdown', 'ext': '.md',
-          \ 'path_html': '~/vimwiki/docs/', 'custom_wiki2html': 'vimwiki_markdown',
-          \ 'html_filename_parameterization': 1,
-          \ 'template_ext': '.tpl'}]
+let g:vimwiki_list = [{
+    \ 'path': '~/vimwiki/docsrc',
+    \ 'template_path': '~/vimwiki/templates/',
+    \ 'template_default': 'default',
+    \ 'syntax': 'markdown',
+    \ 'ext': '.md',
+    \ 'path_html': '~/vimwiki/docs/',
+    \ 'custom_wiki2html': 'vimwiki_markdown',
+    \ 'html_filename_parameterization': 0,
+    \ 'template_ext': '.tpl'}]
 " add the pre tag for inserting code snippets
 let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr, pre, script'
 

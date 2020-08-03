@@ -3,7 +3,7 @@
 alias vim="nvim"
 alias ll="ls -lah"
 alias t="tapis"
-alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
+alias bfg="java -jar ~/bin/bfg-1.13.0.jar"
 
 # custom workflows in ~/.local/bin
 alias abe="abaco-track-executions.sh"
