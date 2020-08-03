@@ -97,9 +97,9 @@
     time                    # current time
     # =========================[ Line #2 ]=========================
     newline
-    load                  # CPU load
+    #load                  # CPU load
     # disk_usage            # disk usage
-    ram                   # free RAM
+    #ram                   # free RAM
     # swap                  # used swap
     # wifi                  # wifi speed
     # ip                    # ip address and bandwidth usage for a specified network interface
