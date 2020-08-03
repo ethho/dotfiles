@@ -35,9 +35,6 @@ setopt extendedglob
 plugins=(
     git
     z
-    docker
-    osx
-    web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-vim-mode
@@ -61,8 +58,6 @@ bindkey '^ ' autosuggest-accept
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# iTerm shell integration
 
 # iTerm shell integration
 ITERM_SH_INTEGRATION="$HOME/.itermrc/shell_integration/iterm2_shell_integration.zsh"
