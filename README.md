@@ -10,6 +10,8 @@ Highlights
 * [dotbot](https://github.com/anishathalye/dotbot) for one-button installation
 * Lightweight configs for TACC HPC systems, where memory on shared login nodes is sacred
 
+![docs/img/example1.png]
+
 ## Quick Start
 
 1. Clone this repository and, recursively, all submodules:
