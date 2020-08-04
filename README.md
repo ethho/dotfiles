@@ -2,7 +2,7 @@
 
 This repository contains Ethan's `$HOME` configuration on MacBook Pro and TACC HPC systems.
 
-Highlights
+**Highlights**
 * zsh with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) and [p10k](https://github.com/romkatv/powerlevel10k.git)
 * Lightweight vim config with [vim-plug](https://github.com/junegunn/vim-plug.git) and [YCM](https://github.com/ycm-core/YouCompleteMe)
 * Vim keybinds whenever possible: zsh, bash, readline, and [even Chrome](https://github.com/philc/vimium)
@@ -10,14 +10,14 @@ Highlights
 * [dotbot](https://github.com/anishathalye/dotbot) for one-button installation
 * Lightweight configs for TACC HPC systems, where memory on shared login nodes is sacred
 
-![docs/img/example1.png]
+![zsh x vim x iTerm2 x gruvbox](docs/img/example1.png)
 
 ## Quick Start
 
 1. Clone this repository and, recursively, all submodules:
 
 ```bash
-git clone --resurse-submodules https://github.com/ethan-n-ho/dotfiles
+git clone --recurse-submodules https://github.com/ethan-n-ho/dotfiles
 ```
 
 2. `git checkout` the branch with the desired config.
