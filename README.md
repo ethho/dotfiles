@@ -12,7 +12,7 @@ This repository contains Ethan's `$HOME` configuration on MacBook Pro and TACC H
 
 ![zsh x vim x iTerm2 x gruvbox](docs/img/example1.png)
 
-## Quick Start
+## Installation
 
 1. Clone this repository and, recursively, all submodules:
 
@@ -20,7 +20,7 @@ This repository contains Ethan's `$HOME` configuration on MacBook Pro and TACC H
 git clone --recurse-submodules https://github.com/ethan-n-ho/dotfiles
 ```
 
-2. `git checkout` the branch with the desired config.
+2. `git fetch --all` and `git checkout` the branch with the desired config.
 
 3. Run the [dotbot](https://github.com/anishathalye/dotbot) install script:
 
