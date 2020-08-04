@@ -10,7 +10,7 @@ Highlights
 * [dotbot](https://github.com/anishathalye/dotbot) for one-button installation
 * Lightweight configs for TACC HPC systems, where memory on shared login nodes is sacred
 
-![docs/img/example1.png]
+![zsh x vim x iTerm2 x gruvbox](docs/img/example1.png)
 
 ## Quick Start
 
