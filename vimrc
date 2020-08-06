@@ -67,6 +67,8 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'vimwiki/vimwiki'
+Plug 'jreybert/vimagit'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -74,6 +76,10 @@ call plug#end()
 if executable('rg')
     let g:rg_derive_root='true'
 endif
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " netrw
 let g:netrw_browse_split = 2
@@ -106,7 +112,8 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " ************************************ Colors *********************************
 
 " gruvbox, baby
-autocmd vimenter * colorscheme gruvbox
+"autocmd vimenter * colorscheme gruvbox
+colorscheme gruvbox
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
 set background=dark
@@ -137,6 +144,9 @@ noremap <leader>dws :s/\s\+$//g<CR>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
+
+" vimagit
+nnoremap <leader>git :call magit#show_magit('v')<CR>
 
 " vimwiki
 nmap ,wt <Plug>VimwikiTabIndex
