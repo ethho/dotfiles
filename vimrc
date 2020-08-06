@@ -50,7 +50,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
-Plug 'jreybert/vimagit'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
@@ -104,9 +103,6 @@ noremap <leader>dws :s/\s\+$//g<CR>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
-
-" vimagit
-nnoremap <leader>git :call magit#show_magit('v')<CR>
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
