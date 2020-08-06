@@ -10,6 +10,7 @@
     co = checkout
     ci = commit
     br = branch
+    fa = fetch --all
     df = diff
     dfs = diff --staged
     dfc = "!git --no-pager diff --compact-summary"
