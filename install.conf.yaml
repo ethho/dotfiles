@@ -32,16 +32,23 @@
 - shell:
     -
         command: vim +'PlugInstall --sync' +'qa'
-        description: Installing vim plugins using plug.vim
+        description: Installing vim plugins using plug.vim...
+        stdin: true
+        stdout: false
+        stderr: true
+        quiet: true
+    -
+        command: vim +'CocInstall coc-python' +'qa'
+        description: Installing coc.vim extensions...
         stdin: true
         stdout: false
         stderr: true
         quiet: true
     -
         command: curl -sL https://iterm2.com/shell_integration/zsh -o ~/.itermrc/shell_integration/iterm2_shell_integration.zsh
-        description: Installing iTerm shell integration (zsh)
+        description: Installing iTerm shell integration (zsh)...
         quiet: true
     -
         command: curl -sL https://iterm2.com/shell_integration/bash -o ~/.itermrc/shell_integration/iterm2_shell_integration.bash
-        description: Installing iTerm shell integration (bash)
+        description: Installing iTerm shell integration (bash)...
         quiet: true
