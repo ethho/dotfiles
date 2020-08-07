@@ -57,6 +57,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'mhinz/vim-startify'
 Plug 'kshenoy/vim-signature'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
