@@ -6,7 +6,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+
+# Miniconda3
+export PATH="$PATH:$HOME/miniconda3/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -42,7 +45,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# ************************ User configuration **********************************
+# ************************ User configuration *********************************
 
 # Keybinds
 bindkey -v
@@ -62,3 +65,21 @@ bindkey '^ ' autosuggest-accept
 # iTerm shell integration
 ITERM_SH_INTEGRATION="$HOME/.itermrc/shell_integration/iterm2_shell_integration.zsh"
 [[ ! -f $ITERM_SH_INTEGRATION ]] || source $ITERM_SH_INTEGRATION
+
+# ******************************* Miniconda  **********************************
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home1/06634/eho/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home1/06634/eho/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home1/06634/eho/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home1/06634/eho/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

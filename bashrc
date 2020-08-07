@@ -47,6 +47,9 @@ if [ -z "$__PERSONAL_PATH__" ]; then
 
     export PATH=$PATH:$HOME/bin/
 
+    # Miniconda3
+    export PATH="$PATH:$HOME/miniconda3/bin"
+
     # git-completion
     if [ -f ${HOME}/.git-completion.bash ]; then
       source ${HOME}/.git-completion.bash
@@ -117,3 +120,19 @@ export VER_DF_PD=/work/projects/SD2E-Community/prod/data/versioned-dataframes/pr
 if [ -n "$SHELL_STARTUP_DEBUG" ]; then
   DBG_ECHO "${DBG_INDENT}}"
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home1/06634/eho/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home1/06634/eho/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home1/06634/eho/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home1/06634/eho/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
