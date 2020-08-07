@@ -64,11 +64,6 @@ call plug#end()
 
 " ***************************** Configure Plugins *****************************
 
-" ripgrep
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
-
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
