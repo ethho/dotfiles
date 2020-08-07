@@ -45,7 +45,7 @@ fi
 if [ -z "$__PERSONAL_PATH__" ]; then
     export __PERSONAL_PATH__=1
 
-    export PATH=$PATH:$HOME/bin/
+    export PATH=$PATH:$HOME/.local/bin/
 
     # Miniconda3
     export PATH="$PATH:$HOME/miniconda3/bin"
