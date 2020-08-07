@@ -2,7 +2,6 @@ syntax on
 filetype plugin indent on
 
 set nocompatible
-set hidden
 set autoread
 set relativenumber
 set noerrorbells
@@ -14,7 +13,6 @@ set nu
 set nowrap
 set smartcase
 set noswapfile
-set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
@@ -23,6 +21,14 @@ set sidescrolloff=15
 set sidescroll=1
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" recommended for coc.vim
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
 
 " leader key
 let mapleader = " "
@@ -43,16 +49,25 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-" ************************************ Plugins ********************************
+" ****************************** Install Plugins ******************************
 
+" uses plug.vim
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
+Plug 'mhinz/vim-startify'
 
 call plug#end()
+
+" ***************************** Configure Plugins *****************************
+
+" ripgrep
+if executable('rg')
+    let g:rg_derive_root='true'
+endif
 
 " vim-airline
 let g:airline_powerline_fonts = 1
@@ -71,7 +86,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " ************************************ Colors *********************************
 
 " gruvbox, baby
-"autocmd vimenter * colorscheme gruvbox
 colorscheme gruvbox
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
