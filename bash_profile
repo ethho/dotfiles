@@ -34,6 +34,7 @@ chruby 2.7.1
 
 # ********************************** Conda *************************************
 
+# >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/TASethanho/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
