@@ -23,7 +23,7 @@
     ~/.vimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/bin: bin
+    ~/.local:
 
 - create:
     - ~/.vim/undodir
