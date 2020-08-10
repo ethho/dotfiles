@@ -51,11 +51,13 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 bindkey '^ ' autosuggest-accept
 
-# Initialize pyenv
+# pyenv
 eval "$(pyenv init -)"
-
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Agave Bash CLI
+export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -11,6 +11,9 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 # Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# Agave Bash CLI
+export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
+
 # ********************************** Misc. *************************************
 
 # iTerm2 shell completion
