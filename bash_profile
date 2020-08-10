@@ -1,6 +1,6 @@
 # ************************** $PATH changes ************************************
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # OpenSSL v1.1
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
