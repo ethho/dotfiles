@@ -28,7 +28,7 @@ set nobackup
 set nowritebackup
 set cmdheight=2
 set updatetime=300
-set shortmess+=c
+" set shortmess+=c
 
 " leader key
 let mapleader = " "
@@ -48,43 +48,6 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
-
-" ****************************** Install Plugins ******************************
-
-" uses plug.vim
-call plug#begin('~/.vim/plugged')
-
-Plug 'preservim/nerdcommenter'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'mhinz/vim-startify'
-
-call plug#end()
-
-" ***************************** Configure Plugins *****************************
-
-" vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-
-" netrw
-let g:netrw_browse_split = 2
-let g:netrw_banner = 0
-let g:netrw_winsize = 15
-
-" ctrl p
-set runtimepath^=~/.vim/plugged/ctrlp.vim
-let g:ctrlp_use_caching = 0
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-" ************************************ Colors *********************************
-
-" gruvbox, baby
-colorscheme gruvbox
-let g:gruvbox_contrast_light='hard'
-let g:gruvbox_contrast_dark='medium'
-set background=dark
 
 " ************************************ Keymaps ********************************
 

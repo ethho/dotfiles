@@ -37,10 +37,6 @@ setopt extendedglob
 # Plugins
 plugins=(
     git
-    z
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    zsh-vim-mode
 )
 
 source $ZSH/oh-my-zsh.sh
