@@ -250,6 +250,12 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" *************************** Syntax highlighting *****************************
+
+" Snakemake
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake
+
 " ************************************ Keymaps ********************************
 
 " pane navigation
@@ -272,7 +278,7 @@ nnoremap <leader>ps :Rg<SPACE>
 " misc
 noremap <leader>y "*y
 noremap <leader>p "*p
-noremap <leader>dws :s/\s\+$//g<CR>
+noremap <leader>dws :%s/\S\zs\s\{2,}/ /g<CR>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
