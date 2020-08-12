@@ -38,15 +38,15 @@
         stderr: true
         quiet: true
     -
-        command: curl -sL https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o ~/sd2e-cloud-cli.tgz && tar -C ~ -xzf ~/sd2e-cloud-cli.tgz && rm -rf ~/sd2e-cloud-cli.tgz
-        description: Installing Agave Bash CLI...
+        command: vim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
+        description: Installing coc.vim extensions...
         stdin: true
         stdout: false
         stderr: true
         quiet: true
     -
-        command: vim +'CocInstall coc-python' +'qa'
-        description: Installing coc.vim extensions...
+        command: curl -sL https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o ~/sd2e-cloud-cli.tgz && tar -C ~ -xzf ~/sd2e-cloud-cli.tgz && rm -rf ~/sd2e-cloud-cli.tgz
+        description: Installing Agave Bash CLI...
         stdin: true
         stdout: false
         stderr: true

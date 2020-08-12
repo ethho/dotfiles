@@ -85,9 +85,6 @@ let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
-" enable YCM for all files, notably markdown and vimwiki
-let g:ycm_filetype_blacklist = {}
-
 " vimwiki: use markdown
 let g:vimwiki_list = [{
     \ 'path': '~/vimwiki/docsrc',
@@ -249,6 +246,11 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" ************************ Configure Coc Extensions ***************************
+
+" coc-yank
+nnoremap <silent> <space>Y  :<C-u>CocList -A --normal yank<cr>
 
 " *************************** Syntax highlighting *****************************
 
