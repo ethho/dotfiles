@@ -50,6 +50,9 @@ source $ZSH/oh-my-zsh.sh
 # Keybinds
 bindkey -v
 bindkey '^ ' autosuggest-accept
+export VISUAL=$EDITOR
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd V edit-command-line
 
 # pyenv
 eval "$(pyenv init -)"

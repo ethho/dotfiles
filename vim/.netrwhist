@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/TASethanho/tacc/apps/covid-seir/SEIR-city/src/SEIRcity/model'
 let g:netrw_dirhist_8='/Users/TASethanho/tacc/pipelines/psap/rocklin-ladder-cal-rx'
 let g:netrw_dirhist_7='/Users/TASethanho/tacc/pipelines/psap/rocklin-ladder-cal-rx/workflow'
 let g:netrw_dirhist_6='/Users/TASethanho/tacc/pipelines/psap/rocklin-ladder-cal-rx/workflow/scripts'
