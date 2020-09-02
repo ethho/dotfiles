@@ -267,6 +267,8 @@ nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
 nnoremap <silent> <leader>b gT
 nnoremap <silent> <leader>w gt
+nnoremap <silent> <leader>W :bn<CR>
+nnoremap <silent> <leader>B :bp<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>tn :tabnew<SPACE>
