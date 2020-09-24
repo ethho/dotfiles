@@ -66,6 +66,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
 Plug 'jreybert/vimagit'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
