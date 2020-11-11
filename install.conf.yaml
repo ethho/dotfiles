@@ -24,6 +24,7 @@
     ~/.zsh_custom:
     ~/.itermrc:
     ~/.local:
+    ~/.atom:
 
 - create:
     - ~/.vim/undodir
