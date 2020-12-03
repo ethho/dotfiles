@@ -21,6 +21,7 @@
     ~/.vim:
     ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
+    ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
     ~/.local:
