@@ -1,6 +1,8 @@
 # vim
 vim/plugged
 vim/undodir
+vim/pack
+vim/.netrwhist
 
 # Files that are built by dotbot
 # and should be left out of git history
