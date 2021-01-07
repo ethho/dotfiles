@@ -134,13 +134,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
-
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
 " <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
@@ -285,7 +278,7 @@ noremap <leader>y "*y
 noremap <leader>Y "*Y
 noremap <leader>p "*p
 noremap <leader>P "*P
-noremap <C-y><C-y> :let @* = expand("%")<cr>
+noremap <C-y><C-y> :let @* = expand("%:p")<cr>
 noremap <leader>dws :%s/\S\zs\s\{2,}/ /g<CR>
 
 " toggle light/dark BG
@@ -310,7 +303,6 @@ nmap ,wr <Plug>VimwikiRenameFile
 nmap ,wd <Plug>VimwikiDeleteFile
 nmap ,wn <Plug>VimwikiGoto
 nmap ,ww <Plug>VimwikiIndex
-nmap <C-Tab> <Plug>VimwikiNextLink
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
