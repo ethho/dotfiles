@@ -34,14 +34,18 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'ctrl-l': 'vim-mode-plus:next-tab'
   'ctrl-h': 'vim-mode-plus:previous-tab'
-
-'.platform-darwin':
-  # Like vim-ctrlp
-  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+  # NerdCommenter style
+  'space c space': 'editor:toggle-line-comments'
+  # Git tab
+  'space g i t': 'github:toggle-git-tab'
   # Leader key style
   'space p v': 'tree-view:toggle-focus'
   # Alternate project search
   'space p s': 'project-find:show'
+
+'.platform-darwin':
+  # Like vim-ctrlp
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
 
 # Change core movement behavior
 'atom-text-editor':
@@ -53,17 +57,9 @@
   'ctrl-,': 'pane:move-item-left'
   'ctrl-.': 'pane:move-item-right'
 
-'.workspace':
-  # Git tab
-  'space g i t': 'github:toggle-git-tab'
-
 '.tree-view':
-  'y y': 'tree-view:copy-full-path'
-
-# YCM style definition jumping
-'.platform-darwin atom-text-editor[data-grammar~=python]:not(.mini)':
-  'space g d': 'autocomplete-python:go-to-definition'
-
-# NerdCommenter style
-'atom-workspace atom-text-editor:not([mini])':
-  'space c space': 'editor:toggle-line-comments'
+  'y y': 'tree-view:copy'
+  'p': 'tree-view:paste'
+  'd d': 'tree-view:remove'
+  'o': 'tree-view:add-file'
+  'c c': 'tree-view:move'

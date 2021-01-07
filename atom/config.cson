@@ -8,10 +8,13 @@
     closeDeletedFileTabs: true
     projectHome: "/Users/TASethanho/"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "gruvbox"
+    ]
     useTreeSitterParsers: false
   editor:
     fontSize: 17
-    preferredLineLength: 72
     scrollPastEnd: true
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
