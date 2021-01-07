@@ -1,10 +1,6 @@
 [user]
-    name = Ethan Ho
-    email = ethan.n.ho@gmail.com
-[includeIf "gitdir:~/TACC/"]
-    path = ~/TACC/.gitconfig
-[includeIf "gitdir:~/Ho-Lab-Colostate/"]
-    path = ~/Ho-Lab-Colostate/.gitconfig
+	name = Ethan Ho
+	email = eho@tacc.utexas.edu
 [core]
     editor = vim
 [color]

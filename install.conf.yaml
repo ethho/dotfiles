@@ -24,7 +24,6 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.local:
     ~/.atom:
 
 - create:
