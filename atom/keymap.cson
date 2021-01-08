@@ -32,8 +32,6 @@
 
 # Vim mode tab scrolling
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
-  'ctrl-l': 'vim-mode-plus:next-tab'
-  'ctrl-h': 'vim-mode-plus:previous-tab'
   # NerdCommenter style
   'space c space': 'editor:toggle-line-comments'
   # Git tab

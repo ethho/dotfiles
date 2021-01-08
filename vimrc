@@ -273,6 +273,9 @@ nnoremap <leader>tmr :tabmove +1<CR>
 nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>ps :Rg<SPACE>
 
+" remove search highlight when returning to normal mode
+nnoremap <silent> <esc> :noh<CR><esc>
+
 " registers and aliases
 noremap <leader>y "*y
 noremap <leader>Y "*Y
