@@ -10,18 +10,46 @@
       "passKeys": ""
     },
     {
+      "pattern": "https?://jupyter.sd2e.org/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8889/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://gophervr.org/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://repl.it/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://stadia.google.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.3daimtrainer.com/*",
+      "passKeys": ""
+    },
+    {
       "pattern": "https?://localhost:8888/*",
       "passKeys": ""
     },
     {
-      "pattern": "https?://jupyter.sd2e.org/*",
+      "pattern": "https?://docs.google.com/*",
       "passKeys": ""
+    },
+    {
+      "pattern": "https?://github.com/*",
+      "passKeys": "y?np"
     }
   ],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "\" classic vim scrolling\nunmap d\nunmap u\nunmap <c-e>\nunmap <c-y>\nmap <c-d> scrollFullPageDown\nmap <c-u> scrollFullPageUp\nunmap gt\nunmap gT\nunmap J\nunmap K\nmap <c-l> nextTab\nmap <c-h> previousTab\nunmap x\nunmap u\nmap dd removeTab\nmap u restoreTab\nunmap `\nmap  '  Marks.activateGotoMode",
+  "keyMappings": "\" classic vim scrolling\nunmap d\nunmap u\nunmap <c-e>\nunmap <c-y>\nmap <c-d> scrollFullPageDown\nmap <c-u> scrollFullPageUp\nunmap gt\nunmap gT\nunmap J\nunmap K\nmap <c-l> nextTab\nmap <c-h> previousTab\nunmap x\nunmap u\nmap dd removeTab\nmap u restoreTab\nunmap `\nmap <c-y><c-y> copyCurrentUrl\nmap  '  Marks.activateGotoMode",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
