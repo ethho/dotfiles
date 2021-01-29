@@ -1,20 +1,33 @@
 "*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+    helmDirSwitch: true
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   "autocomplete-python":
-    useKite: false
     useSnippets: "required"
   core:
     closeDeletedFileTabs: true
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "advanced-open-file"
+    ]
     projectHome: "/Users/TASethanho/"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "gruvbox"
     ]
+    titleBar: "hidden"
     useTreeSitterParsers: false
   editor:
+    autoIndentOnPaste: false
     fontSize: 17
+    multiCursorOnClick: false
     scrollPastEnd: true
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
@@ -37,8 +50,6 @@
     pythonExecutable: "/Users/TASethanho/.pyenv/shims/python3"
   "tree-view": {}
   "vim-mode-plus":
-    keymapCCToChangeInnerSmartWord: true
-    keymapPToPutWithAutoIndent: true
     keymapYToYankToLastCharacterOfLine: true
     useSmartcaseForFind: true
     useSmartcaseForSearch: true
@@ -46,3 +57,6 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".generic-config.jinja.text":
+  editor:
+    autoIndentOnPaste: true

@@ -24,7 +24,13 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.atom:
+    ~/.atom/config.cson: atom/config.cson
+    ~/.atom/github.cson: atom/github.cson
+    ~/.atom/init.coffee: atom/init.coffee
+    ~/.atom/keymap.cson: atom/keymap.cson
+    ~/.atom/projects.cson: atom/projects.cson
+    ~/.atom/snippets.cson: atom/snippets.cson
+    ~/.atom/styles.less: atom/styles.less
 
 - create:
     - ~/.vim/undodir
