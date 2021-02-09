@@ -17,16 +17,14 @@
     ~/.inputrc:
     ~/.p10k.zsh:
     ~/.scimrc:
-    ~/.vimiumrc.json:
     ~/.vim:
     ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.zsh_custom:
-    ~/.itermrc:
+    ~/.lmod.d:
 
 - create:
     - ~/.vim/undodir
-    - ~/.itermrc/shell_integration
 
 - shell:
     -
