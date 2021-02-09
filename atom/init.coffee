@@ -9,3 +9,13 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+# toggle between light and dark themes
+# credit to https://discuss.atom.io/t/changing-the-theme-with-a-keymap/15129
+# atom.commands.add 'atom-workspace',
+#   'themes:toggle': ->
+#     activeThemes = atom.themes.getActiveThemes()
+#     if activeThemes.join(':').indexOf('dark') is -1
+#       atom.themes.setEnabledThemes(["atom-dark-syntax", "atom-dark-ui"])
+#     else
+#       atom.themes.setEnabledThemes(["atom-light-syntax", "atom-light-ui"])

@@ -4,6 +4,7 @@ alias vim="nvim"
 alias ll="ls -lah"
 alias t="tapis"
 alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
+alias briss="java -jar ~/.local/bin/briss-0.9/briss-0.9.jar"
 
 # custom workflows in ~/.local/bin
 alias abe="abaco-track-executions.sh"

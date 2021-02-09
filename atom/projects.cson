@@ -34,4 +34,12 @@
     ]
     color: "blue"
   }
+  {
+    title: "Dotfiles"
+    group: "config"
+    paths: [
+      "~/dotfiles"
+    ]
+    color: "green"
+  }
 ]

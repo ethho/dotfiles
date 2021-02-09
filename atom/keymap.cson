@@ -29,7 +29,6 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
-
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'space w': 'vim-mode-plus:next-tab'
   'space b': 'vim-mode-plus:previous-tab'
