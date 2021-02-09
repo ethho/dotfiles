@@ -1,0 +1,45 @@
+[
+  {
+    title: "COVID Modeling"
+    group: "tacc"
+    paths: [
+      "~/tacc/projects/meyers/covid/episimlab"
+      "~/tacc/projects/meyers/covid/SEIR_Example"
+      "~/tacc/projects/meyers/covid/SEIR-city-v1.4"
+      "~/tacc/projects/meyers/covid/SEIR-city"
+    ]
+    color: "orange"
+  }
+  {
+    title: "Vimwiki"
+    group: "notes"
+    paths: [
+      "~/vimwiki"
+    ]
+    color: "green"
+  }
+  {
+    title: "PSAP"
+    group: "tacc"
+    paths: [
+      "~/TACC/pipelines/psap/psap-launcher-rx"
+      "~/TACC/pipelines/psap/ec50-stab-app"
+      "~/TACC/pipelines/psap/ec50-stab-audit-rx"
+      "~/TACC/pipelines/psap/v2v1-xform-rx"
+      "~/TACC/pipelines/psap/rocklin-ladder-cal-rx"
+      "~/TACC/pipelines/psap/cnn-usm-app"
+      "~/TACC/pipelines/psap/cnn-usm-audit-rx"
+      "~/TACC/pipelines/psap/merge-versioned-df-rx"
+      "~/TACC/pipelines/psap/og-ec50-stab"
+    ]
+    color: "blue"
+  }
+  {
+    title: "Dotfiles"
+    group: "config"
+    paths: [
+      "~/dotfiles"
+    ]
+    color: "green"
+  }
+]

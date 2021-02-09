@@ -21,13 +21,19 @@
     ~/.vim:
     ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
+    ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.local:
+    ~/.atom/config.cson: atom/config.cson
+    ~/.atom/github.cson: atom/github.cson
+    ~/.atom/init.coffee: atom/init.coffee
+    ~/.atom/keymap.cson: atom/keymap.cson
+    ~/.atom/projects.cson: atom/projects.cson
+    ~/.atom/snippets.cson: atom/snippets.cson
+    ~/.atom/styles.less: atom/styles.less
 
 - create:
     - ~/.vim/undodir
-    - ~/.itermrc/shell_integration
 
 - shell:
     -
@@ -38,10 +44,16 @@
         stderr: true
         quiet: true
     -
-        command: curl -sL https://iterm2.com/shell_integration/zsh -o ~/.itermrc/shell_integration/iterm2_shell_integration.zsh
-        description: Installing iTerm shell integration (zsh)...
+        command: vim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
+        description: Installing coc.vim extensions...
+        stdin: true
+        stdout: false
+        stderr: true
         quiet: true
     -
-        command: curl -sL https://iterm2.com/shell_integration/bash -o ~/.itermrc/shell_integration/iterm2_shell_integration.bash
-        description: Installing iTerm shell integration (bash)...
+        command: curl -sL https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o ~/sd2e-cloud-cli.tgz && tar -C ~ -xzf ~/sd2e-cloud-cli.tgz && rm -rf ~/sd2e-cloud-cli.tgz
+        description: Installing Agave Bash CLI...
+        stdin: true
+        stdout: false
+        stderr: true
         quiet: true

@@ -1,10 +1,6 @@
 [user]
-    name = Ethan Ho
-    email = ethan.n.ho@gmail.com
-[includeIf "gitdir:~/TACC/"]
-    path = ~/TACC/.gitconfig
-[includeIf "gitdir:~/Ho-Lab-Colostate/"]
-    path = ~/Ho-Lab-Colostate/.gitconfig
+	name = Ethan Ho
+	email = eho@tacc.utexas.edu
 [core]
     editor = vim
 [color]
@@ -19,6 +15,7 @@
     dfs = diff --staged
     dfc = "!git --no-pager diff --compact-summary"
     dfcs = "!git --no-pager diff --staged --compact-summary"
+    dfsc = "!git --no-pager diff --staged --compact-summary"
     edit-unmerged = "!$EDITOR -p `git diff --name-only --diff-filter=U`"
     add-unmerged = "!git add `git diff --name-only --diff-filter=U`"
     logt = log --graph --oneline --decorate
@@ -28,6 +25,7 @@
     sts = stash -u --keep-index
     dis = checkout --
     res = reset --soft HEAD^
+    short = rev-parse --short HEAD
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process

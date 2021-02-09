@@ -11,6 +11,9 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 # Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# Agave Bash CLI
+export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
+
 # ********************************** Misc. *************************************
 
 # iTerm2 shell completion
@@ -31,6 +34,7 @@ chruby 2.7.1
 
 # ********************************** Conda *************************************
 
+# >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/TASethanho/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then

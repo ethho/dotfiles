@@ -1,0 +1,84 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'space w': 'vim-mode-plus:next-tab'
+  'space b': 'vim-mode-plus:previous-tab'
+  # NerdCommenter style
+  'space c space': 'editor:toggle-line-comments'
+  # Git tab
+  'space g i t': 'github:toggle-git-tab'
+  # Leader key style
+  'space p v': 'tree-view:toggle'
+  # Alternate project search
+  'space p s': 'project-find:show'
+  # Navigate vertical splits
+  'space h': 'window:focus-pane-on-left'
+  'space l': 'window:focus-pane-on-right'
+  'ctrl-v': 'pane:split-right-and-copy-active-item'
+  # Advanced open file
+  'space t n': 'advanced-open-file:toggle'
+
+'atom-text-editor.vim-mode-plus:not([mini]):not(.insert-mode)':
+  'ctrl-y ctrl-y': 'editor:copy-path'
+
+# Advanced open file
+'.advanced-open-file':
+  'tab': 'advanced-open-file:autocomplete'
+  'ctrl-k': 'advanced-open-file:move-cursor-up'
+  'ctrl-j': 'advanced-open-file:move-cursor-down'
+  'ctrl-u': 'advanced-open-file:move-cursor-top'
+  'ctrl-d': 'advanced-open-file:move-cursor-bottom'
+
+'.platform-darwin':
+  # Like vim-ctrlp
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+
+# Change core movement behavior
+'atom-text-editor':
+  'ctrl-k': 'unset!'
+
+'body':
+  'ctrl-k': 'core:move-up'
+  'ctrl-j': 'core:move-down'
+  'ctrl-,': 'pane:move-item-left'
+  'ctrl-.': 'pane:move-item-right'
+
+# Tree view navigation
+'.tree-view':
+  'ctrl-d': 'core:move-to-bottom'
+  'ctrl-u': 'core:move-to-top'
+  'space p v': 'tree-view:toggle'
+  'y y': 'tree-view:copy'
+  'p': 'tree-view:paste'
+  'd d': 'tree-view:remove'
+  'o': 'tree-view:add-file'
+  'c c': 'tree-view:move'

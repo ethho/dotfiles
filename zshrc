@@ -50,6 +50,17 @@ source $ZSH/oh-my-zsh.sh
 # Keybinds
 bindkey -v
 bindkey '^ ' autosuggest-accept
+export VISUAL=$EDITOR
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd V edit-command-line
+
+# pyenv
+eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Agave Bash CLI
+export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
