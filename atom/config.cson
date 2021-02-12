@@ -17,6 +17,7 @@
       "advanced-open-file"
     ]
     projectHome: "/Users/TASethanho/"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"

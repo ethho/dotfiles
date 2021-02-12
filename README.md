@@ -32,6 +32,14 @@ dotfiles/install.sh
 
 ## Reference
 
+### How to save list of installed Atom packages
+
+From [this StackOverflow post](https://stackoverflow.com/questions/30006827/how-to-save-atom-editor-config-and-list-of-packages-installed):
+```bash
+apm list --installed --bare > ~/.atom/package.list
+apm install --packages-file ~/.atom/package.list
+```
+
 ### How to remove a git submodule
 
 From [myusuf3's Gist](https://gist.github.com/myusuf3/7f645819ded92bda6677):

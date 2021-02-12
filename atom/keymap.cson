@@ -72,6 +72,13 @@
   'ctrl-,': 'pane:move-item-left'
   'ctrl-.': 'pane:move-item-right'
 
+# cursor history
+'atom-workspace':
+  'ctrl-i': 'cursor-history:next'
+  'ctrl-o': 'cursor-history:prev'
+  'ctrl-cmd-i': 'cursor-history:next-within-editor'
+  'ctrl-cmd-o': 'cursor-history:prev-within-editor'
+
 # Tree view navigation
 '.tree-view':
   'ctrl-d': 'core:move-to-bottom'
