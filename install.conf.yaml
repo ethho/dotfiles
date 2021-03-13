@@ -24,7 +24,7 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.matplotlib/stylelib: matplotlib/stylelib
+    #~/.matplotlib/stylelib: matplotlib/stylelib
     ~/.atom/config.cson: atom/config.cson
     ~/.atom/github.cson: atom/github.cson
     ~/.atom/init.coffee: atom/init.coffee
