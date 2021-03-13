@@ -32,6 +32,7 @@
     ~/.atom/snippets.cson: atom/snippets.cson
     ~/.atom/styles.less: atom/styles.less
     ~/.atom/package.list: atom/package.list
+    ~/.config/matplotlib: config/matplotlib
 
 - create:
     - ~/.vim/undodir
