@@ -62,6 +62,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # Agave Bash CLI
 export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
 
+# BitWarden CLI completion
+eval "$(bw completion --shell zsh); compdef _bw bw;"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

@@ -42,4 +42,24 @@
     ]
     color: "green"
   }
+  {
+    title: "Python Reactors"
+    group: "tacc"
+    paths: [
+      "~/tacc/projects/sd2e/python-reactors"
+      "~/tacc/projects/sd2e/base-images"
+      "~/tacc/projects/sd2e/example-reactors"
+    ]
+    color: "orange"
+  }
+  {
+    title: "Stonks"
+    paths: [
+      "~/Misc/stonks/stonks-sandbox"
+      "~/Misc/stonks/btoandav20"
+      "~/Misc/stonks/btoandav20-sample"
+      "~/Misc/stonks/gamestonk-terminal"
+    ]
+    color: "green"
+  }
 ]

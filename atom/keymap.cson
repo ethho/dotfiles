@@ -89,3 +89,10 @@
   'd d': 'tree-view:remove'
   'o': 'tree-view:add-file'
   'c c': 'tree-view:move'
+
+# autocomplete mappings
+# 'body atom-text-editor.autocomplete-active':
+#   'shift-tab': 'autocomplete-plus:move-up'
+#   'tab': 'autocomplete-plus:move-down'
+#   'ctrl-u': 'autocomplete-plus:page-up'
+#   'ctrl-d': 'autocomplete-plus:page-down'

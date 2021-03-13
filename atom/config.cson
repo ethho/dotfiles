@@ -9,6 +9,7 @@
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   "autocomplete-python":
+    useKite: false
     useSnippets: "required"
   core:
     closeDeletedFileTabs: true
