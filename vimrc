@@ -65,8 +65,7 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
-Plug 'jreybert/vimagit'
-Plug 'tpope/vim-surround'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -286,9 +285,6 @@ noremap <leader>dws :%s/\S\zs\s\{2,}/ /g<CR>
 
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
-
-" vimagit
-nnoremap <leader>git :call magit#show_magit('v')<CR>
 
 " vimwiki
 nmap ,wt <Plug>VimwikiTabIndex
