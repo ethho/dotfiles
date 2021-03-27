@@ -84,8 +84,7 @@ export EDITOR='nvim'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
     if [[ $TERM_PROGRAM == 'vscode' ]]; then
-        # source ~/.p10k.vscode.zsh
-        source ~/.p10k.zsh
+        source ~/.p10k.vscode.zsh
     else;
         source ~/.p10k.zsh
     fi
