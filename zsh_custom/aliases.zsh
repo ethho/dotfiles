@@ -6,6 +6,9 @@ alias tp="tapis"
 alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
 alias briss="java -jar ~/.local/bin/briss-0.9/briss-0.9.jar"
 alias dk="docker"
+alias dkc="docker-compose"
+alias c="code -r"
+alias af="airflow"
 
 # uninstall and reinstall openssl
 # fixes "ssl module in Python is not available" error on pip install
