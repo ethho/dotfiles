@@ -91,10 +91,12 @@ if [[ -f ~/.p10k.zsh ]]; then
 fi
 
 # iTerm shell integration
-
-# iTerm shell integration
 ITERM_SH_INTEGRATION="$HOME/.itermrc/shell_integration/iterm2_shell_integration.zsh"
 [[ ! -f $ITERM_SH_INTEGRATION ]] || source $ITERM_SH_INTEGRATION
+
+# Allow direnv to set $PROMPT_COMMAND overwritten by iTerm
+export DIRENV_LOG_FORMAT=
+eval "$(direnv hook zsh)"
 
 # ********************************** Conda *************************************
 
