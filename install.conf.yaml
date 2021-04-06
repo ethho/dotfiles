@@ -24,7 +24,7 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    #~/.matplotlib/stylelib: matplotlib/stylelib
+    ~/.config/nvim/init.vim: init.vim
 
 - create:
     - ~/.vim/undodir
