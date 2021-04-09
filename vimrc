@@ -44,14 +44,6 @@ function! XTermPasteBegin()
           return ""
       endfunction
 
-function! ToggleGruvboxBG()
-    if &background == 'dark'
-        set background=light
-    else
-        set background=dark
-    endif
-endfunction
-
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
@@ -81,9 +73,6 @@ nnoremap <leader>ps :Rg<SPACE>
 noremap <leader>y "*y
 noremap <leader>p "*p
 noremap <leader>dws :s/\s\+$//g<CR>
-
-" toggle light/dark BG
-nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
