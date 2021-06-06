@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -54,21 +54,13 @@ export VISUAL=$EDITOR
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd V edit-command-line
 
-# pyenv
-eval "$(pyenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-# Agave Bash CLI
-export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
-
 # BitWarden CLI completion
 eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor
 export EDITOR='nvim'
@@ -89,14 +81,6 @@ if [[ -f ~/.p10k.zsh ]]; then
         source ~/.p10k.zsh
     fi
 fi
-
-# iTerm shell integration
-ITERM_SH_INTEGRATION="$HOME/.itermrc/shell_integration/iterm2_shell_integration.zsh"
-[[ ! -f $ITERM_SH_INTEGRATION ]] || source $ITERM_SH_INTEGRATION
-
-# Allow direnv to set $PROMPT_COMMAND overwritten by iTerm
-export DIRENV_LOG_FORMAT=
-eval "$(direnv hook zsh)"
 
 # ********************************** Conda *************************************
 
