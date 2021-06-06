@@ -42,7 +42,7 @@ fi
 [ -f $HOME/.xprofile ] && source $HOME/.xprofile
 
 # Remap caps to escape
-setxkbmap -option caps:escape
+setxkbmap -option caps:escape &
 
 get_session(){
 	local dbus_args=(--sh-syntax --exit-with-session)
