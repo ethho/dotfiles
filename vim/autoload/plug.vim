@@ -1,1 +1,1 @@
-/Users/TASethanho/.vim/autoload/vim-plug/plug.vim
+/home/eho/.vim/autoload/vim-plug/plug.vim
