@@ -24,6 +24,9 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
+    ~/.xinitrc:
+    ~/.xprofile:
+    ~/.Xresources:
     ~/.atom/config.cson: atom/config.cson
     ~/.atom/github.cson: atom/github.cson
     ~/.atom/init.coffee: atom/init.coffee
