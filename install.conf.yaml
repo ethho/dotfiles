@@ -22,7 +22,7 @@
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.config/nvim/init.vim: init.vim
+    ~/.config/nvim/init.vim: vimrc
 
 - create:
     - ~/.vim/undodir
