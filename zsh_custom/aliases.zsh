@@ -8,5 +8,5 @@ alias dkc="docker-compose"
 alias c="code -r"
 
 # pacman
-alias install="sudo yay -S"
-alias update="sudo yay -Suyy"
+alias install="yay -S"
+alias update="yay -Suyy"
