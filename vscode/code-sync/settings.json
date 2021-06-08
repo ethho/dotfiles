@@ -1,0 +1,335 @@
+{
+    // "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "terminal.integrated.letterSpacing": 1,
+    "terminal.integrated.rendererType": "auto",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "W"
+            ],
+            "commands": [
+                "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "<esc>",
+                "<esc>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "<leader>"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ],
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "before": [
+                "<C-y>",
+                "<C-y>"
+            ],
+            "commands": [
+                "copyFilePath"
+            ],
+            "when": "editorFocus"
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ],
+            "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "p"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ],
+            "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "D"
+            ],
+            "commands": [
+                "editor.action.revealDefinitionAside"
+            ],
+            "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "<leader>"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ],
+            "when": "editorTextFocus && !editorReadonly"
+        }
+    ],
+    "workbench.sideBar.location": "right",
+    "editor.fontSize": 16,
+    "vim.leader": "<space>",
+    "editor.cursorBlinking": "smooth",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "vim.visualstar": true,
+    "vim.searchHighlightColor": "#d79921",
+    "vim.highlightedyank.color": "#b57614",
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.showMarksInGutter": true,
+    "vim.showmodename": true,
+    "vim.smartRelativeLine": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.useSystemClipboard": true,
+    "vim.searchHighlightTextColor": "#ebdbb2",
+    "explorer.incrementalNaming": "smart",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.minimap.enabled": false,
+    "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
+    "workbench.preferredDarkColorTheme": "Gruvbox Dark Soft",
+    "git.fetchOnPull": true,
+    "jupyter.alwaysScrollOnNewCell": true,
+    "workbench.colorCustomizations": {
+        "[Gruvbox Light Medium]": {
+            "peekViewEditor.matchHighlightBackground": "#d5c4a1cb",
+            "peekViewResult.matchHighlightBackground": "#d5c4a1",
+            "peekViewResult.selectionForeground": "#b67614",
+            "peekViewResult.selectionBackground": "#d5c4a1",
+            "statusBarItem.remoteBackground": "#fbf1c7",
+            "statusBarItem.remoteForeground": "#427b58"
+        },
+        "[Gruvbox Dark Soft]": {
+            "peekViewEditor.matchHighlightBackground": "#5049459e",
+            "peekViewResult.matchHighlightBackground": "#3c3836",
+            "peekViewResult.selectionForeground": "#fabd2fbb",
+            "peekViewResult.selectionBackground": "#3c3836",
+            "notebook.cellBorderColor": "#fabd2fbb",
+            "notebook.focusedEditorBorder": "#fabd2fbb",
+            "notebook.cellToolbarSeparator": "#fabd2fbb",
+            "notebook.focusedRowBorder": "#fabd2fbb",
+            "statusBarItem.remoteBackground": "#32302f",
+            "statusBarItem.remoteForeground": "#8ec07c"
+        }
+    },
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.neovimConfigPath": "~/.config/nvim/init.vim",
+    "typescript.suggest.paths": false,
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.focusSideBar"
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.cursorSurroundingLines": 8,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "text.html.markdown.journal.task.open.bullet",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.open.marker",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.open.keyword",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.open.text",
+                "settings": {}
+            },
+            {
+                "scope": "text.html.markdown.journal.task.completed.keyword",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.completed.marker",
+                "settings": {
+                    "foreground": "#AAAAAA"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.completed.text",
+                "settings": {
+                    "foreground": "#AAAAAA"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.task.completed.bullet",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.memo.keyword",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.memo.bullet",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.scope",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.link.keyword",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "text.html.markdown.journal.link.bullet",
+                "settings": {
+                    "foreground": "#CC3300"
+                }
+            }
+        ]
+    },
+    "journal.base": "/Users/TASethanho/wiki/docsrc",
+    "journal.patterns": {
+        "notes": {
+            "path": "${base}/${year}/${month}/${day}",
+            "file": "${input}.${ext}"
+        },
+        "entries": {
+            "path": "${base}/${year}/${month}",
+            "file": "${day}.${ext}"
+        }
+    },
+    "journal.templates": [
+        {
+            "name": "memo",
+            "template": "- MEMO ${localTime}: ${input}"
+        },
+        {
+            "name": "task",
+            "template": "- [] ${d:LL} - Task: ${input}"
+        },
+        {
+            "name": "entry",
+            "template": "# ${d:dddd, MMMM DD YYYY}\n\n## Tasks\n\n## Notes\n\n"
+        },
+        {
+            "name": "time",
+            "template": "${localTime}"
+        },
+        {
+            "name": "note",
+            "template": "# ${input}\n\n${tags}\n"
+        },
+        {
+            "name": "files",
+            "template": "- NOTE: [${title}](${link})"
+        }
+    ],
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.highlights.enabled": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.showScanModeButton": true,
+    "editor.wordWrap": "on",
+    "todo-tree.highlights.customHighlight": {
+        "[ ]": {
+            "type": "text",
+            "background": "#ffffff00"
+        },
+        "[x]": {
+            "type": "text",
+            "background": "#ffffff00"
+        }
+    },
+    "markdown.extension.list.indentationSize": "inherit",
+    "jupyter.askForKernelRestart": false,
+    "jupyter.themeMatplotlibPlots": true,
+    "vim.foldfix": true,
+    "workbench.activityBar.visible": false,
+    "workbench.tips.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "notebook.showCellStatusBar": false
+}
