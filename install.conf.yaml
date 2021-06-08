@@ -26,6 +26,7 @@
     ~/.xprofile:
     ~/.Xresources:
     ~/.config/nvim/init.vim: vimrc
+    ~/.i3/config: i3/config
 
 - create:
     - ~/.vim/undodir
