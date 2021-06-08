@@ -79,10 +79,6 @@ if [[ -f ~/.p10k.zsh ]]; then
     fi
 fi
 
-# Allow direnv to set $PROMPT_COMMAND overwritten by iTerm
-export DIRENV_LOG_FORMAT=
-eval "$(direnv hook zsh)"
-
 # ********************************** Conda *************************************
 
 # >>> conda initialize >>>
