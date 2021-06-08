@@ -27,6 +27,8 @@
     ~/.Xresources:
     ~/.config/nvim/init.vim: vimrc
     ~/.i3/config: i3/config
+    ~/.config/gtk-3.0: config/gtk-3.0
+    ~/.config/picom.conf: config/picom.conf
 
 - create:
     - ~/.vim/undodir
