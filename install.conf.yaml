@@ -15,10 +15,9 @@
     ~/.condarc:
     ~/.inputrc:
     ~/.p10k.zsh:
-    ~/.scimrc:
+    ~/.p10k.vscode.zsh:
     ~/.vimiumrc.json:
     ~/.vim:
-    ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.gvimrc:
     ~/.zsh_custom:
@@ -26,6 +25,7 @@
     ~/.xinitrc:
     ~/.xprofile:
     ~/.Xresources:
+    ~/.config/nvim/init.vim: vimrc
 
 - create:
     - ~/.vim/undodir
