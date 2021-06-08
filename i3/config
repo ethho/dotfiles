@@ -361,7 +361,8 @@ bindsym $mod+m bar mode toggle
   client.background       #2B2C2B
 
 # Remap caps to escape
-exec --no-startup-id setxkbmap -model pc105 -layout us,no -option caps:escape
+#exec --no-startup-id setxkbmap -model pc105 -layout us,no -option caps:escape
+exec --no-startup-id setxkbmap -layout us,no -option caps:escape
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
