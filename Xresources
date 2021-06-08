@@ -1,3 +1,5 @@
+! ########################### Display ##########################
+
 Xft.dpi:       192
 Xft.antialias: true
 Xft.hinting:   true
@@ -6,14 +8,6 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background:        #222D31
-XTerm*foreground:        #d8d8d8
-XTerm*pointerColor:      #1ABB9B
-XTerm*faceName:          Fixed
-XTerm*faceSize:          11
-XTerm*reverseVideo:      on
-XTerm*selectToClipboard: true
-
 *background:                      #222D31
 *foreground:                      #d8d8d8
 *fading:                          8
@@ -21,6 +15,8 @@ XTerm*selectToClipboard: true
 *cursorColor:                     #1ABB9B
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
+
+! ############################# Colors ##########################
 
 !! black dark/light
 *color0:                          #222D31
@@ -77,6 +73,16 @@ URxvt*saveLines:                  5000
 ! URxvt*inheritPixmap:            true
 ! URxvt*transparent:              true
 ! URxvt*shading:                  138
+
+! ########################### Xterm ############################
+
+XTerm*background:        #222D31
+XTerm*foreground:        #d8d8d8
+XTerm*pointerColor:      #1ABB9B
+XTerm*faceName:          Fixed
+XTerm*faceSize:          11
+XTerm*reverseVideo:      on
+XTerm*selectToClipboard: true
 
 ! Normal copy-paste keybindings without perls
 URxvt.iso14755:                   false
