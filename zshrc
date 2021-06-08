@@ -54,9 +54,6 @@ export VISUAL=$EDITOR
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd V edit-command-line
 
-# BitWarden CLI completion
-eval "$(bw completion --shell zsh); compdef _bw bw;"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
