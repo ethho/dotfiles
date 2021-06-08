@@ -11,26 +11,25 @@
     ~/.bash_profile:
     ~/.bashrc:
     ~/.zshrc:
-    ~/.oh-my-zsh:
     ~/.gitconfig:
     ~/.condarc:
     ~/.inputrc:
     ~/.p10k.zsh:
-    ~/.scimrc:
+    ~/.p10k.vscode.zsh:
     ~/.vimiumrc.json:
     ~/.vim:
-    ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.gvimrc:
     ~/.zsh_custom:
     ~/.itermrc:
-    ~/.atom/config.cson: atom/config.cson
-    ~/.atom/github.cson: atom/github.cson
-    ~/.atom/init.coffee: atom/init.coffee
-    ~/.atom/keymap.cson: atom/keymap.cson
-    ~/.atom/projects.cson: atom/projects.cson
-    ~/.atom/snippets.cson: atom/snippets.cson
-    ~/.atom/styles.less: atom/styles.less
+    ~/.xinitrc:
+    ~/.xprofile:
+    ~/.Xresources:
+    ~/.config/nvim/init.vim: vimrc
+    ~/.config/i3/config: config/i3/config
+    ~/.config/gtk-3.0: config/gtk-3.0
+    ~/.config/picom.conf: config/picom.conf
+    ~/.config/polybar: config/polybar
 
 - create:
     - ~/.vim/undodir
@@ -46,13 +45,6 @@
     -
         command: vim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
         description: Installing coc.vim extensions...
-        stdin: true
-        stdout: false
-        stderr: true
-        quiet: true
-    -
-        command: curl -sL https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o ~/sd2e-cloud-cli.tgz && tar -C ~ -xzf ~/sd2e-cloud-cli.tgz && rm -rf ~/sd2e-cloud-cli.tgz
-        description: Installing Agave Bash CLI...
         stdin: true
         stdout: false
         stderr: true

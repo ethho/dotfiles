@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -54,27 +54,46 @@ export VISUAL=$EDITOR
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd V edit-command-line
 
-# pyenv
-eval "$(pyenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-# Agave Bash CLI
-export PATH="$PATH:$HOME/sd2e-cloud-cli/bin"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Preferred editor
+export EDITOR='nvim'
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [[ -f ~/.p10k.zsh ]]; then
+    if [[ $TERM_PROGRAM == 'vscode' ]]; then
+        source ~/.p10k.vscode.zsh
+    else;
+        source ~/.p10k.zsh
+    fi
+fi
 
-# iTerm shell integration
+# ********************************** Conda *************************************
 
-# iTerm shell integration
-ITERM_SH_INTEGRATION="$HOME/.itermrc/shell_integration/iterm2_shell_integration.zsh"
-[[ ! -f $ITERM_SH_INTEGRATION ]] || source $ITERM_SH_INTEGRATION
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/TASethanho/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/TASethanho/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/TASethanho/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/TASethanho/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+source /home/eho/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
