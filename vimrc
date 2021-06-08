@@ -286,23 +286,6 @@ noremap <leader>dws :%s/\S\zs\s\{2,}/ /g<CR>
 " toggle light/dark BG
 nnoremap <leader>1 :call ToggleGruvboxBG()<CR>
 
-" vimwiki
-nmap ,wt <Plug>VimwikiTabIndex
-nmap ,ws <Plug>VimwikiUISelect
-nmap ,wi <Plug>VimwikiDiaryIndex
-nmap ,w,w <Plug>VimwikiMakeDiaryNote
-nmap ,w,t <Plug>VimwikiTabMakeDiaryNote
-nmap ,w,y <Plug>VimwikiMakeYesterdayDiaryNote
-nmap ,w,m <Plug>VimwikiMakeTomorrowDiaryNote
-nmap ,wh <Plug>Vimwiki2HTML
-nmap ,whh  <Plug>Vimwiki2HTMLBrowse
-nmap ,w,wk <Plug>VimwikiDiaryGenerateLinks
-nmap ,w,w <Plug>VimwikiMakeDiaryNote
-nmap ,wr <Plug>VimwikiRenameFile
-nmap ,wd <Plug>VimwikiDeleteFile
-nmap ,wn <Plug>VimwikiGoto
-nmap ,ww <Plug>VimwikiIndex
-
 " autocompleters
 autocmd BufWritePre * :call TrimWhitespace()
 
