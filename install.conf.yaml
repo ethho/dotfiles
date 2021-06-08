@@ -45,10 +45,3 @@
         stdout: false
         stderr: true
         quiet: true
-    -
-        command: curl -sL https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o ~/sd2e-cloud-cli.tgz && tar -C ~ -xzf ~/sd2e-cloud-cli.tgz && rm -rf ~/sd2e-cloud-cli.tgz
-        description: Installing Agave Bash CLI...
-        stdin: true
-        stdout: false
-        stderr: true
-        quiet: true
