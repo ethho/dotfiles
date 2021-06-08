@@ -62,7 +62,7 @@ modules-right = filesystem backlight pulseaudio memory cpu wlan battery date pow
 tray-position = right
 tray-padding = 2
 ;tray-scale = 1
-tray-background = ${xrdb:background:#222}
+tray-background = ${colors.background}
 
 ;wm-restack = bspwm
 wm-restack = i3
