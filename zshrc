@@ -96,4 +96,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source /home/eho/.zsh_custom/plugins/zsh-syntax-highlighting
+source $HOME/.zsh_custom/plugins/zsh-syntax-highlighting
