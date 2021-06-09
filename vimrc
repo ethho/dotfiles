@@ -273,7 +273,7 @@ nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>ps :Rg<SPACE>
 
 " remove search highlight when returning to normal mode
-nnoremap <silent> <esc> :noh<CR><esc>
+"nnoremap <silent> <esc><esc> :noh<CR><ESC>
 
 " registers and aliases
 noremap <leader>y "*y
