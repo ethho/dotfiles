@@ -25,6 +25,7 @@
     ~/.config/nvim/init.vim: vimrc
     ~/.config/yabai/yabairc: config/yabai/yabairc
     ~/.config/skhd/skhdrc: config/skhd/skhdrc
+    ~/.config/ubersicht: config/ubersicht
 
 - create:
     - ~/.vim/undodir

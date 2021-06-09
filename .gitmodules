@@ -17,3 +17,6 @@
 [submodule "vim/autoload/vim-plug"]
 	path = vim/autoload/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
+[submodule "config/ubersicht/simple-bar"]
+	path = config/ubersicht/simple-bar
+	url = git@github.com:Jean-Tinland/simple-bar.git
