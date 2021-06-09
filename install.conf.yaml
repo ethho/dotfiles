@@ -23,6 +23,7 @@
     ~/.zsh_custom:
     ~/.itermrc:
     ~/.config/nvim/init.vim: vimrc
+    ~/.config/yabai/yabairc: config/yabai/yabairc
 
 - create:
     - ~/.vim/undodir
