@@ -19,8 +19,9 @@ set incsearch
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+set mouse=a
+"set colorcolumn=80
+"highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " recommended for coc.vim
 set hidden
@@ -95,7 +96,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
 let g:gruvbox_transparent_bg='1'
-colorscheme gruvbox
+"colorscheme gruvbox
 set background=dark
 
 " *********************************** coc.vim *********************************
@@ -258,7 +259,7 @@ nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>ps :Rg<SPACE>
 
 " remove search highlight when returning to normal mode
-"nnoremap <silent> <esc><esc> :noh<CR><ESC>
+nnoremap <silent> <esc><esc> :noh<CR><ESC>
 
 " registers and aliases
 noremap <leader>y "*y
