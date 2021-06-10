@@ -51,9 +51,9 @@ shift + alt - n : yabai -m space --create && \
 shift + alt - w : yabai -m space --destroy
 
 # fast focus desktop
-#cmd + alt - x : yabai -m space --focus recent
-#cmd + alt - z : yabai -m space --focus prev
-#cmd + alt - c : yabai -m space --focus next
+#alt - x : yabai -m space --focus recent
+alt - 0x21 : yabai -m space --focus prev
+alt - 0x1E : yabai -m space --focus next
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
 alt - 3 : yabai -m space --focus 3
@@ -163,5 +163,5 @@ alt - p : yabai -m window --toggle sticky;\
           yabai -m window --grid 5:5:4:0:1:1
 
 # change layout of desktop
-ctrl + alt - a : yabai -m space --layout bsp
-ctrl + alt - d : yabai -m space --layout float
+ctrl + alt - v : yabai -m space --layout bsp
+shift + alt - v : yabai -m space --layout float
