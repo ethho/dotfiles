@@ -21,6 +21,7 @@
     ~/.vimrc:
     ~/.gvimrc:
     ~/.zsh_custom:
+    ~/.zprofile:
     ~/.itermrc:
     ~/.config/nvim/init.vim: vimrc
     ~/.config/yabai/yabairc: config/yabai/yabairc
