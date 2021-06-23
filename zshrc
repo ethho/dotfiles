@@ -56,7 +56,6 @@ bindkey '^ ' autosuggest-accept
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Poetry
- path+=('~/.poetry/bin')
-export PATH
+# Poetry in path
+export PATH="$PATH:$HOME/.poetry/bin"
 
