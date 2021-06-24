@@ -6,7 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -97,3 +98,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $HOME/.zsh_custom/plugins/zsh-syntax-highlighting
+
+export PATH="$HOME/.poetry/bin:$PATH"
