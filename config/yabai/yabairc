@@ -88,6 +88,7 @@ yabai -m rule --add app="^.*Firefox.*$" space=3
 yabai -m rule --add app="^.*Slack.*$" space=4
 yabai -m rule --add app="^.*Outlook.*$" space=5
 yabai -m rule --add app="^.*zoom.*$" space=6
+yabai -m rule --add app="^.*zoom.*$" title="^.*zoom share.*$" manage=off
 #yabai -m space --focus 1
 
 echo "yabai configuration loaded"
