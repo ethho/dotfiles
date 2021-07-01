@@ -51,25 +51,11 @@ yabai -m config window_gap                   5
 # Application-specific rules
 yabai -m rule --add app="^.*System\ Preferences.*$" manage=off
 yabai -m rule --add app="^.*Code.*$" space=2
-yabai -m rule --add app="^.*Firefox.*$" space=3
-yabai -m rule --add app="^.*Slack.*$" space=4
-yabai -m rule --add app="^.*Outlook.*$" space=5
-yabai -m rule --add app="^.*zoom.*$" space=6
+yabai -m rule --add app="^.*Firefox.*$" space=4
+yabai -m rule --add app="^.*Slack.*$" space=5
+yabai -m rule --add app="^.*Outlook.*$" space=6
+yabai -m rule --add app="^.*zoom.*$" space=7
 yabai -m rule --add app="^.*zoom.*$" title="^.*zoom share.*$" manage=off
-
-# Default config for multiple displays
-N_DISPLAYS="$(yabai -m query --displays | jq 'length')"
-echo "$N_DISPLAYS displays detected."
-if (( $N_DISPLAYS > 1 )); then
-    yabai -m space 1 --display 1
-    yabai -m space 2 --display 1
-    yabai -m space 3 --display 2
-    yabai -m space 4 --display 2
-    yabai -m space 5 --display 2
-    yabai -m space 6 --display 2
-else
-    echo "Skipping display assignment"
-fi
 
 ###############################################################################
 # Refresh for Jean-Tinland/simple-bar
