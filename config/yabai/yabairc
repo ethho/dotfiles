@@ -48,13 +48,21 @@ yabai -m config left_padding                 10
 yabai -m config right_padding                10
 yabai -m config window_gap                   5
 
-# Application-specific rules
+# space labels
+yabai -m space 1 --label m
+yabai -m space 2 --label c
+yabai -m space 3 --label w
+yabai -m space 4 --label s
+yabai -m space 5 --label o
+yabai -m space 6 --label z
+
+# application-specific rules
 yabai -m rule --add app="^.*System\ Preferences.*$" manage=off
-yabai -m rule --add app="^.*Code.*$" space=2
-yabai -m rule --add app="^.*Firefox.*$" space=4
-yabai -m rule --add app="^.*Slack.*$" space=5
-yabai -m rule --add app="^.*Outlook.*$" space=6
-yabai -m rule --add app="^.*zoom.*$" space=7
+yabai -m rule --add app="^.*Code.*$" space=c
+yabai -m rule --add app="^.*Firefox.*$" space=w
+yabai -m rule --add app="^.*Slack.*$" space=s
+yabai -m rule --add app="^.*Outlook.*$" space=o
+yabai -m rule --add app="^.*zoom.*$" space=z
 yabai -m rule --add app="^.*zoom.*$" title="^.*zoom share.*$" manage=off
 
 ###############################################################################
