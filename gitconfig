@@ -26,6 +26,7 @@
     dis = checkout --
     res = reset --soft HEAD^
     short = rev-parse --short HEAD
+    push-og = push --set-upstream origin
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
