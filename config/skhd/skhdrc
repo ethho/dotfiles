@@ -7,8 +7,8 @@
 alt - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
 
 # focus window
-alt - 0x21 : yabai -m window --focus prev
-alt - 0x1E : yabai -m window --focus next
+alt - k : yabai -m window --focus prev
+alt - j : yabai -m window --focus next
 
 # swap window
 shift + alt - 0x21 : yabai -m window --swap prev
