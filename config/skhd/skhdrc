@@ -10,9 +10,13 @@ alt - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
 alt - k : yabai -m window --focus prev
 alt - j : yabai -m window --focus next
 
+# focus display
+alt - 0x21 : yabai -m display --focus prev
+alt - 0x1E : yabai -m display --focus next
+
 # swap window
-shift + alt - 0x21 : yabai -m window --swap prev
-shift + alt - 0x1E : yabai -m window --swap next
+shift + alt - k : yabai -m window --swap prev
+shift + alt - j : yabai -m window --swap next
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
@@ -27,13 +31,13 @@ cmd + alt - left   : yabai -m window --grid 1:2:0:0:1:1
 cmd + alt - right  : yabai -m window --grid 1:2:1:0:1:1
 
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-alt - n : yabai -m space --create && \
+shift + alt - n : yabai -m space --create && \
           index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
           yabai -m window --space "${index}" && \
           yabai -m space --focus "${index}"
 
 # create desktop and follow focus - uses jq for parsing json (brew install jq)
-shift + alt - n : yabai -m space --create && \
+alt - n : yabai -m space --create && \
                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
                   yabai -m space --focus "${index}"
 
@@ -79,8 +83,8 @@ shift + alt - 9 : yabai -m window --space  9; yabai -m space --focus 9
 shift + alt - 0 : yabai -m window --space 10; yabai -m space --focus 10
 
 # move space to monitor and follow focus
-shift + alt - h : yabai -m space --display 1; yabai -m display --focus 1
-shift + alt - l : yabai -m space --display 2; yabai -m display --focus 2
+shift + alt - 0x21 : yabai -m space --display 1; yabai -m display --focus 1
+shift + alt - 0x1E : yabai -m space --display 2; yabai -m display --focus 2
 
 # increase window size
 shift + alt - left : yabai -m window --resize left:-40:0
