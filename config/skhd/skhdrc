@@ -84,7 +84,7 @@ cmd + alt - left   : yabai -m window --grid 1:2:0:0:1:1
 cmd + alt - right  : yabai -m window --grid 1:2:1:0:1:1
 
 # destroy desktop
-shift + alt - w : yabai -m space --destroy
+shift + alt - q : yabai -m space --destroy
 
 # increase window size
 shift + alt - left : yabai -m window --resize left:-40:0
