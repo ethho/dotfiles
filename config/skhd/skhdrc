@@ -4,12 +4,12 @@
 ###############################################################################
 
 # focus window
-alt - k : yabai -m window --focus prev
-alt - j : yabai -m window --focus next
+alt - j : yabai -m window --focus prev
+alt - k : yabai -m window --focus next
 
 # swap window
-shift + alt - k : yabai -m window --swap prev
-shift + alt - j : yabai -m window --swap next
+shift + alt - j : yabai -m window --swap prev
+shift + alt - k : yabai -m window --swap next
 
 # focus space
 alt - h: yabai -m space --focus prev
