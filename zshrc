@@ -100,3 +100,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $HOME/.zsh_custom/plugins/zsh-syntax-highlighting
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/eho/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/eho/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/eho/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/eho/google-cloud-sdk/completion.zsh.inc'; fi
