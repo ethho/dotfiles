@@ -49,11 +49,11 @@ yabai -m config right_padding                10
 yabai -m config window_gap                   5
 
 # space labels
-yabai -m space 1 --label m
+# yabai -m space 1 --label m
 yabai -m space 2 --label c
 yabai -m space 3 --label w
 yabai -m space 4 --label s
-yabai -m space 5 --label o
+yabai -m space 5 --label m
 yabai -m space 6 --label z
 
 # application-specific rules
