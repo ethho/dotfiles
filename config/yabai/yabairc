@@ -61,7 +61,7 @@ yabai -m rule --add app="^.*System\ Preferences.*$" manage=off
 yabai -m rule --add app="^.*Code.*$" space=c
 yabai -m rule --add app="^.*Firefox.*$" space=w
 yabai -m rule --add app="^.*Slack.*$" space=s
-yabai -m rule --add app="^.*Outlook.*$" space=o
+yabai -m rule --add app="^.*Outlook.*$" space=m
 yabai -m rule --add app="^.*zoom.*$" space=z
 yabai -m rule --add app="^.*zoom.*$" title="^.*zoom share.*$" manage=off
 
