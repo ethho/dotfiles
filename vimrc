@@ -65,7 +65,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'mhinz/vim-startify'
 
@@ -86,14 +85,6 @@ let g:netrw_winsize = 15
 set runtimepath^=~/.vim/plugged/ctrlp.vim
 let g:ctrlp_use_caching = 0
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-" ************************************ Colors *********************************
-
-" gruvbox, baby
-colorscheme gruvbox
-let g:gruvbox_contrast_light='hard'
-let g:gruvbox_contrast_dark='medium'
-set background=dark
 
 " ************************************ Keymaps ********************************
 
