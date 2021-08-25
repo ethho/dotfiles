@@ -17,7 +17,6 @@
     ~/.inputrc:
     ~/.p10k.zsh:
     ~/.vim:
-    ~/.vim/autoload/plug.vim: ~/.vim/autoload/vim-plug/plug.vim
     ~/.vimrc:
     ~/.zsh_custom:
     ~/.lmod.d:
