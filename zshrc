@@ -39,7 +39,7 @@ plugins=(
     git
     z
     docker
-    osx
+    macos
     web-search
     zsh-autosuggestions
     zsh-syntax-highlighting

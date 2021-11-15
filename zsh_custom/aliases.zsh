@@ -12,3 +12,4 @@ alias af="airflow"
 alias p3p="python3 -m pip"
 
 alias briss="java -jar ~/.local/bin/briss-0.9/briss-0.9.jar"
+alias manpy="python3 manage.py"
