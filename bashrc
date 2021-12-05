@@ -23,6 +23,7 @@ fi
 export PS1="\[\e[0;35m\]\W\[\e[m\] ${GP}⌁ "
 
 # aliases
+alias vim="nvim"
 alias ll="ls -lah"
 alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
 alias jenkins-local="docker run --rm -u root -p 8080:8080 \
