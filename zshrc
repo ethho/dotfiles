@@ -50,7 +50,6 @@ source $ZSH/oh-my-zsh.sh
 # Keybinds
 bindkey -v
 bindkey '^ ' autosuggest-accept
-export VISUAL=$EDITOR
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd V edit-command-line
 
@@ -66,6 +65,7 @@ export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
+export VISUAL=$EDITOR
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
