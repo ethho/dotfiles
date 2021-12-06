@@ -25,6 +25,7 @@
     ~/.xinitrc:
     ~/.xprofile:
     ~/.Xresources:
+    ~/.Xmodmap:
     ~/.config/nvim/init.vim: vimrc
     ~/.config/i3/config: config/i3/config
     ~/.config/gtk-3.0: config/gtk-3.0
