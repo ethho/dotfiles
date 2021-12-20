@@ -7,6 +7,7 @@ alias dk="docker"
 alias dkc="docker-compose"
 alias c="code -r"
 alias vim="nvim"
+alias open="xdg-open"
 
 # pacman
 alias install="yay -S"
