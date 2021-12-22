@@ -24,6 +24,8 @@
     ~/.xinitrc:
     ~/.config/qtile/config.py: config/qtile/config.py
     ~/.config/nvim/init.vim: vimrc
+    ~/.local/bin/jitter.py: bin/jitter.py
+    ~/.local/bin/toggletheme.py: bin/toggletheme.py
 
     # Let Gnome define
     #~/.xprofile:
