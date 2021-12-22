@@ -21,11 +21,14 @@
     ~/.vimrc:
     ~/.gvimrc:
     ~/.zsh_custom:
-    #~/.xinitrc:
+    ~/.xinitrc:
+    ~/.config/qtile/config.py: config/qtile/config.py
+    ~/.config/nvim/init.vim: vimrc
+
+    # Let Gnome define
     #~/.xprofile:
     #~/.Xresources:
     #~/.Xmodmap:
-    ~/.config/nvim/init.vim: vimrc
     #~/.config/i3/config: config/i3/config
     #~/.config/gtk-3.0: config/gtk-3.0
     #~/.config/picom.conf: config/picom.conf
@@ -37,14 +40,14 @@
 
 - shell:
     -
-        command: vim +'PlugInstall --sync' +'qa'
+        command: nvim +'PlugInstall --sync' +'qa'
         description: Installing vim plugins using plug.vim...
         stdin: true
         stdout: false
         stderr: true
         quiet: true
     -
-        command: vim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
+        command: nvim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
         description: Installing coc.vim extensions...
         stdin: true
         stdout: false
