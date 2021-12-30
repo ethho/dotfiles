@@ -52,6 +52,7 @@ get_session(){
 		i3|i3wm) dbus_args+=(i3 --shmlog-size 0) ;;
 		jwm) dbus_args+=(jwm) ;;
 		kde) dbus_args+=(startplasma-x11) ;;
+		qtile) dbus_args+=(qtile start) ;;
 		lxde) dbus_args+=(startlxde) ;;
 		lxqt) dbus_args+=(lxqt-session) ;;
 		mate) dbus_args+=(mate-session) ;;
