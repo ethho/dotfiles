@@ -4,16 +4,16 @@
 ###############################################################################
 
 # focus window
-alt - h : yabai -m window --focus prev
-alt - l : yabai -m window --focus next
+alt - j : yabai -m window --focus prev
+alt - k : yabai -m window --focus next
 
 # swap window
-shift + alt - h : yabai -m window --swap prev
-shift + alt - l : yabai -m window --swap next
+shift + alt - j : yabai -m window --swap prev
+shift + alt - k : yabai -m window --swap next
 
 # focus space
-alt - j: yabai -m space --focus prev
-alt - k: yabai -m space --focus next
+alt - h: yabai -m space --focus prev
+alt - l: yabai -m space --focus next
 alt - o : yabai -m space --focus recent
 alt - m : yabai -m space --focus m
 alt - c : yabai -m space --focus c
@@ -32,8 +32,8 @@ alt - 9 : yabai -m space --focus 9
 alt - 0 : yabai -m space --focus 10
 
 # send window to space and follow focus
-shift + alt - j : yabai -m window --space prev; yabai -m space --focus prev
-shift + alt - k : yabai -m window --space next; yabai -m space --focus next
+shift + alt - h : yabai -m window --space prev; yabai -m space --focus prev
+shift + alt - l : yabai -m window --space next; yabai -m space --focus next
 shift + alt - o : yabai -m window --space recent; yabai -m space --focus recent
 shift + alt - m : yabai -m window --space  m; yabai -m space --focus m
 shift + alt - c : yabai -m window --space  c; yabai -m space --focus c
