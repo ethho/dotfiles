@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from subprocess import run, call
 
 DEBUG = False
-LIGHT_THEME = "'Matcha-light-pueril'"
+LIGHT_THEME = "'Adwaita'"
 DARK_THEME = "'Gruvbox-Material-Dark'"
 LIGHT_BG = 'file:///home/eho/Pictures/wallpapers-exorcist365/gruvbox/skyscraper.jpg'
 DARK_BG = 'file:///home/eho/Pictures/wallpapers-exorcist365/gruvbox/leaves-hard.jpg'
@@ -46,7 +46,7 @@ class Cmd:
         if self.debug:
             print(" ".join(str(a) for a in args))
         _ = run(args)
-    
+
 
 
 def toggle_dark():

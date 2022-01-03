@@ -10,5 +10,5 @@ alias vim="nvim"
 alias open="xdg-open"
 
 # pacman
-alias install="yay -S"
-alias update="yay -Suyy"
+alias install="sudo dnf install"
+alias update="sudo dnf"
