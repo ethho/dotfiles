@@ -1,2 +1,4 @@
 ! -- This points to the default looks Xresource root file.
-#include "/etc/regolith/styles/lascaille/root"
+#include "/etc/regolith/styles/gruvbox/root"
+
+Xft.dpi: 192
