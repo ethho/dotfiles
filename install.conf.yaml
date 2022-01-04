@@ -23,7 +23,7 @@
 
     # Regolith specific
     ~/.config/regolith/i3/config: config/i3/config
-    ~/.Xresources-regolith:
+    ~/.Xresources-regolith: Xresources
 
 - create:
     - ~/.vim/undodir
