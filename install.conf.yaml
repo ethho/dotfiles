@@ -23,6 +23,7 @@
 
     # Regolith specific
     ~/.config/regolith/i3/config: config/i3/config
+    ~/.config/regolith/i3xrocks/conf.d: config/i3xrocks/conf.d
     ~/.Xresources-regolith: Xresources
 
 - create:
