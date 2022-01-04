@@ -30,20 +30,6 @@
 
 - shell:
     -
-        command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-        description: Installing oh-my-zsh
-        stdin: true
-        stdout: false
-        stderr: true
-        quiet: true
-    -
-        command: sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-        description: Installing vim-plug
-        stdin: true
-        stdout: false
-        stderr: true
-        quiet: true
-    -
         command: nvim +'PlugInstall --sync' +'qa'
         description: Installing vim plugins using plug.vim...
         stdin: true
