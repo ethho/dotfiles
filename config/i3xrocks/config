@@ -23,10 +23,11 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 command=/usr/share/i3xrocks/$BLOCK_NAME
-separator_block_width=35
+separator_block_width=40
 markup=pango
 color=xresource:i3xrocks.value.color
 label_color=xresource:i3xrocks.label.color
+
 
 # Media Player
 #
@@ -48,8 +49,8 @@ label_color=xresource:St.color4
 # instance=BAT0
 [battery]
 interval=30
-color=xresource:St.color9
-label_color=xresource:St.color9
+
+# command=/home/eho/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 
 # Rofication
 #
