@@ -41,12 +41,6 @@ interval=20
 color=xresource:St.color4
 label_color=xresource:St.color4
 
-# Displays network load
-[net-traffic]
-interval=repeat
-color=xresource:St.color3
-label_color=xresource:St.color3
-
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
