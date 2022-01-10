@@ -5,3 +5,10 @@ Xft.dpi: 192
 rofi.font:	JetBrains Mono Medium 30
 gnome.wallpaper: /home/eho/Pictures/wallpapers-exorcist365/gruvbox/leaves-hard.jpg
 i3-wm.gaps.inner.size: 10
+i3-wm.binding.up: Ctrl+h
+i3-wm.binding.down: Ctrl+l
+i3-wm.binding.left: j
+i3-wm.binding.right: k
+i3-wm.binding.ws_prev_on_output2: h
+i3-wm.binding.ws_next_on_output2: l
+i3-wm.workspace.auto_back_and_forth: yes
