@@ -19,5 +19,8 @@ i3-wm.workspace.12.name: 12:<span font_desc='MesloLGS NF Regular 15'>  </span
 i3-wm.workspace.13.name: 13:<span font_desc='MesloLGS NF Regular 15'>  </span>
 i3-wm.workspace.14.name: 14:<span font_desc='MesloLGS NF Regular 15'>  </span>
 i3-wm.workspace.15.name: 15:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.16.name: 16:<span font_desc='MesloLGS NF Regular 15'>  </span>
 i3-wm.bar.separator:  
 i3-wm.bar.separator.color: St.color9
+i3-wm.bar.workspace.focused.background.color:   color_green
+i3-wm.bar.workspace.focused.border.color:       color_green
