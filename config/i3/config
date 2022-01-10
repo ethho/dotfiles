@@ -84,6 +84,11 @@ set_from_resource $ws7_key  i3-wm.workspace.07.key 7
 set_from_resource $ws8_key  i3-wm.workspace.08.key 8
 set_from_resource $ws9_key  i3-wm.workspace.09.key 9
 set_from_resource $ws10_key i3-wm.workspace.10.key 0
+set_from_resource $ws11_key i3-wm.workspace.10.key w
+set_from_resource $ws12_key i3-wm.workspace.10.key s
+set_from_resource $ws13_key i3-wm.workspace.10.key m
+set_from_resource $ws14_key i3-wm.workspace.10.key c
+set_from_resource $ws15_key i3-wm.workspace.10.key z
 
 ###############################################################################
 # Launcher dialogs
@@ -139,7 +144,8 @@ bindsym $mod+$i3-wm.binding.focus_parent focus parent
 
 ## Navigate // Relative Child // <> z ##/
 set_from_resource $i3-wm.binding.focus_child i3-wm.binding.focus_child z
-bindsym $mod+$i3-wm.binding.focus_child focus child
+# TODO
+# bindsym $mod+$i3-wm.binding.focus_child focus child
 
 ## Navigate // Relative Window // <> ↑ ↓ ← → ##
 bindsym $mod+Left focus left
@@ -169,11 +175,11 @@ bindsym $mod+$ws8_key workspace number $ws8
 bindsym $mod+$ws9_key workspace number $ws9
 bindsym $mod+$ws10_key workspace number $ws10
 ## Navigate // Workspace 11 - 19 // <><Ctrl> 1..9 ##
-bindsym $mod+Ctrl+$ws1_key workspace number $ws11
-bindsym $mod+Ctrl+$ws2_key workspace number $ws12
-bindsym $mod+Ctrl+$ws3_key workspace number $ws13
-bindsym $mod+Ctrl+$ws4_key workspace number $ws14
-bindsym $mod+Ctrl+$ws5_key workspace number $ws15
+bindsym $mod+$ws11_key workspace number $ws11
+bindsym $mod+$ws12_key workspace number $ws12
+bindsym $mod+$ws13_key workspace number $ws13
+bindsym $mod+$ws14_key workspace number $ws14
+bindsym $mod+$ws15_key workspace number $ws15
 bindsym $mod+Ctrl+$ws6_key workspace number $ws16
 bindsym $mod+Ctrl+$ws7_key workspace number $ws17
 bindsym $mod+Ctrl+$ws8_key workspace number $ws18
@@ -220,6 +226,25 @@ set_from_resource $i3-wm.binding.scratchpad i3-wm.binding.scratchpad Ctrl+a
 bindsym $mod+$i3-wm.binding.scratchpad scratchpad show
 
 ###############################################################################
+# Additional bindings for specific workspaces
+###############################################################################
+
+# Assign from StartupWMClass
+# grep StartupWMClass /usr/share/applications/slack.desktop 
+assign [class="Firefox"] $ws11
+assign [class="Slack"] $ws12
+assign [class="Thunderbird"] $ws13
+assign [class="Code"] $ws14
+assign [class="Zoom"] $ws15
+
+###############################################################################
+# Additional custom keybinds
+###############################################################################
+
+bindsym $mod+Shift+$i3-wm.binding.ws_next_on_output2 move container to workspace next; workspace next
+bindsym $mod+Shift+$i3-wm.binding.ws_prev_on_output2 move container to workspace prev; workspace prev
+
+###############################################################################
 # Window and Workspace Configuration
 ###############################################################################
 
@@ -250,10 +275,10 @@ set_from_resource $i3-wm.binding.take_left i3-wm.binding.take_left Ctrl+Shift+h
 set_from_resource $i3-wm.binding.take_right i3-wm.binding.take_right Ctrl+Shift+l
 set_from_resource $i3-wm.binding.take_up i3-wm.binding.take_up Ctrl+Shift+k
 set_from_resource $i3-wm.binding.take_down i3-wm.binding.take_down Ctrl+Shift+j
-bindsym $mod+$i3-wm.binding.take_left move workspace to output left
-bindsym $mod+$i3-wm.binding.take_down move workspace to output down
-bindsym $mod+$i3-wm.binding.take_up move workspace to output up
-bindsym $mod+$i3-wm.binding.take_right move workspace to output right
+# bindsym $mod+$i3-wm.binding.take_left move workspace to output left
+# bindsym $mod+$i3-wm.binding.take_down move workspace to output down
+# bindsym $mod+$i3-wm.binding.take_up move workspace to output up
+# bindsym $mod+$i3-wm.binding.take_right move workspace to output right
 
 ## Modify // Vertical Window Orientation // <> v ##
 set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
@@ -277,7 +302,8 @@ bindsym $mod+Shift+$i3-wm.binding.float_toggle floating toggle
 
 ## Modify // Move to Scratchpad // <><Ctrl> m ##
 set_from_resource $i3-wm.binding.move_scratchpad i3-wm.binding.move_scratchpad Ctrl+m
-bindsym $mod+$i3-wm.binding.move_scratchpad move to scratchpad
+# TODO
+# bindsym $mod+$i3-wm.binding.move_scratchpad move to scratchpad
 
 ## Modify // Tile/Float Focus Toggle // <><Shift> t ##
 set_from_resource $i3-wm.binding.focus_toggle i3-wm.binding.focus_toggle Shift+t
@@ -287,54 +313,54 @@ bindsym $mod+$i3-wm.binding.focus_toggle focus mode_toggle
 set_from_resource $i3-wm.binding.layout_mode i3-wm.binding.layout_mode t
 bindsym $mod+$i3-wm.binding.layout_mode layout toggle tabbed splith splitv
 
-## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
-bindsym $mod+Shift+$ws1_key move container to workspace number $ws1
-bindsym $mod+Shift+$ws2_key move container to workspace number $ws2
-bindsym $mod+Shift+$ws3_key move container to workspace number $ws3
-bindsym $mod+Shift+$ws4_key move container to workspace number $ws4
-bindsym $mod+Shift+$ws5_key move container to workspace number $ws5
-bindsym $mod+Shift+$ws6_key move container to workspace number $ws6
-bindsym $mod+Shift+$ws7_key move container to workspace number $ws7
-bindsym $mod+Shift+$ws8_key move container to workspace number $ws8
-bindsym $mod+Shift+$ws9_key move container to workspace number $ws9
-bindsym $mod+Shift+$ws10_key move container to workspace number $ws10
-## Modify // Move Window to Workspace 11 - 19// <><Ctrl><Shift> 1..9 ##
-bindsym $mod+Shift+Ctrl+$ws1_key move container to workspace number $ws11
-bindsym $mod+Shift+Ctrl+$ws2_key move container to workspace number $ws12
-bindsym $mod+Shift+Ctrl+$ws3_key move container to workspace number $ws13
-bindsym $mod+Shift+Ctrl+$ws4_key move container to workspace number $ws14
-bindsym $mod+Shift+Ctrl+$ws5_key move container to workspace number $ws15
-bindsym $mod+Shift+Ctrl+$ws6_key move container to workspace number $ws16
-bindsym $mod+Shift+Ctrl+$ws7_key move container to workspace number $ws17
-bindsym $mod+Shift+Ctrl+$ws8_key move container to workspace number $ws18
-bindsym $mod+Shift+Ctrl+$ws9_key move container to workspace number $ws19
+## Modify // Carry Window to Workspace 1 - 10 // <><Shift> 0..9 ##
+bindsym $mod+Shift+$ws1_key move container to workspace number $ws1; workspace number $ws1
+bindsym $mod+Shift+$ws2_key move container to workspace number $ws2; workspace number $ws2
+bindsym $mod+Shift+$ws3_key move container to workspace number $ws3; workspace number $ws3
+bindsym $mod+Shift+$ws4_key move container to workspace number $ws4; workspace number $ws4
+bindsym $mod+Shift+$ws5_key move container to workspace number $ws5; workspace number $ws5
+bindsym $mod+Shift+$ws6_key move container to workspace number $ws6; workspace number $ws6
+bindsym $mod+Shift+$ws7_key move container to workspace number $ws7; workspace number $ws7
+bindsym $mod+Shift+$ws8_key move container to workspace number $ws8; workspace number $ws8
+bindsym $mod+Shift+$ws9_key move container to workspace number $ws9; workspace number $ws9
+bindsym $mod+Shift+$ws10_key move container to workspace number $ws10; workspace number $ws10
+## Modify // Carry Window to Workspace 11 - 19// <><Ctrl><Shift> 1..9 ##
+bindsym $mod+Shift+$ws11_key move container to workspace number $ws11; workspace number $ws11
+bindsym $mod+Shift+$ws12_key move container to workspace number $ws12; workspace number $ws12
+bindsym $mod+Shift+$ws13_key move container to workspace number $ws13; workspace number $ws13
+bindsym $mod+Shift+$ws14_key move container to workspace number $ws14; workspace number $ws14
+bindsym $mod+Shift+$ws15_key move container to workspace number $ws15; workspace number $ws15
+bindsym $mod+Shift+Ctrl+$ws6_key move container to workspace number $ws16; workspace number $ws16
+bindsym $mod+Shift+Ctrl+$ws7_key move container to workspace number $ws17; workspace number $ws17
+bindsym $mod+Shift+Ctrl+$ws8_key move container to workspace number $ws18; workspace number $ws18
+bindsym $mod+Shift+Ctrl+$ws9_key move container to workspace number $ws19; workspace number $ws19
 
 ## Modify // Move Window to Next Free Workspace // <><Shift> ` ##
 set_from_resource $i3-wm.binding.move_next_free i3-wm.binding.move_next_free Shift+grave
 bindsym $mod+$i3-wm.binding.move_next_free exec --no-startup-id /usr/bin/i3-next-workspace --move-window
 
 # move focused container to workspace, move to workspace
-## Modify // Carry Window to Workspace 1 - 10// <><Alt> 0..9 ##
-bindsym $mod+$alt+$ws1_key move container to workspace number $ws1; workspace number $ws1
-bindsym $mod+$alt+$ws2_key move container to workspace number $ws2; workspace number $ws2
-bindsym $mod+$alt+$ws3_key move container to workspace number $ws3; workspace number $ws3
-bindsym $mod+$alt+$ws4_key move container to workspace number $ws4; workspace number $ws4
-bindsym $mod+$alt+$ws5_key move container to workspace number $ws5; workspace number $ws5
-bindsym $mod+$alt+$ws6_key move container to workspace number $ws6; workspace number $ws6
-bindsym $mod+$alt+$ws7_key move container to workspace number $ws7; workspace number $ws7
-bindsym $mod+$alt+$ws8_key move container to workspace number $ws8; workspace number $ws8
-bindsym $mod+$alt+$ws9_key move container to workspace number $ws9; workspace number $ws9
+## Modify // Move Window to Workspace 1 - 10// <><Alt> 0..9 ##
+bindsym $mod+$alt+$ws1_key move container to workspace number $ws1
+bindsym $mod+$alt+$ws2_key move container to workspace number $ws2
+bindsym $mod+$alt+$ws3_key move container to workspace number $ws3
+bindsym $mod+$alt+$ws4_key move container to workspace number $ws4
+bindsym $mod+$alt+$ws5_key move container to workspace number $ws5
+bindsym $mod+$alt+$ws6_key move container to workspace number $ws6
+bindsym $mod+$alt+$ws7_key move container to workspace number $ws7
+bindsym $mod+$alt+$ws8_key move container to workspace number $ws8
+bindsym $mod+$alt+$ws9_key move container to workspace number $ws9
 bindsym $mod+$alt+$ws10_key move container to workspace number $ws10; workspace number $ws10
-## Modify // Carry Window to Workspace 11 - 19 // <><Alt><Ctrl> 1..9 ##
-bindsym $mod+$alt+Ctrl+$ws1_key move container to workspace number $ws11; workspace number $ws11
-bindsym $mod+$alt+Ctrl+$ws2_key move container to workspace number $ws12; workspace number $ws12
-bindsym $mod+$alt+Ctrl+$ws3_key move container to workspace number $ws13; workspace number $ws13
-bindsym $mod+$alt+Ctrl+$ws4_key move container to workspace number $ws14; workspace number $ws14
-bindsym $mod+$alt+Ctrl+$ws5_key move container to workspace number $ws15; workspace number $ws15
-bindsym $mod+$alt+Ctrl+$ws6_key move container to workspace number $ws16; workspace number $ws16
-bindsym $mod+$alt+Ctrl+$ws7_key move container to workspace number $ws17; workspace number $ws17
-bindsym $mod+$alt+Ctrl+$ws8_key move container to workspace number $ws18; workspace number $ws18
-bindsym $mod+$alt+Ctrl+$ws9_key move container to workspace number $ws19; workspace number $ws19
+## Modify // Move Window to Workspace 11 - 19 // <><Alt><Ctrl> 1..9 ##
+bindsym $mod+$alt+$ws11_key move container to workspace number $ws11
+bindsym $mod+$alt+$ws12_key move container to workspace number $ws12
+bindsym $mod+$alt+$ws13_key move container to workspace number $ws13
+bindsym $mod+$alt+$ws14_key move container to workspace number $ws14
+bindsym $mod+$alt+$ws15_key move container to workspace number $ws15
+bindsym $mod+$alt+Ctrl+$ws6_key move container to workspace number $ws16
+bindsym $mod+$alt+Ctrl+$ws7_key move container to workspace number $ws17
+bindsym $mod+$alt+Ctrl+$ws8_key move container to workspace number $ws18
+bindsym $mod+$alt+Ctrl+$ws9_key move container to workspace number $ws19
 
 ## Modify // Carry Window to Next Free Workspace // <><Alt> ` ##
 set_from_resource $i3-wm.binding.take_next_free i3-wm.binding.take_next_free Mod1+grave
@@ -366,7 +392,8 @@ bindsym $mod+$i3-wm.binding.kill_app [con_id="__focused__"] exec --no-startup-id
 
 ## Session // Reload i3 Config // <><Shift> c ##
 set_from_resource $i3-wm.binding.reload i3-wm.binding.reload Shift+c
-bindsym $mod+$i3-wm.binding.reload reload
+# TODO
+# bindsym $mod+$i3-wm.binding.reload reload
 
 ## Session // Refresh Session // <><Shift> r ##
 set_from_resource $i3-wm.binding.refresh i3-wm.binding.refresh Shift+r
@@ -400,7 +427,8 @@ bindsym $mod+$i3-wm.binding.lock exec $i3-wm.program.lock
 ## Session // Sleep // <><Shift> s ##
 set_from_resource $i3-wm.binding.sleep i3-wm.binding.sleep Shift+s
 set_from_resource $i3-wm.program.sleep i3-wm.program.sleep systemctl suspend
-bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
+# TODO
+# bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
 
 ###############################################################################
 # System Management
@@ -409,7 +437,8 @@ bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
 ## Modify // Settings // <> c ##
 set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c
 set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
-bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
+# TODO
+# bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
 
 ## Modify // Display Settings // <> d ##
 set_from_resource $i3-wm.binding.display i3-wm.binding.display d
@@ -419,7 +448,7 @@ bindsym $mod+$i3-wm.binding.display exec $i3-wm.program.display
 ## Modify // Wifi Settings // <> w ##
 set_from_resource $i3-wm.binding.wifi i3-wm.binding.wifi w
 set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
-bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
+# bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
 
 ## Modify // Bluetooth Settings // <> b ##
 set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b
@@ -429,7 +458,7 @@ bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
 ## Modify // Sound Settings // <> s ##
 set_from_resource $i3-wm.binding.sound i3-wm.binding.sound s
 set_from_resource $i3-wm.program.sound i3-wm.program.sound gnome-control-center --class=floating_window sound
-bindsym $mod+$i3-wm.binding.sound exec $i3-wm.program.sound
+# bindsym $mod+$i3-wm.binding.sound exec $i3-wm.program.sound
 
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $i3-wm.binding.files i3-wm.binding.files Shift+n
