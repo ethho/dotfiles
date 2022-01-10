@@ -6,3 +6,4 @@
 interval=5
 min_width=100%
 color=xresource:St.color9
+label_color=xresource:St.color9
