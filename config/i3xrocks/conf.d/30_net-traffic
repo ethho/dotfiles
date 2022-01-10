@@ -1,5 +1,0 @@
-# Displays network load
-[net-traffic]
-interval=repeat
-color=xresource:St.color3
-label_color=xresource:St.color3

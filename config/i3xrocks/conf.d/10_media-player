@@ -1,7 +1,0 @@
-# Media Player
-#
-# Displays media controls
-[media-player]
-interval=5
-color=xresource:St.color5
-label_color=xresource:St.color5
