@@ -237,7 +237,7 @@ assign [class="Slack"] $ws12
 assign [class="Thunderbird"] $ws13
 assign [class="Code"] $ws14
 assign [class="Zoom"] $ws15
-assign [class="Discord"] $ws16
+assign [class="discord"] $ws16
 
 ###############################################################################
 # Additional custom keybinds
