@@ -1,8 +1,5 @@
-#include "/etc/regolith/styles/gruvbox/root"
-
 Xft.dpi: 192
 rofi.font:	Hack Nerd Font 30
-gnome.wallpaper: /home/eho/Pictures/wallpapers-exorcist365/gruvbox/leaves-hard.jpg
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
