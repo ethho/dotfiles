@@ -6,6 +6,7 @@
 # align
 # color
 # command
+# command=/home/eho/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 # full_text
 # instance
 # interval
@@ -28,7 +29,6 @@ markup=pango
 color=xresource:i3xrocks.value.color
 label_color=xresource:i3xrocks.label.color
 
-
 # Media Player
 #
 # Displays media controls
@@ -49,8 +49,6 @@ label_color=xresource:St.color4
 # instance=BAT0
 [battery]
 interval=30
-
-# command=/home/eho/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 
 # Rofication
 #

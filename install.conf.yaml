@@ -18,6 +18,7 @@
     ~/.p10k.vscode.zsh:
     ~/.vim:
     ~/.vimrc:
+    ~/.taskrc:
     ~/.zsh_custom:
     ~/.config/nvim/init.vim: vimrc
 
