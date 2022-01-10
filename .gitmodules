@@ -11,3 +11,9 @@
 [submodule "zsh_custom/plugins/zsh-syntax-highlighting"]
 	path = zsh_custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "zsh_custom/plugins/zsh-vi-mode"]
+	path = zsh_custom/plugins/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode
+[submodule "config/i3blocks"]
+	path = config/i3blocks
+	url = git@github.com:vivien/i3blocks-contrib.git
