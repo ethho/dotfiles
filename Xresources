@@ -3,6 +3,7 @@
 Xft.dpi: 192
 rofi.font:	JetBrains Mono Medium 30
 gnome.wallpaper: /home/eho/Pictures/wallpapers-exorcist365/gruvbox/leaves-hard.jpg
+i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
 i3-wm.binding.up: Ctrl+k
@@ -16,8 +17,8 @@ i3-wm.binding.right: k
 i3-wm.binding.ws_prev_on_output2: h
 i3-wm.binding.ws_next_on_output2: l
 i3-wm.binding.settings: Mod1+c
-i3-wm.workspace.11.name: 11:<span font_desc='JetBrains Mono Medium 13'> w </span>
-i3-wm.workspace.12.name: 12:<span font_desc='JetBrains Mono Medium 13'> s </span>
-i3-wm.workspace.13.name: 13:<span font_desc='JetBrains Mono Medium 13'> m </span>
-i3-wm.workspace.14.name: 14:<span font_desc='JetBrains Mono Medium 13'> c </span>
-i3-wm.workspace.15.name: 15:<span font_desc='JetBrains Mono Medium 13'> z </span>
+i3-wm.workspace.11.name: 11:<span font_desc='Hack Nerd Font 13'> w </span>
+i3-wm.workspace.12.name: 12:<span font_desc='Hack Nerd Font 13'> s </span>
+i3-wm.workspace.13.name: 13:<span font_desc='Hack Nerd Font 13'> m </span>
+i3-wm.workspace.14.name: 14:<span font_desc='Hack Nerd Font 13'> c </span>
+i3-wm.workspace.15.name: 15:<span font_desc='Hack Nerd Font 13'> z </span>
