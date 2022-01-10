@@ -47,23 +47,15 @@ interval=repeat
 color=xresource:St.color3
 label_color=xresource:St.color3
 
-# CPU usage
-#
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu-usage]
-interval=5
-min_width=100%
-color=xresource:St.color9
-label_color=xresource:St.color9
-
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
 # You can specify the instance by adding:
 # instance=BAT0
 [battery]
-interval=10
+interval=30
+color=xresource:St.color9
+label_color=xresource:St.color9
 
 # Rofication
 #
