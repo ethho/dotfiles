@@ -5,3 +5,4 @@
 [cpu-usage]
 interval=5
 min_width=100%
+color=xresource:St.color9

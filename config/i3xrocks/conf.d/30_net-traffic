@@ -1,3 +1,4 @@
 # Displays network load
 [net-traffic]
 interval=repeat
+color=xresource:St.color3
