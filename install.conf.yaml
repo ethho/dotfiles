@@ -27,8 +27,9 @@
     ~/.config/regolith/i3/config: config/i3/config
     ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
     ~/.config/i3blocks: config/i3blocks
-    ~/.Xresources-regolith: 
-    ~/.Xresources.d: 
+    ~/.config/regolith/picom: config/picom
+    ~/.Xresources-regolith:
+    ~/.Xresources.d:
 
 - create:
     - ~/.vim/undodir
