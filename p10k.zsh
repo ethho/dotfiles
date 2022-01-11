@@ -92,14 +92,15 @@
     # vi_mode               # vi mode (you don't need this if you've enabled prompt_char)
     # vpn_ip                # virtual private network indicator
     todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     time                    # current time
     # =========================[ Line #2 ]=========================
     newline
-    load                  # CPU load
+
+    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
+    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
+    # load                  # CPU load
     # disk_usage            # disk usage
-    ram                   # free RAM
+    # ram                   # free RAM
     # swap                  # used swap
     # wifi                  # wifi speed
     # ip                    # ip address and bandwidth usage for a specified network interface
