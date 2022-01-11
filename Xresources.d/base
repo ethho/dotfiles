@@ -1,4 +1,6 @@
 Xft.dpi: 192
+St.font:        MesloLGS NF:pixelsize=16:antialias=true:autohint=true
+gnome.terminal.font:    MesloLGS NF 13
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
@@ -23,3 +25,6 @@ i3-wm.bar.separator: 
 i3-wm.bar.separator.color: St.color9
 i3-wm.bar.workspace.focused.background.color:   color_green
 i3-wm.bar.workspace.focused.border.color:       color_green
+i3-wm.bar.font: pango:MesloLGS NF 13, Material Design Icons 13
+i3-wm.font:     pango:MesloLGS NF 13
+i3xrocks.value.font:    MesloLGS NF 13

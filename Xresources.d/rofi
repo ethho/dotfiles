@@ -1,5 +1,5 @@
 ! "Enabled modi"
-rofi.modi:                           window,drun,run
+rofi.modi:                           window,drun,run,keys
 ! "Window width"
 ! rofi.width:                          50
 ! "Number of lines"
@@ -7,7 +7,7 @@ rofi.lines:                          10
 ! "Number of columns"
 ! rofi.columns:                        1
 ! "Font to use"
-rofi.font:                           Hack Nerd Font 30
+rofi.font:                           MesloLGS NF 30
 ! "Border width"
 ! rofi.bw:                             1
 ! "Location on screen"

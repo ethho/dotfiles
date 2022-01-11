@@ -38,8 +38,6 @@ color=xresource:St.color6
 
 [bluetooth]
 interval=20
-color=xresource:St.color4
-label_color=xresource:St.color4
 
 # Battery indicator
 #
