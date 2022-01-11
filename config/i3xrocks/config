@@ -34,7 +34,7 @@ label_color=xresource:i3xrocks.label.color
 # Displays media controls
 [media-player]
 interval=5
-color=xresource:St.color5
+color=xresource:St.color6
 
 [bluetooth]
 interval=20
@@ -56,7 +56,7 @@ interval=30
 [cpu-usage]
 interval=5
 min_width=100%
-color=xresource:St.color9
+color=xresource:St.color5
 
 # Rofication
 #
