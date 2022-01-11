@@ -1,0 +1,19 @@
+configuration {
+	modi: "window,drun,run,keys";
+	lines: 10;
+	font: "MesloLGS NF 30";
+	padding: 15;
+	show-icons: true;
+	icon-theme: "Moka";
+	drun-display-format: "{name}";
+	sort: true;
+	sorting-method: "fzf";
+	window-format: "{n} {t}";
+	theme: "/etc/regolith/styles/gruvbox/rofi.rasi";
+	kb-accept-entry: "Control+m,Return,KP_Enter";
+	kb-remove-char-forward: "Delete";
+	kb-remove-to-eol: "Control+Alt+Right";
+	kb-remove-to-sol: "Control+Alt+Left";
+	kb-row-up: "Up,Control+K,ISO_Left_Tab";
+	kb-row-down: "Down,Control+J";
+}

@@ -1,5 +1,4 @@
 #include "/etc/regolith/styles/gruvbox/root"
 #include "/home/eho/.Xresources.d/base"
-#include "/home/eho/.Xresources.d/rofi"
 
 gnome.wallpaper: /home/eho/Pictures/wallpapers-exorcist365/gruvbox/leaves-hard.jpg
