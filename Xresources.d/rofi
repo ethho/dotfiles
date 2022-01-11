@@ -13,7 +13,7 @@ rofi.font:                           Hack Nerd Font 30
 ! "Location on screen"
 ! rofi.location:                       0
 ! "Padding"
-rofi.padding:                        10
+rofi.padding:                        15
 ! "Y-offset relative to location"
 ! rofi.yoffset:                        0
 ! "X-offset relative to location"
@@ -207,9 +207,9 @@ rofi.kb-row-down:                    Down,Control+j
 ! "Go to next row, if one left, accept it, if no left next mode."
 ! rofi.kb-row-tab:                     Tab
 ! "Go to the previous page"
-! rofi.kb-page-prev:                   Page_Up,Control+u
+rofi.kb-page-prev:                   Page_Up,Control+u
 ! "Go to the next page"
-! rofi.kb-page-next:                   Page_Down,Control+d
+rofi.kb-page-next:                   Page_Down,Control+d
 ! "Go to the first entry"
 ! rofi.kb-row-first:                   Home,KP_Home
 ! "Go to the last entry"
