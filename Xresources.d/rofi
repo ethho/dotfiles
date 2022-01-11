@@ -3,7 +3,7 @@ rofi.modi:                           window,drun,run
 ! "Window width"
 ! rofi.width:                          50
 ! "Number of lines"
-! rofi.lines:                          15
+rofi.lines:                          10
 ! "Number of columns"
 ! rofi.columns:                        1
 ! "Font to use"
@@ -181,9 +181,9 @@ rofi.kb-remove-char-forward:         Delete
 ! "Delete previous char"
 ! rofi.kb-remove-char-back:            BackSpace,Shift+BackSpace,Control+h
 ! "Delete till the end of line"
-rofi.kb-remove-to-eol:
+rofi.kb-remove-to-eol:                 Control+K
 ! "Delete till the start of line"
-rofi.kb-remove-to-sol:
+rofi.kb-remove-to-sol:                 Control+J
 ! "Accept entry"
 rofi.kb-accept-entry:                Control+m,Return,KP_Enter
 ! "Use entered text as command (in ssh/run modi)"
@@ -207,9 +207,9 @@ rofi.kb-row-down:                    Down,Control+j
 ! "Go to next row, if one left, accept it, if no left next mode."
 ! rofi.kb-row-tab:                     Tab
 ! "Go to the previous page"
-rofi.kb-page-prev:                   Page_Up,Control+u
+! rofi.kb-page-prev:                   Page_Up,Control+u
 ! "Go to the next page"
-rofi.kb-page-next:                   Page_Down,Control+d
+! rofi.kb-page-next:                   Page_Down,Control+d
 ! "Go to the first entry"
 ! rofi.kb-row-first:                   Home,KP_Home
 ! "Go to the last entry"
