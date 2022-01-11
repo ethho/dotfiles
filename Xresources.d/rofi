@@ -177,15 +177,15 @@ rofi.window-format:                   {n} {t}
 ! "Delete next word"
 ! rofi.kb-remove-word-forward:         Control+Alt+d
 ! "Delete next char"
-! rofi.kb-remove-char-forward:         Delete,Control+d
+rofi.kb-remove-char-forward:         Delete
 ! "Delete previous char"
 ! rofi.kb-remove-char-back:            BackSpace,Shift+BackSpace,Control+h
 ! "Delete till the end of line"
-! rofi.kb-remove-to-eol:               Control+k
+rofi.kb-remove-to-eol:
 ! "Delete till the start of line"
-! rofi.kb-remove-to-sol:               Control+u
+rofi.kb-remove-to-sol:
 ! "Accept entry"
-! rofi.kb-accept-entry:                Control+j,Control+m,Return,KP_Enter
+rofi.kb-accept-entry:                Control+m,Return,KP_Enter
 ! "Use entered text as command (in ssh/run modi)"
 ! rofi.kb-accept-custom:               Control+Return
 ! "Use alternate accept command."
