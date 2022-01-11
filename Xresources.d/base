@@ -1,5 +1,4 @@
 Xft.dpi: 192
-rofi.font:	Hack Nerd Font 30
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
