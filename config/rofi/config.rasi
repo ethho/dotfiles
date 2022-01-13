@@ -14,6 +14,6 @@ configuration {
 	kb-remove-char-forward: "Delete";
 	kb-remove-to-eol: "Control+Alt+Right";
 	kb-remove-to-sol: "Control+Alt+Left";
-	kb-row-up: "Up,Control+K,ISO_Left_Tab";
-	kb-row-down: "Down,Control+J";
+	kb-row-up: "Up,Control+k,ISO_Left_Tab";
+	kb-row-down: "Down,Control+j";
 }
