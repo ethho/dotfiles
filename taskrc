@@ -16,8 +16,8 @@ data.location=~/.task
 # Color theme (uncomment one to use)
 #include /usr/share/taskwarrior/light-16.theme
 #include /usr/share/taskwarrior/light-256.theme
-#include /usr/share/taskwarrior/dark-16.theme
-include /usr/share/taskwarrior/dark-256.theme
+include /usr/share/taskwarrior/dark-16.theme
+#include /usr/share/taskwarrior/dark-256.theme
 #include /usr/share/taskwarrior/dark-red-256.theme
 #include /usr/share/taskwarrior/dark-green-256.theme
 #include /usr/share/taskwarrior/dark-blue-256.theme
@@ -29,7 +29,14 @@ include /usr/share/taskwarrior/dark-256.theme
 #include /usr/share/taskwarrior/solarized-light-256.theme
 #include /usr/share/taskwarrior/no-color.theme
 
+# inthe.am
+include ~/.intheamrc
 
+# taskwarrior-tui
+uda.taskwarrior-tui.selection.bold=no
+uda.taskwarrior-tui.selection.italic=yes
+uda.taskwarrior-tui.selection.dim=yes
+uda.taskwarrior-tui.selection.blink=no
 uda.taskwarrior-tui.keyconfig.quit=q
 uda.taskwarrior-tui.keyconfig.refresh=r
 uda.taskwarrior-tui.keyconfig.go-to-bottom=G
@@ -54,3 +61,4 @@ uda.taskwarrior-tui.keyconfig.zoom=z
 uda.taskwarrior-tui.keyconfig.context-menu=c
 uda.taskwarrior-tui.keyconfig.next-tab=]
 uda.taskwarrior-tui.keyconfig.previous-tab=[
+
