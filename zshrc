@@ -36,7 +36,6 @@ plugins=(
     git
     z
     docker
-    macos
     web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -66,18 +65,7 @@ export EDITOR='nvim'
 #   export EDITOR='mvim'
 # fi
 export VISUAL=$EDITOR
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-if [[ -f ~/.p10k.zsh ]]; then
-    if [[ $TERM_PROGRAM == 'vscode' ]]; then
-        source ~/.p10k.vscode.zsh
-    else;
-        source ~/.p10k.zsh
-    fi
-fi
+source ~/.p10k.zsh
 
 # ********************************** Conda *************************************
 
