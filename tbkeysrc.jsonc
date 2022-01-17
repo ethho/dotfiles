@@ -36,8 +36,8 @@
     "ctrl+h": "window.document.getElementById('tabmail-tabs').advanceSelectedTab(-1, true)",
     "ctrl+d": "window.document.getElementById('messagepane').contentDocument.documentElement.getElementsByTagName('body')[0].scrollBy(0, 100)",
     "ctrl+u": "window.document.getElementById('messagepane').contentDocument.documentElement.getElementsByTagName('body')[0].scrollBy(0, -100)",
-    "ctrl+j": "cmd:cmd_markAsJunk",
-    "shift+ctrl+j": "cmd:cmd_markAsNotJunk",
+    "ctrl+m": "cmd:cmd_markAsJunk",
+    "shift+ctrl+m": "cmd:cmd_markAsNotJunk",
     "shift+ctrl+l": "cmd:cmd_expandAllThreads",
     "shift+ctrl+h": "cmd:cmd_collapseAllThreads"
 }
