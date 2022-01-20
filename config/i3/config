@@ -364,6 +364,12 @@ bindsym $mod+$alt+Ctrl+$ws7_key move container to workspace number $ws17
 bindsym $mod+$alt+Ctrl+$ws8_key move container to workspace number $ws18
 bindsym $mod+$alt+Ctrl+$ws9_key move container to workspace number $ws19
 
+## Move workspaces to monitors
+bindsym $mod+$alt+Shift+Up move workspace to output up
+bindsym $mod+$alt+Shift+Down move workspace to output down
+bindsym $mod+$alt+Shift+Left move workspace to output left
+bindsym $mod+$alt+Shift+Right move workspace to output right
+
 ## Modify // Carry Window to Next Free Workspace // <><Alt> ` ##
 set_from_resource $i3-wm.binding.take_next_free i3-wm.binding.take_next_free Mod1+grave
 bindsym $mod+$i3-wm.binding.take_next_free exec --no-startup-id /usr/bin/i3-next-workspace --move-window-and-follow
