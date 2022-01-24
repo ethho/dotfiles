@@ -39,5 +39,6 @@
     "ctrl+m": "cmd:cmd_markAsJunk",
     "shift+ctrl+m": "cmd:cmd_markAsNotJunk",
     "shift+ctrl+l": "cmd:cmd_expandAllThreads",
-    "shift+ctrl+h": "cmd:cmd_collapseAllThreads"
+    "shift+ctrl+h": "cmd:cmd_collapseAllThreads",
+    "shift+ctrl+s": "cmd:cmd_getMsgsForAuthAccounts"
 }
