@@ -104,6 +104,7 @@ colorscheme gruvbox
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
 set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 " *********************************** coc.vim *********************************
 
