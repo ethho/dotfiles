@@ -15,7 +15,6 @@
     ~/.condarc:
     ~/.inputrc:
     ~/.p10k.zsh:
-    ~/.p10k.vscode.zsh:
     ~/.vim:
     ~/.vimrc:
     ~/.taskrc:
