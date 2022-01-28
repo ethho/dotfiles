@@ -101,10 +101,10 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 " gruvbox, baby
 colorscheme gruvbox
+"hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contrast_light='hard'
 let g:gruvbox_contrast_dark='medium'
 set background=dark
-hi Normal guibg=NONE ctermbg=NONE
 
 " *********************************** coc.vim *********************************
 
