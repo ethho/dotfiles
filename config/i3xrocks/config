@@ -5,13 +5,14 @@
 #	|_|____/|_.__/|_|\___/ \___|_|\_\___/
 #
 markup=pango
-full_text=
+full_text=<span font-desc="MesloLGS NF Regular 13"></span>
 align=center
 separator=false
 separator_block_width=0
 background=#2e3440
 
 [separator]
+command=
 color=#4c566a
 background=#2e3440
 border=#2e3440
@@ -20,20 +21,17 @@ border_right=0
 border_top=2
 border_bottom=2
 
-[mediaplayer]
-command=echo 'mediaplayer'
-interval=2
-signal=6
-color=#eceff4
-background=#4c566a
-border=#2e3440
-border_left=0
-border_right=0
-border_top=2
-border_bottom=2
+# Media Player
+#
+# Displays media controls
+[media-player]
+command=/usr/share/i3xrocks/$BLOCK_NAME
+interval=5
+color=xresource:St.color6
 
 ############
 [separator]
+command=
 full_text=" "
 color=#2e3440
 background=#4c566a
@@ -57,6 +55,7 @@ border_top=2
 border_bottom=2
 
 [separator]
+command=
 color=#81a1c1
 background=#4c566a
 border=#2e3440
@@ -77,6 +76,7 @@ border_top=2
 border_bottom=2
 
 [separator]
+command=
 color=#88c0d0
 background=#81a1c1
 border=#2e3440
@@ -106,3 +106,74 @@ border_bottom=2
 #border_top=2
 #border_bottom=2
 
+# ***** OG config ******
+
+# i3xrocks config file
+# # The man page for i3blocks is hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# command=/home/eho/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+; command=/usr/share/i3xrocks/$BLOCK_NAME
+; separator_block_width=40
+; markup=pango
+; color=xresource:i3xrocks.value.color
+; label_color=xresource:i3xrocks.label.color
+
+; # Media Player
+; #
+; # Displays media controls
+; [media-player]
+; interval=5
+; color=xresource:St.color6
+
+; [bluetooth]
+; interval=20
+
+; # Battery indicator
+; #
+; # Displays total percentage charge left of specified battery.
+; # You can specify the instance by adding:
+; # instance=BAT0
+; [battery]
+; interval=30
+
+; # CPU usage
+; #
+; # The script may be called with -w and -c switches to specify thresholds,
+; # see the script for details.
+; [cpu-usage]
+; interval=5
+; min_width=100%
+; color=xresource:St.color5
+
+; # Rofication
+; #
+; # Displays notifications.
+; [rofication]
+; command=rofication-status
+; interval=10
+
+; # Date Time
+; [time]
+; interval=xresource:i3xrocks.time.interval 10
+; color=xresource:St.color10
