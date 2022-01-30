@@ -28,15 +28,24 @@ separator_block_width=40
 markup=pango
 color=xresource:i3xrocks.value.color
 label_color=xresource:i3xrocks.label.color
+border_bottom=0
+border_left=0
+border_right=0
+border_top=1
 
 # Media Player
 #
 # Displays media controls
 [media-player]
 interval=5
-color=xresource:St.color6
+border=xresource:St.color6
+# border_bottom=0
+# border_left=0
+# border_right=0
+# border_top=2
 
 [bluetooth]
+border=xresource:St.color4
 interval=20
 
 # Battery indicator
@@ -45,6 +54,7 @@ interval=20
 # You can specify the instance by adding:
 # instance=BAT0
 [battery]
+border=xresource:St.color9
 interval=30
 
 # CPU usage
@@ -54,16 +64,17 @@ interval=30
 [cpu-usage]
 interval=5
 min_width=100%
-color=xresource:St.color5
+border=xresource:St.color5
 
 # Rofication
 #
 # Displays notifications.
 [rofication]
+border=xresource:St.color3
 command=rofication-status
 interval=10
 
 # Date Time
 [time]
 interval=xresource:i3xrocks.time.interval 10
-color=xresource:St.color10
+border=xresource:St.color2
