@@ -12,50 +12,25 @@ separator=false
 separator_block_width=0
 background=#2e3440
 command=/usr/share/i3xrocks/$BLOCK_NAME
+border_top=0
+border_bottom=0
 
 [separator]
 command=
-color=#4c566a
-background=#2e3440
-border=#2e3440
+background=xresource:i3-wm.bar.background.color
+border=xresource:i3-wm.bar.background.color
+color=xresource:St.color6
 border_left=0
 border_right=0
-border_top=2
-border_bottom=2
-
-# i3xrocks config file
-# # The man page for i3blocks is hosted at http://vivien.github.io/i3blocks
-#
-# List of valid properties:
-#
-# align
-# color
-# command
-# command=/home/eho/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
-# full_text
-# instance
-# interval
-# label
-# min_width
-# name
-# separator
-# separator_block_width
-# short_text
-# signal
-# urgent
-
-# Global properties
-#
-# The top properties below are applied to every block, but can be overridden.
-# Each block command defaults to the script name to avoid boilerplate.
-
+border_top=0
+border_bottom=0
 
 # Media Player
 #
 # Displays media controls
 [media-player]
 interval=5
-color=xresource:St.color6
+background=xresource:St.color6
 
 [separator]
 command=

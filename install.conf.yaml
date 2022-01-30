@@ -25,7 +25,7 @@
 
     # Regolith specific
     ~/.config/regolith/i3/config: config/i3/config
-    ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
+    ~/.config/regolith/i3xrocks: config/i3xrocks
     ~/.config/i3blocks: config/i3blocks
     ~/.config/regolith/picom: config/picom
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
