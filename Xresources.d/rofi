@@ -111,7 +111,7 @@ rofi.window-format:                   {n} {t}
 ! "Indicate how it match by underlining it."
 ! rofi.show-match:                     true
 ! "New style theme file"
-! rofi.theme:                          /etc/regolith/styles/gruvbox/rofi.rasi
+rofi.theme:                          /etc/regolith/styles/ayu/rofi.rasi
 ! "Color scheme for normal row"
 ! rofi.color-normal:
 ! "Color scheme for urgent row"

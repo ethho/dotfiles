@@ -1,0 +1,24 @@
+#!/bin/bash
+
+error() {
+	echo ${1} && exit 1
+}
+
+theme=${1}
+basedir="/home/eho/.Xresources.d"
+tfile="${basedir}/${theme}"
+outfile="/home/eho/.Xresources-regolith"
+
+if [[ -z $theme ]]; then
+	error "Please pass a theme name as the first argument"
+fi
+
+if [[ -f $tfile ]]; then
+	echo "Switching to ${theme}..."
+	echo "#include \"${tfile}\"" > ${outfile}
+else
+	error "Theme spec at \"${tfile}\" does not exist"
+fi
+
+regolith-look refresh
+
