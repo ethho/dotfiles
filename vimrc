@@ -269,11 +269,11 @@ nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <esc> :noh<CR><esc>
 
 " registers and aliases
-noremap <leader>y "*y
-noremap <leader>Y "*Y
-noremap <leader>p "*p
-noremap <leader>P "*P
-noremap <C-y><C-y> :let @* = expand("%:p")<cr>
+noremap <leader>y "+y
+noremap <leader>Y "+Y
+noremap <leader>p "+p
+noremap <leader>P "+P
+noremap <C-y><C-y> :let @+ = expand("%:p")<cr>
 noremap <leader>dws :%s/\S\zs\s\{2,}/ /g<CR>
 
 " toggle light/dark BG
