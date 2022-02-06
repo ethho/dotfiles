@@ -14,11 +14,15 @@ alias update="sudo apt update && sudo apt upgrade"
 alias remove="sudo autoremove"
 
 md2pdf() {
-  pandoc $1 -o `basename $1 .md`.pdf
+  dir="$(dirname ${1})"
+  fname="$(basename ${1} .md).pdf"
+  fp="${dir}/${fname}"
+  echo ${fp}
+  pandoc ${1} -o ${fp}
 }
 
 
 search() {
-  apt search $1 | rg $1
+    apt search ${1} | rg -A 2 -B 2 ${1}
 }
 
