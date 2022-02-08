@@ -67,6 +67,12 @@ export EDITOR='nvim'
 export VISUAL=$EDITOR
 source ~/.p10k.zsh
 
+# Todoist CLI
+# https://github.com/sachaos/todoist
+export GOPATH="$HOME/go"
+source "$GOPATH/src/github.com/sachaos/todoist/todoist_functions.sh"
+PROG=todoist source "$GOPATH/src/github.com/urfave/cli/autocomplete/zsh_autocomplete"
+
 # ********************************** Conda *************************************
 
 # >>> conda initialize >>>

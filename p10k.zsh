@@ -97,7 +97,7 @@
     newline
 
     # timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
+    # taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     # load                  # CPU load
     # disk_usage            # disk usage
     # ram                   # free RAM
