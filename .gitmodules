@@ -2,9 +2,6 @@
 	ignore = dirty
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "zsh_custom/themes/powerlevel10k"]
-	path = zsh_custom/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "zsh_custom/plugins/zsh-autosuggestions"]
 	path = zsh_custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
