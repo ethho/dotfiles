@@ -52,7 +52,7 @@
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#d65d0e{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#cc241d{{ end }}",
-            "{{ if gt .Ahead 0 }}#427b58{{ end }}",
+            "{{ if gt .Ahead 0 }}#d3869b{{ end }}",
             "{{ if gt .Behind 0 }}#fe8019{{ end }}"
           ],
           "foreground": "#ebdbb2",
