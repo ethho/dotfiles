@@ -16,7 +16,7 @@
           "type": "os"
         },
         {
-          "background": "#98971a",
+          "background": "#458588",
           "foreground": "#ebdbb2",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -27,7 +27,7 @@
           "type": "path"
         },
         {
-          "background": "#458588",
+          "background": "#565c54",
           "foreground": "#ebdbb2",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -37,22 +37,22 @@
           "type": "node"
         },
         {
-          "background": "#d79921",
+          "background": "#b16286",
           "foreground": "#ebdbb2",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "fetch_version": false,
-            "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+            "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
           },
           "style": "powerline",
           "type": "python"
         },
         {
-          "background": "#689d6a",
+          "background": "#98971a",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#d65d0e{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#b57614{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#cc241d{{ end }}",
-            "{{ if gt .Ahead 0 }}#d3869b{{ end }}",
+            "{{ if gt .Ahead 0 }}#8f3f71{{ end }}",
             "{{ if gt .Behind 0 }}#fe8019{{ end }}"
           ],
           "foreground": "#ebdbb2",
