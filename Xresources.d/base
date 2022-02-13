@@ -1,6 +1,8 @@
-Xft.dpi: 192
-St.font:        MesloLGS NF:pixelsize=16:antialias=true:autohint=true
 gnome.terminal.font:    MesloLGS NF 13
+rofi.font:              MesloLGS NF 16
+i3xrocks.value.font:    MesloLGS NF 13
+
+// i3
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
@@ -21,4 +23,23 @@ i3-wm.bar.workspace.focused.background.color:   color_green
 i3-wm.bar.workspace.focused.border.color:       color_green
 i3-wm.bar.font: pango:MesloLGS NF 13, Material Design Icons 13
 i3-wm.font:     pango:MesloLGS NF 13
-i3xrocks.value.font:    MesloLGS NF 13
+i3-wm.workspace.01.name:        1:<span font_desc='MesloLGS NF Regular 15'> 1 </span>
+i3-wm.workspace.02.name:        2:<span font_desc='MesloLGS NF Regular 15'> 2 </span>
+i3-wm.workspace.03.name:        3:<span font_desc='MesloLGS NF Regular 15'> 3 </span>
+i3-wm.workspace.04.name:        4:<span font_desc='MesloLGS NF Regular 15'> 4 </span>
+i3-wm.workspace.05.name:        5:<span font_desc='MesloLGS NF Regular 15'> 5 </span>
+i3-wm.workspace.06.name:        6:<span font_desc='MesloLGS NF Regular 15'> 6 </span>
+i3-wm.workspace.07.name:        7:<span font_desc='MesloLGS NF Regular 15'> 7 </span>
+i3-wm.workspace.08.name:        8:<span font_desc='MesloLGS NF Regular 15'> 8 </span>
+i3-wm.workspace.09.name:        9:<span font_desc='MesloLGS NF Regular 15'> 9 </span>
+i3-wm.workspace.09.name:       10:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       11:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       12:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       13:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       14:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       15:<span font_desc='MesloLGS NF Regular 15'>  </span>
+i3-wm.workspace.09.name:       16:<span font_desc='MesloLGS NF Regular 15'> ﭮ </span>
+i3-wm.workspace.17.name:       17:<span font_desc='MesloLGS NF Regular 15'> 17 </span>
+i3-wm.workspace.18.name:       18:<span font_desc='MesloLGS NF Regular 15'> 18 </span>
+i3-wm.workspace.19.name:       19:<span font_desc='MesloLGS NF Regular 15'> 19 </span>
+

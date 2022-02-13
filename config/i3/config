@@ -64,7 +64,7 @@ set $ws12 12:<span font_desc='MesloLGS NF Regular 15'>  </span>
 set $ws13 13:<span font_desc='MesloLGS NF Regular 15'>  </span>
 set $ws14 14:<span font_desc='MesloLGS NF Regular 15'>  </span>
 set $ws15 15:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws16 "16:<span font_desc='MesloLGS NF Regular 15'> ﭮ </span>"
+set $ws16 16:<span font_desc='MesloLGS NF Regular 15'> ﭮ </span>
 set $ws17 "1:  17  "
 set $ws18 "1:  18  "
 set $ws19 "1:  19  "
