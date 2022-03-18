@@ -15,5 +15,5 @@
 	path = config/i3blocks
 	url = git@github.com:vivien/i3blocks-contrib.git
 [submodule "zsh_custom/plugins/powerlevel10k"]
-	path = zsh_custom/plugins/powerlevel10k
+	path = zsh_custom/themes/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git

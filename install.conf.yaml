@@ -14,7 +14,7 @@
     ~/.gitconfig:
     ~/.condarc:
     ~/.inputrc:
-    ~/.hunk.omp.json:
+    ~/.p10k.zsh:
     ~/.vim:
     ~/.vimrc:
     ~/.zsh_custom:
