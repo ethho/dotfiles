@@ -39,7 +39,7 @@ plugins=(
     web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-vi-mode
+    zsh-vim-mode
 )
 
 source $ZSH/oh-my-zsh.sh
