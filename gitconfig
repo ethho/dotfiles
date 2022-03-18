@@ -2,13 +2,14 @@
 	name = Ethan Ho
 	email = eho@tacc.utexas.edu
 [core]
-    editor = nvim
+	editor = code --wait
 [color]
     ui = true
 [alias]
     st = status
     co = checkout
     ci = commit
+    cia = commit --amend
     br = branch
     fa = fetch --all
     df = diff
