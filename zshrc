@@ -46,6 +46,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd V edit-command-line
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/nodejs/bin"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -58,6 +60,9 @@ export EDITOR='nvim'
 #   export EDITOR='mvim'
 # fi
 export VISUAL=$EDITOR
+
+# WSL 2 shortcuts
+export WHOME="/mnt/c/Users/EthanHo"
 
 # oh-my-posh
 eval "$(oh-my-posh --init --shell zsh --config ~/.hunk.omp.json)"
@@ -77,6 +82,10 @@ else
     fi
 fi
 unset __conda_setup
+
+if [ -f "/home/eho/miniconda3/etc/profile.d/mamba.sh" ]; then
+    . "/home/eho/miniconda3/etc/profile.d/mamba.sh"
+fi
 # <<< conda initialize <<<
 
 export PATH="$HOME/.poetry/bin:$PATH"
