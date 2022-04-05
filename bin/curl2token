@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Extracts the bearer token from a curl command.
+# 
+# Workflow: Chrome developer console > Network > right click on request 
+# with Authorization: Bearer in headers > Copy > Copy as curl (bash) >
+# invoke this script from WSL 2 console
+
+set -e
+function error {
+	echo $1 && exit 1
+}
+
+CURL_CMD="$(powershell.exe -Command get-clipboard)"
+if [[ $CURL_CMD != *"curl"*"Authorization: Bearer"* ]]; then
+	error "Command does not appear to be a curl command with a bearer token: $CURL_CMD"
+fi
+
+TOKEN="$(echo $CURL_CMD | sed 's/^.*Bearer\s*\([a-zA-Z0-9=\._\-]*\).*$/\1/')"
+if [[ -z $TOKEN ]]; then
+	error "Unable to capture token from curl command: $CURL_CMD"
+fi
+
+# Get the token export command
+EXPORT_CMD="""export TOKEN=\"${TOKEN}\""""
+echo "${EXPORT_CMD}"
+
+# Get the curl command with token replaced
+echo $CURL_CMD | sed "s/'Authorization\: Bearer\s*\([a-zA-Z0-9=\._\-]*'\)/\"Authorization: Bearer \$\{TOKEN\}\"/g" \
+	| sed 's/\\/\\\n/g'
+echo "${EXPORT_CMD}" | clip.exe

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Script that echos and executes WSL 2 clipboard contents as bash command
+
+set -e
+RAW="$(powershell.exe -Command get-clipboard)"
+CMD="""$(echo ${RAW} | sed 's/^[\s\r]*\(.*\)[\s\r]*$/\1/')"""
+echo "${CMD}"
+eval "${CMD}"
