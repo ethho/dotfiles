@@ -60,7 +60,7 @@ export PATH="$PATH:$HOME/nodejs/bin"
 export LANG=en_US.UTF-8
 
 # Preferred editor
-export EDITOR='nvim'
+export EDITOR='code --wait'
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
