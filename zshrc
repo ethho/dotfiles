@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH
 
@@ -5,7 +12,7 @@ export PATH=$HOME/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Use hyphen-insensitive completion.
@@ -58,6 +65,7 @@ export EDITOR='nvim'
 #   export EDITOR='mvim'
 # fi
 export VISUAL=$EDITOR
+source ~/.p10k.zsh
 
 # Todoist CLI
 # https://github.com/sachaos/todoist
@@ -83,6 +91,10 @@ else
     fi
 fi
 unset __conda_setup
+
+if [ -f "/home/eho/miniconda3/etc/profile.d/mamba.sh" ]; then
+    . "/home/eho/miniconda3/etc/profile.d/mamba.sh"
+fi
 # <<< conda initialize <<<
 
 export PATH="$HOME/.poetry/bin:$PATH"
