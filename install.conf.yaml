@@ -27,6 +27,7 @@
     ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
     ~/.config/i3blocks: config/i3blocks
     ~/.config/regolith/picom: config/picom
+    ~/.config/regolith2: config/regolith2
     ~/.config/rofi/config.rasi: config/rofi/config.rasi
     ~/.Xresources-regolith:
     ~/.Xresources.d:

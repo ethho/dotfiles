@@ -82,10 +82,6 @@ else
     fi
 fi
 unset __conda_setup
-
-if [ -f "/home/eho/miniconda3/etc/profile.d/mamba.sh" ]; then
-    . "/home/eho/miniconda3/etc/profile.d/mamba.sh"
-fi
 # <<< conda initialize <<<
 
 export PATH="$HOME/.poetry/bin:$PATH"
