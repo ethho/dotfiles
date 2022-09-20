@@ -14,15 +14,13 @@
     ~/.gitconfig:
     ~/.condarc:
     ~/.inputrc:
-    ~/.hunk.omp.json:
+    ~/.p10k.zsh:
     ~/.vim:
     ~/.vimrc:
-    ~/.taskrc:
     ~/.zsh_custom:
     ~/.config/nvim/init.vim: vimrc
     ~/.config/jrnl: config/jrnl
     ~/.local/bin/jitter.py: bin/jitter.py
-    ~/.local/bin/swap-theme: bin/swap-theme
 
     # Regolith specific
     ~/.config/regolith/i3/config: config/i3/config
