@@ -1,14 +1,14 @@
-[user]
-	name = Ethan Ho
-	email = eho@tacc.utexas.edu
+[include]
+  path = ~/.gitconfig.local
 [core]
-    editor = nvim
+	editor = nvim
 [color]
     ui = true
 [alias]
     st = status
     co = checkout
     ci = commit
+    cia = commit --amend
     br = branch
     fa = fetch --all
     df = diff
