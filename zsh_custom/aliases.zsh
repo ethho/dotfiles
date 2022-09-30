@@ -23,6 +23,10 @@ md2pdf() {
 
 
 search() {
-    apt search ${1} | rg -A 2 -B 2 ${1}
+  apt search ${1} | rg -A 2 -B 2 ${1}
+}
+
+rgfs () {
+  rg -B 2 -A 2 --fixed-strings -- ${1} ${PWD} 
 }
 

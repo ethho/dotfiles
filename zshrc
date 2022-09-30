@@ -35,8 +35,6 @@ setopt extendedglob
 plugins=(
     git
     z
-    docker
-    web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-vim-mode
@@ -49,8 +47,12 @@ source $ZSH/oh-my-zsh.sh
 # Keybinds
 bindkey -v
 bindkey '^ ' autosuggest-accept
-autoload edit-command-line; zle -N edit-command-line
-bindkey -M vicmd V edit-command-line
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd '!' edit-command-line
+
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$PATH:$HOME/.local/bin"
@@ -61,16 +63,12 @@ export LANG=en_US.UTF-8
 
 # Preferred editor
 export EDITOR='code --wait'
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 export VISUAL=$EDITOR
 source ~/.p10k.zsh
 
 # WSL 2 shortcuts
 export WHOME="/mnt/c/Users/EthanHo"
+export RIPLPROJ="/mnt/c/Users/EthanHo/Research Improving People's Lives/RIPL All Staff - Projects/"
 
 # ********************************** Conda *************************************
 
