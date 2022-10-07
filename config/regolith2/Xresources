@@ -18,9 +18,9 @@ i3-wm.binding.up:
 i3-wm.binding.down:
 i3-wm.binding.ws_prev_on_output2: h
 i3-wm.binding.ws_next_on_output2: l
-i3-wm.binding.settings: Mod1+c
-i3-wm.bar.separator: " "
-i3-wm.bar.separator.color: St.color9
+! i3-wm.binding.settings: Mod1+c
+! i3-wm.bar.separator: " "
+! i3-wm.bar.separator.color: St.color9
 i3-wm.bar.workspace.focused.background.color:   color_green
 i3-wm.bar.workspace.focused.border.color:       color_green
 i3-wm.bar.font: pango:MesloLGS NF 13, Material Design Icons 13
@@ -44,3 +44,5 @@ i3-wm.workspace.09.name:       16:<span font_desc='MesloLGS NF Regular 15'> ﭮ 
 i3-wm.workspace.17.name:       17:<span font_desc='MesloLGS NF Regular 15'> 17 </span>
 i3-wm.workspace.18.name:       18:<span font_desc='MesloLGS NF Regular 15'> 18 </span>
 i3-wm.workspace.19.name:       19:<span font_desc='MesloLGS NF Regular 15'> 19 </span>
+!regolith.look.path: /usr/share/regolith-look/lascaille
+regolith.look.path: /usr/share/regolith-look/gruvbox
