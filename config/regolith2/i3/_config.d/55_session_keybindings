@@ -12,7 +12,8 @@ bindsym $mod+$alt+$i3-wm.binding.kill_app [con_id="__focused__"] exec --no-start
 
 ## Session // Reload i3 Config // <><Shift> c ##
 set_from_resource $i3-wm.binding.reload i3-wm.binding.reload Shift+c
-bindsym $mod+$i3-wm.binding.reload reload
+# TODO
+# bindsym $mod+$i3-wm.binding.reload reload
 
 ## Session // Refresh Session // <><Shift> r ##
 set_from_resource $i3-wm.binding.refresh i3-wm.binding.refresh Shift+r
@@ -46,4 +47,5 @@ bindsym $mod+$i3-wm.binding.lock exec $i3-wm.program.lock
 ## Session // Sleep // <><Shift> s ##
 set_from_resource $i3-wm.binding.sleep i3-wm.binding.sleep Shift+s
 set_from_resource $i3-wm.program.sleep i3-wm.program.sleep systemctl suspend
-bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
+# TODO
+# bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
