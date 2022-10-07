@@ -6,14 +6,16 @@ i3xrocks.value.font:    MesloLGS NF 13
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
-i3-wm.binding.up: Ctrl+k
-i3-wm.binding.down: Ctrl+j
-i3-wm.binding.move_left: Shift+j
-i3-wm.binding.move_right: Shift+k
-i3-wm.binding.move_up: Ctrl+Shift+k
-i3-wm.binding.move_down: Ctrl+Shift+j
+! i3-wm.binding.up: Ctrl+k
+! i3-wm.binding.down: Ctrl+j
+! i3-wm.binding.move_left: Shift+j
+! i3-wm.binding.move_right: Shift+k
+! i3-wm.binding.move_up: Ctrl+Shift+k
+! i3-wm.binding.move_down: Ctrl+Shift+j
 i3-wm.binding.left: j
 i3-wm.binding.right: k
+i3-wm.binding.up:
+i3-wm.binding.down:
 i3-wm.binding.ws_prev_on_output2: h
 i3-wm.binding.ws_next_on_output2: l
 i3-wm.binding.settings: Mod1+c
@@ -42,4 +44,3 @@ i3-wm.workspace.09.name:       16:<span font_desc='MesloLGS NF Regular 15'> ﭮ 
 i3-wm.workspace.17.name:       17:<span font_desc='MesloLGS NF Regular 15'> 17 </span>
 i3-wm.workspace.18.name:       18:<span font_desc='MesloLGS NF Regular 15'> 18 </span>
 i3-wm.workspace.19.name:       19:<span font_desc='MesloLGS NF Regular 15'> 19 </span>
-

@@ -23,14 +23,15 @@
     ~/.local/bin/jitter.py: bin/jitter.py
 
     # Regolith specific
-    ~/.config/regolith/i3/config: config/i3/config
-    ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
-    ~/.config/i3blocks: config/i3blocks
-    ~/.config/regolith/picom: config/picom
+    # ~/.config/regolith/i3/config: config/i3/config
+    # ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
+    # ~/.config/i3blocks: config/i3blocks
+    # ~/.config/regolith/picom: config/picom
     ~/.config/regolith2: config/regolith2
-    ~/.config/rofi/config.rasi: config/rofi/config.rasi
-    ~/.Xresources-regolith:
-    ~/.Xresources.d:
+    /etc/regolith/i3/config: config/regolith2/i3/base
+    # ~/.config/rofi/config.rasi: config/rofi/config.rasi
+    # ~/.Xresources-regolith:
+    # ~/.Xresources.d:
 
 - create:
     - ~/.vim/undodir
@@ -39,13 +40,6 @@
     -
         command: nvim +'PlugInstall --sync' +'qa'
         description: Installing vim plugins using plug.vim...
-        stdin: true
-        stdout: false
-        stderr: true
-        quiet: true
-    -
-        command: nvim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
-        description: Installing coc.vim extensions...
         stdin: true
         stdout: false
         stderr: true

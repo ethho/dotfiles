@@ -1,61 +1,4 @@
 ###############################################################################
-# Key Mappings
-###############################################################################
-
-# Meta Key - Alt key is Mod1, and Windows key is Mod4
-set_from_resource $mod  i3-wm.mod Mod4
-set_from_resource $alt  i3-wm.alt Mod1
-
-set_from_resource $i3-wm.binding. i3-wm.binding.
-
-###############################################################################
-# Workspace Names
-# These are the labels which define each i3 workspace.
-###############################################################################
-
-set $ws1  "1:  1  "
-set $ws2  "2:  2  "
-set $ws3  "3:  3  "
-set $ws4  "4:  4  "
-set $ws5  "5:  5  "
-set $ws6  "6:  6  "
-set $ws7  "7:  7  "
-set $ws8  "8:  8  "
-set $ws9  "9:  9  "
-set $ws10 10:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws11 11:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws12 12:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws13 13:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws14 14:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws15 15:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws16 16:<span font_desc='MesloLGS NF Regular 15'> ﭮ </span>
-set $ws17 "1:  17  "
-set $ws18 "1:  18  "
-set $ws19 "1:  19  "
-
-###############################################################################
-# Workspace Keys
-# These are the keys which will be used while binding workspace switching
-###############################################################################
-
-set_from_resource $ws1_key  i3-wm.workspace.01.key 1
-set_from_resource $ws2_key  i3-wm.workspace.02.key 2
-set_from_resource $ws3_key  i3-wm.workspace.03.key 3
-set_from_resource $ws4_key  i3-wm.workspace.04.key 4
-set_from_resource $ws5_key  i3-wm.workspace.05.key 5
-set_from_resource $ws6_key  i3-wm.workspace.06.key 6
-set_from_resource $ws7_key  i3-wm.workspace.07.key 7
-set_from_resource $ws8_key  i3-wm.workspace.08.key 8
-set_from_resource $ws9_key  i3-wm.workspace.09.key 9
-set_from_resource $ws10_key i3-wm.workspace.10.key x
-set_from_resource $ws11_key i3-wm.workspace.10.key w
-set_from_resource $ws12_key i3-wm.workspace.10.key s
-set_from_resource $ws13_key i3-wm.workspace.10.key m
-set_from_resource $ws14_key i3-wm.workspace.10.key c
-set_from_resource $ws15_key i3-wm.workspace.10.key z
-set_from_resource $ws16_key i3-wm.workspace.10.key d
-
-###############################################################################
 # Window and Workspace Configuration
 ###############################################################################
 
@@ -90,10 +33,10 @@ set_from_resource $i3-wm.binding.take_left i3-wm.binding.take_left Ctrl+Shift+h
 set_from_resource $i3-wm.binding.take_right i3-wm.binding.take_right Ctrl+Shift+l
 set_from_resource $i3-wm.binding.take_up i3-wm.binding.take_up Ctrl+Shift+k
 set_from_resource $i3-wm.binding.take_down i3-wm.binding.take_down Ctrl+Shift+j
-bindsym $mod+$i3-wm.binding.take_left move workspace to output left
-bindsym $mod+$i3-wm.binding.take_down move workspace to output down
-bindsym $mod+$i3-wm.binding.take_up move workspace to output up
-bindsym $mod+$i3-wm.binding.take_right move workspace to output right
+# bindsym $mod+$i3-wm.binding.take_left move workspace to output left
+# bindsym $mod+$i3-wm.binding.take_down move workspace to output down
+# bindsym $mod+$i3-wm.binding.take_up move workspace to output up
+# bindsym $mod+$i3-wm.binding.take_right move workspace to output right
 
 ## Modify // Vertical Window Orientation // <> v ##
 set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
