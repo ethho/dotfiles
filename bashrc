@@ -51,6 +51,7 @@ set -o vi
 
 # ls colors
 export CLICOLOR=1
+export DISPLAY="$(hostname).local:0.0"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

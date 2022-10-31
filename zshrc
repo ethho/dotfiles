@@ -37,7 +37,7 @@ plugins=(
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-vim-mode
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -53,6 +53,7 @@ bindkey -M vicmd '!' edit-command-line
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$PATH:$HOME/.local/bin"
@@ -69,6 +70,10 @@ source ~/.p10k.zsh
 # WSL 2 shortcuts
 export WHOME="/mnt/c/Users/EthanHo"
 export RIPLPROJ="/mnt/c/Users/EthanHo/Research Improving People's Lives/RIPL All Staff - Projects/"
+
+if [ -f ~/.bash_sysinit ]; then
+    . ~/.bash_sysinit
+fi
 
 # ********************************** Conda *************************************
 

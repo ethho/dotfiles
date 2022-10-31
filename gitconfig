@@ -20,6 +20,7 @@
     add-unmerged = "!git add `git diff --name-only --diff-filter=U`"
     logt = log --graph --oneline --decorate
     logo = log --oneline
+    logh = log --oneline -n 10
     ust = reset HEAD --
     mergedry = merge --no-commit --no-ff
     sts = stash -u --keep-index
