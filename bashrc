@@ -72,3 +72,4 @@ if [ -f "/home/eho/miniconda3/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+. "$HOME/.cargo/env"
