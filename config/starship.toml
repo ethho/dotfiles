@@ -11,6 +11,8 @@ disabled = true
 
 [aws]
 symbol = "  "
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold yellow"
 
 [buf]
 symbol = " "
@@ -35,6 +37,11 @@ symbol = " "
 
 [elm]
 symbol = " "
+
+[gcloud]
+symbol = "  "
+style = "bold blue"
+disabled = true
 
 [git_branch]
 symbol = " "

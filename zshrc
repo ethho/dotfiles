@@ -23,6 +23,7 @@ setopt extendedglob
 # Plugins
 plugins=(
     git
+    docker
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
