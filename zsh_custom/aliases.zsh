@@ -1,3 +1,5 @@
+alias b="bat"
+alias bp="bat -p"
 alias tf="terraform"
 alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
 alias dk="docker"
@@ -5,10 +7,11 @@ alias dkc="docker compose"
 alias c="code -r"
 alias vim="nvim"
 alias open="xdg-open"
-alias ls="exa --header --icons --git"
-alias ll="exa --long --header --icons --git"
-alias lt="exa --tree --header --icons --git --level=3"
-alias llt="exa --tree --header --icons --git"
+alias ls="exa --group-directories-first --header --icons --git"
+alias ll="exa --long -a --group-directories-first --header --icons --git"
+alias lt="exa --tree -a --group-directories-first --header --icons --git --level=3"
+alias llt="exa --tree -a --group-directories-first --header --icons --git"
+alias jqb="jq | bat -l json"
 
 
 # apt

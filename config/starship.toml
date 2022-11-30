@@ -96,3 +96,6 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+[terraform]
+disabled = true
