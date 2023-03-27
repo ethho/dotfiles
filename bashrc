@@ -55,14 +55,14 @@ export DISPLAY="$(hostname).local:0.0"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/eho/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/eho/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/eho/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/eho/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/eho/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/eho/mambaforge/etc/profile.d/conda.sh"
     else
-        export PATH="/home/eho/miniconda3/bin:$PATH"
+        export PATH="/home/eho/mambaforge/bin:$PATH"
     fi
 fi
 unset __conda_setup

@@ -20,7 +20,7 @@
     ~/.vimrc:
     ~/.zsh_custom:
     ~/.config/starship.toml: config/starship.toml
-    ~/.config/nvim/init.vim: vimrc
+    ~/.config/nvim: config/nvim
     ~/.config/jrnl: config/jrnl
 
 - create:
@@ -35,7 +35,14 @@
         stderr: true
         quiet: true
     -
-        command: nvim +'CocInstall coc-python coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
+        command: bash scripts/coc-install.sh
+        description: Running coc.vim install script...
+        stdin: true
+        stdout: false
+        stderr: true
+        quiet: true
+    -
+        command: nvim +'CocInstall coc-python coc-pyright coc-sh coc-yank coc-yaml coc-snippets coc-json' +'qa'
         description: Installing coc.vim extensions...
         stdin: true
         stdout: false
