@@ -8,6 +8,7 @@
     st = status
     co = checkout
     ci = commit
+    cim = commit -m
     cia = commit --amend
     br = branch
     fa = fetch --all
