@@ -1,6 +1,11 @@
+alias g="git"
+alias clr="clear"
 alias b="bat"
 alias bp="bat -p"
 alias tf="terraform"
+alias minstall="mamba install -c conda-forge"
+alias mact="mamba activate"
+alias mdeact="mamba deactivate"
 alias bfg="java -jar ~/.local/bin/bfg-1.13.0.jar"
 alias dk="docker"
 alias dkc="docker compose"
@@ -19,20 +24,12 @@ alias install="sudo apt install"
 alias update="sudo apt update && sudo apt upgrade"
 alias remove="sudo autoremove"
 
-md2pdf() {
-  dir="$(dirname ${1})"
-  fname="$(basename ${1} .md).pdf"
-  fp="${dir}/${fname}"
-  echo ${fp}
-  pandoc ${1} -o ${fp}
-}
-
 
 search() {
   apt search ${1} | rg -A 2 -B 2 ${1}
 }
 
 rgfs () {
-  rg -B 2 -A 2 --fixed-strings -- ${1} ${PWD} 
+  rg -B 2 -A 2 --fixed-strings -- ${1} ${PWD}
 }
 

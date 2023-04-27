@@ -19,6 +19,7 @@
     ~/.vim:
     ~/.vimrc:
     ~/.zsh_custom:
+    ~/.ipython/profile_default/ipython_config.py: ipython_config.py
     ~/.config/starship.toml: config/starship.toml
     ~/.config/nvim: config/nvim
     ~/.config/jrnl: config/jrnl
