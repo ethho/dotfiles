@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-# export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -81,4 +82,5 @@ fi
 # <<< conda initialize <<<
 
 export PATH="$HOME/.poetry/bin:$PATH"
+. "$HOME/.cargo/env"
 eval "$(starship init zsh)"
