@@ -1,5 +1,5 @@
-gnome.terminal.font:    MesloLGS Nerd Font 13
-rofi.font:              MesloLGS Nerd Font 16
+gnome.terminal.font:    MesloLGS Nerd Font 15
+rofi.font:              MesloLGS Nerd Font 15
 i3xrocks.value.font:    MesloLGS Nerd Font 13
 
 ! i3
@@ -23,7 +23,7 @@ i3-wm.bar.separator: " "
 ! i3-wm.bar.separator.color: St.color9
 ! i3-wm.bar.workspace.focused.background.color:   color_green
 ! i3-wm.bar.workspace.focused.border.color:       color_green
-! i3-wm.bar.font: pango:MesloLGS Nerd Font 13, Material Design Icons 13
+i3-wm.bar.font: pango:MesloLGS Nerd Font 15
 ! i3-wm.font:     pango:MesloLGS Nerd Font 13
 ! i3-wm.workspace.01.name:        1:<span font_desc='MesloLGS Nerd Font Regular 15'> 1 </span>
 ! i3-wm.workspace.02.name:        2:<span font_desc='MesloLGS Nerd Font Regular 15'> 2 </span>
