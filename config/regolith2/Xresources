@@ -12,14 +12,14 @@ i3-wm.gaps.inner.size: 10
 ! i3-wm.binding.move_right: Shift+k
 ! i3-wm.binding.move_up: Ctrl+Shift+k
 ! i3-wm.binding.move_down: Ctrl+Shift+j
-! i3-wm.binding.left: j
-! i3-wm.binding.right: k
-! i3-wm.binding.up:
-! i3-wm.binding.down:
-! i3-wm.binding.ws_prev_on_output2: h
-! i3-wm.binding.ws_next_on_output2: l
+i3-wm.binding.left: j
+i3-wm.binding.right: k
+i3-wm.binding.up:
+i3-wm.binding.down:
+i3-wm.binding.ws_prev_on_output2: h
+i3-wm.binding.ws_next_on_output2: l
 ! i3-wm.binding.settings: Mod1+c
-! i3-wm.bar.separator: " "
+i3-wm.bar.separator: " "
 ! i3-wm.bar.separator.color: St.color9
 ! i3-wm.bar.workspace.focused.background.color:   color_green
 ! i3-wm.bar.workspace.focused.border.color:       color_green
