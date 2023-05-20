@@ -62,6 +62,11 @@ export VISUAL=$EDITOR
 
 # ********************************** Conda *************************************
 
+export PATH="$HOME/.poetry/bin:$PATH"
+. "$HOME/.cargo/env"
+eval "$(starship init zsh)"
+
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/eho/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -81,6 +86,3 @@ if [ -f "/home/eho/mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-export PATH="$HOME/.poetry/bin:$PATH"
-. "$HOME/.cargo/env"
-eval "$(starship init zsh)"
