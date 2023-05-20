@@ -6,6 +6,7 @@ i3xrocks.value.font:    MesloLGS Nerd Font 13
 i3-wm.bar.position: top
 i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 10
+i3-wm.gaps.smart: off
 ! i3-wm.binding.up: Ctrl+k
 ! i3-wm.binding.down: Ctrl+j
 ! i3-wm.binding.move_left: Shift+j
@@ -54,5 +55,5 @@ i3-wm.bar.font: pango:MesloLGS Nerd Font 15
 ! i3-wm.workspace.15.key:        z
 ! i3-wm.workspace.16.key:        d
 
-!regolith.look.path: /usr/share/regolith-look/gruvbox
-regolith.look.path: /usr/share/regolith-look/ayu
+!regolith.look.path: /usr/share/regolith-look/ayu-mirage
+regolith.look.path: /usr/share/regolith-look/nevil
