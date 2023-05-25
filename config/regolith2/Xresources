@@ -48,5 +48,6 @@ i3-wm.workspace.14.key: c
 i3-wm.workspace.15.key: z
 i3-wm.workspace.16.key: d
 
-!regolith.look.path: /usr/share/regolith-look/nevil
-regolith.look.path: /usr/share/regolith-look/gruvbox
+
+!regolith.look.path: /usr/share/regolith-look/gruvbox
+regolith.look.path: /usr/share/regolith-look/nevil
