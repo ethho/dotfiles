@@ -47,25 +47,25 @@ set_from_resource $alt  i3-wm.alt Mod1
 # These are the labels which define each i3 workspace.
 ###############################################################################
 
-set $ws1  "1: 1 "
-set $ws2  "2: 2 "
-set $ws3  "3: 3 "
-set $ws4  "4: 4 "
-set $ws5  "5: 5 "
-set $ws6  "6: 6 "
-set $ws7  "7: 7 "
-set $ws8  "8: 8 "
-set $ws9  "9: 9 "
-set $ws10 10:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws11 11:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws12 12:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws13 13:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws14 14:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws15 15:<span font_desc='MesloLGS NF Regular 15'>  </span>
-set $ws16 16:<span font_desc='MesloLGS NF Regular 15'> ﭮ </span>
-set $ws17 "1: 17 "
-set $ws18 "1: 18 "
-set $ws19 "1: 19 "
+set_from_resource $ws1  i3-wm.workspace.01.name "1: 1 "
+set_from_resource $ws2  i3-wm.workspace.02.name "2: 2 "
+set_from_resource $ws3  i3-wm.workspace.03.name "3: 3 "
+set_from_resource $ws4  i3-wm.workspace.04.name "4: 4 "
+set_from_resource $ws5  i3-wm.workspace.05.name "5: 5 "
+set_from_resource $ws6  i3-wm.workspace.06.name "6: 6 "
+set_from_resource $ws7  i3-wm.workspace.07.name "7: 7 "
+set_from_resource $ws8  i3-wm.workspace.08.name "8: 8 "
+set_from_resource $ws9  i3-wm.workspace.09.name "9: 9 "
+set_from_resource $ws10 i3-wm.workspace.10.name "10: 10 "
+set_from_resource $ws11 i3-wm.workspace.11.name "11: 11 "
+set_from_resource $ws12 i3-wm.workspace.12.name "12: 12 "
+set_from_resource $ws13 i3-wm.workspace.13.name "13: 13 "
+set_from_resource $ws14 i3-wm.workspace.14.name "14: 14 "
+set_from_resource $ws15 i3-wm.workspace.15.name "15: 15 "
+set_from_resource $ws16 i3-wm.workspace.16.name "16: 16 "
+set_from_resource $ws17 i3-wm.workspace.17.name "17: 17 "
+set_from_resource $ws18 i3-wm.workspace.18.name "18: 18 "
+set_from_resource $ws19 i3-wm.workspace.19.name "19: 19 "
 
 ###############################################################################
 # Workspace Keys
@@ -81,13 +81,16 @@ set_from_resource $ws6_key  i3-wm.workspace.06.key 6
 set_from_resource $ws7_key  i3-wm.workspace.07.key 7
 set_from_resource $ws8_key  i3-wm.workspace.08.key 8
 set_from_resource $ws9_key  i3-wm.workspace.09.key 9
-set_from_resource $ws10_key i3-wm.workspace.10.key x
-set_from_resource $ws11_key i3-wm.workspace.10.key w
-set_from_resource $ws12_key i3-wm.workspace.10.key s
-set_from_resource $ws13_key i3-wm.workspace.10.key m
-set_from_resource $ws14_key i3-wm.workspace.10.key c
-set_from_resource $ws15_key i3-wm.workspace.10.key z
-set_from_resource $ws16_key i3-wm.workspace.10.key d
+set_from_resource $ws10_key i3-wm.workspace.10.key Ctrl+0
+set_from_resource $ws11_key i3-wm.workspace.11.key Ctrl+1
+set_from_resource $ws12_key i3-wm.workspace.12.key Ctrl+2
+set_from_resource $ws13_key i3-wm.workspace.13.key Ctrl+3
+set_from_resource $ws14_key i3-wm.workspace.14.key Ctrl+4
+set_from_resource $ws15_key i3-wm.workspace.15.key Ctrl+5
+set_from_resource $ws16_key i3-wm.workspace.16.key Ctrl+6
+set_from_resource $ws17_key i3-wm.workspace.17.key Ctrl+7
+set_from_resource $ws18_key i3-wm.workspace.18.key Ctrl+8
+set_from_resource $ws19_key i3-wm.workspace.19.key Ctrl+9
 
 ###############################################################################
 # i3 Colors and Fonts
