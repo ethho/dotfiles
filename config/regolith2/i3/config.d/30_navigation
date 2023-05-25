@@ -11,10 +11,10 @@ bindsym $mod+$i3-wm.binding.focus_parent focus parent
 # bindsym $mod+$i3-wm.binding.focus_child focus child
 
 ## Navigate // Relative Window // <> ↑ ↓ ← → ##
-# bindsym $mod+Left focus left
-# bindsym $mod+Down focus down
-# bindsym $mod+Up focus up
-# bindsym $mod+Right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
 ## Navigate // Relative Window // <> k j h l ##
 set_from_resource $i3-wm.binding.left i3-wm.binding.left h
@@ -22,9 +22,9 @@ set_from_resource $i3-wm.binding.right i3-wm.binding.right l
 set_from_resource $i3-wm.binding.up i3-wm.binding.up k
 set_from_resource $i3-wm.binding.down i3-wm.binding.down j
 bindsym $mod+$i3-wm.binding.left focus left
-bindsym $mod+$i3-wm.binding.down focus down
-bindsym $mod+$i3-wm.binding.up focus up
 bindsym $mod+$i3-wm.binding.right focus right
+# bindsym $mod+$i3-wm.binding.up focus up
+# bindsym $mod+$i3-wm.binding.down focus down
 
 ## Navigate // Workspaces 1-10 // <> 0..9 ##
 bindsym $mod+$ws1_key workspace number $ws1
@@ -57,12 +57,12 @@ bindsym $mod+Ctrl+$ws9_key workspace number $ws19
 # bindsym $mod+$alt+$i3-wm.binding.ws_next2 workspace next
 
 ## Navigate // Next Workspace on Output // <><Ctrl> Tab ##
-# set_from_resource $i3-wm.binding.ws_next_on_output i3-wm.binding.ws_next_on_output Ctrl+Tab
-# bindsym $mod+$i3-wm.binding.ws_next_on_output workspace next_on_output
+set_from_resource $i3-wm.binding.ws_next_on_output i3-wm.binding.ws_next_on_output Ctrl+Tab
+bindsym $mod+$i3-wm.binding.ws_next_on_output workspace next_on_output
 
 ## Navigate // Next Workspace on Output // <><Ctrl> l ##
-# set_from_resource $i3-wm.binding.ws_next_on_output2 i3-wm.binding.ws_next_on_output2 Ctrl+l
-# bindsym $mod+$i3-wm.binding.ws_next_on_output2 workspace next_on_output
+set_from_resource $i3-wm.binding.ws_next_on_output2 i3-wm.binding.ws_next_on_output2 Ctrl+l
+bindsym $mod+$i3-wm.binding.ws_next_on_output2 workspace next_on_output
 
 ## Navigate // Previous Workspace // <><Shift> Tab ##
 # set_from_resource $i3-wm.binding.ws_prev i3-wm.binding.ws_prev Shift+Tab
@@ -73,12 +73,12 @@ bindsym $mod+Ctrl+$ws9_key workspace number $ws19
 # bindsym $mod+$alt+$i3-wm.binding.ws_prev2 workspace prev
 
 ## Navigate // Previous Workspace on Output // <><Ctrl><Shift> Tab ##
-# set_from_resource $i3-wm.binding.ws_prev_on_output i3-wm.binding.ws_prev_on_output Ctrl+Shift+Tab
-# bindsym $mod+$i3-wm.binding.ws_prev_on_output workspace prev_on_output
+set_from_resource $i3-wm.binding.ws_prev_on_output i3-wm.binding.ws_prev_on_output Ctrl+Shift+Tab
+bindsym $mod+$i3-wm.binding.ws_prev_on_output workspace prev_on_output
 
 ## Navigate // Previous Workspace on Output // <><Ctrl> h ##
-# set_from_resource $i3-wm.binding.ws_prev_on_output2 i3-wm.binding.ws_prev_on_output2 Ctrl+h
-# bindsym $mod+$i3-wm.binding.ws_prev_on_output2 workspace prev_on_output
+set_from_resource $i3-wm.binding.ws_prev_on_output2 i3-wm.binding.ws_prev_on_output2 Ctrl+h
+bindsym $mod+$i3-wm.binding.ws_prev_on_output2 workspace prev_on_output
 
 ## Navigate // Scratchpad // <><Ctrl> a ##
 set_from_resource $i3-wm.binding.scratchpad i3-wm.binding.scratchpad Ctrl+a

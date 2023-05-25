@@ -81,7 +81,7 @@ set_from_resource $ws6_key  i3-wm.workspace.06.key 6
 set_from_resource $ws7_key  i3-wm.workspace.07.key 7
 set_from_resource $ws8_key  i3-wm.workspace.08.key 8
 set_from_resource $ws9_key  i3-wm.workspace.09.key 9
-set_from_resource $ws10_key i3-wm.workspace.10.key Ctrl+0
+set_from_resource $ws10_key i3-wm.workspace.10.key 0
 set_from_resource $ws11_key i3-wm.workspace.11.key Ctrl+1
 set_from_resource $ws12_key i3-wm.workspace.12.key Ctrl+2
 set_from_resource $ws13_key i3-wm.workspace.13.key Ctrl+3
