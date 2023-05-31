@@ -9,7 +9,6 @@ evince
 fonts-opensymbol
 zsh
 python3-pip
-diodon
 tmux
 xclip
 pipewire-media-session
@@ -17,7 +16,5 @@ timeshift
 nodejs
 npm
 cmake
-fonts-material-design-icons-iconfont
-fonts-nerd-font-meslo
 pandoc
 iputils-ping
