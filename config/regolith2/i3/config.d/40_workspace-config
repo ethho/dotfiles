@@ -39,7 +39,7 @@ bindsym $mod+$i3-wm.binding.move_workspace_output_down move workspace to output 
 # bindsym $mod+$i3-wm.binding.take_right move workspace to output right
 
 ## Modify // Vertical Window Orientation // <> v ##
-set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
+set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v Shift+v
 bindsym $mod+$i3-wm.binding.split_v split vertical
 
 ## Modify // Horizontal Window Orientation // <> g ##
