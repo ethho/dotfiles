@@ -1,9 +1,9 @@
 ! Fonts
-gnome.terminal.font:    MesloLGS Nerd Font 15
-rofi.font:              MesloLGS Nerd Font 15
-i3xrocks.value.font:    MesloLGS Nerd Font 13
-i3-wm.bar.font: pango:MesloLGS Nerd Font 15
-! gtk.font_name: MesloLGS Nerd Font 15
+gnome.terminal.font:    MesloLGS Nerd Font Regular 15
+rofi.font:              MesloLGS Nerd Font Regular 15
+i3xrocks.value.font:    MesloLGS Nerd Font Regular 14
+i3-wm.bar.font:         MesloLGS Nerd Font Regular 15
+gtk.font_name:          MesloLGS Nerd Font Regular 15
 
 ! i3
 i3-wm.alt: Mod1
@@ -18,12 +18,6 @@ i3-wm.workspace.auto_back_and_forth: yes
 i3-wm.gaps.inner.size: 0
 i3-wm.gaps.outer.size: 0
 i3-wm.gaps.smart: off
-! i3-wm.binding.up: Ctrl+k
-! i3-wm.binding.down: Ctrl+j
-! i3-wm.binding.move_left: Shift+j
-! i3-wm.binding.move_right: Shift+k
-! i3-wm.binding.move_up: Ctrl+Shift+k
-! i3-wm.binding.move_down: Ctrl+Shift+j
 i3-wm.binding.up:
 i3-wm.binding.down:
 i3-wm.binding.left: j
@@ -48,6 +42,9 @@ i3-wm.workspace.14.key: c
 i3-wm.workspace.15.key: z
 i3-wm.workspace.16.key: d
 
+! i3 bar
+i3-wm.bar.separatorchar: " "
+i3-wm.bar.workspace_min_width: 36
 
 !regolith.look.path: /usr/share/regolith-look/gruvbox
 regolith.look.path: /usr/share/regolith-look/nevil
