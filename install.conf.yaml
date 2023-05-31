@@ -15,7 +15,6 @@
     ~/.gitconfig:
     ~/.condarc:
     ~/.inputrc:
-    ~/.p10k.zsh:
     ~/.zsh_custom:
     ~/.ipython/profile_default/ipython_config.py: ipython_config.py
     ~/.config/starship.toml: config/starship.toml
@@ -23,17 +22,12 @@
     ~/.local/bin/jitter.py: bin/jitter.py
     ~/.config/nvim/lua/user: config/astronvim
 
-    # Regolith specific
-    # ~/.config/regolith/i3/config: config/i3/config
-    # ~/.config/regolith/i3xrocks/config: config/i3xrocks/config
-    # ~/.config/i3blocks: config/i3blocks
-    # ~/.config/regolith/picom: config/picom
+    # Regolith-specific
     ~/.config/regolith2: config/regolith2
-    /etc/regolith/i3/config: config/regolith2/i3/base
-    /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light
+    /etc/regolith/i3/config: config/regolith2/i3/base # Fails, copy manually
+    /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light # Fails, copy manually
+    # ~/.config/regolith/picom: config/picom
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
-    # ~/.Xresources-regolith:
-    # ~/.Xresources.d:
 
 - create:
     - ~/.vim/undodir

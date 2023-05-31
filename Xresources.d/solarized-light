@@ -1,4 +1,0 @@
-#include "/etc/regolith/styles/solarized-light/root"
-#include "/home/eho/.Xresources.d/base"
-
-gnome.wallpaper: /usr/share/backgrounds/themer-wallpaper-burst-light-2880x1800.png

@@ -8,3 +8,4 @@ vim/.netrwhist
 # and should be left out of git history
 itermrc/shell_integration
 vim/autoload/plug.vim
+zsh_custom/plugins

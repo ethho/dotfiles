@@ -1,4 +1,0 @@
-#include "/etc/regolith/styles/ayu/root"
-#include "/home/eho/.Xresources.d/base"
-
-gnome.wallpaper: /home/eho/Pictures/wallpapers-exorcist365/gruvbox/skyscraper.jpg
