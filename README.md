@@ -1,14 +1,23 @@
 # Ethan's Dotfiles
 
-This repository contains Ethan's `$HOME` configuration on MacBook Pro and TACC HPC systems.
+This repository contains Ethan's `$HOME` configuration.
 
-**Highlights**
+**Features**
 * zsh with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) and [p10k](https://github.com/romkatv/powerlevel10k.git)
-* Lightweight vim config with [vim-plug](https://github.com/junegunn/vim-plug.git) and [YCM](https://github.com/ycm-core/YouCompleteMe)
 * Vim keybinds whenever possible: zsh, bash, readline, and [even Chrome](https://github.com/philc/vimium)
 * Gruvbox for [vim](https://github.com/morhetz/gruvbox) and [iTerm2](https://github.com/herrbischoff/iterm2-gruvbox)
 * [dotbot](https://github.com/anishathalye/dotbot) for one-button installation
-* Lightweight configs for TACC HPC systems, where memory on shared login nodes is sacred
+* [astronvim](https://astronvim.com/)
+
+**Supported Platforms**
+* [Regolith Linux v2](https://regolith-desktop.com/) - `regholith` branch
+    * A few tweaks, but overall keeps Regolith's sane defaults.
+* Mac OS 11.x - `mbp` branch
+    * [yabai](https://github.com/koekeishiya/yabai) and [skhd](https://github.com/koekeishiya/skhd) for WM
+	* [simple-bar](https://github.com/Jean-Tinland/simple-bar) status bar running in Übersicht
+* WSL2 - `wsl` branch
+
+![regolith2](docs/img/example2.png)
 
 ![zsh x vim x iTerm2 x gruvbox](docs/img/example1.png)
 
@@ -17,7 +26,7 @@ This repository contains Ethan's `$HOME` configuration on MacBook Pro and TACC H
 1. Clone this repository and, recursively, all submodules:
 
 ```bash
-git clone --recurse-submodules https://github.com/ethan-n-ho/dotfiles
+git clone --recurse-submodules https://github.com/ethho/dotfiles
 ```
 
 2. `git fetch --all` and `git checkout` the branch with the desired config.
@@ -29,27 +38,5 @@ dotfiles/install.sh
 ```
 
 3. Remove files in `$HOME` that were not replaced with symlinks, and re-run the install script.
+4. Some files in the root config may fail to link. This is expected; simply link or copy them manually.
 
-## Reference
-
-### How to save list of installed Atom packages
-
-From [this StackOverflow post](https://stackoverflow.com/questions/30006827/how-to-save-atom-editor-config-and-list-of-packages-installed):
-```bash
-apm list --installed --bare > ~/.atom/package.list
-apm install --packages-file ~/.atom/package.list
-```
-
-### How to remove a git submodule
-
-From [myusuf3's Gist](https://gist.github.com/myusuf3/7f645819ded92bda6677):
-
-To remove a submodule you need to:
-
-* Delete the relevant section from the .gitmodules file.
-* Stage the .gitmodules changes git add .gitmodules
-* Delete the relevant section from .git/config.
-* Run `git rm --cached path_to_submodule` (no trailing slash).
-* Run `rm -rf .git/modules/path_to_submodule` (no trailing slash).
-* Commit `git commit -m "Removed submodule"`
-* Delete the now untracked submodule files `rm -rf path_to_submodule`
