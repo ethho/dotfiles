@@ -37,3 +37,12 @@
 
 - create:
     - ~/.vim/undodir
+
+- shell:
+    -
+        command: echo "grep -vE '^#' apt-packages.txt | xargs sudo apt install -y"
+        description: Reminder for how to apt install many
+        stdin: true
+        stdout: true
+        stderr: true
+        quiet: false
