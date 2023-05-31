@@ -30,6 +30,7 @@
     # ~/.config/regolith/picom: config/picom
     ~/.config/regolith2: config/regolith2
     /etc/regolith/i3/config: config/regolith2/i3/base
+    /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
     # ~/.Xresources-regolith:
     # ~/.Xresources.d:
