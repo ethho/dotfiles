@@ -1,9 +1,9 @@
 ! Fonts
 gnome.terminal.font:    MesloLGS Nerd Font Regular 15
-rofi.font:              MesloLGS Nerd Font Regular 15
+rofi.font:              MesloLGS Nerd Font Regular 13
 i3xrocks.value.font:    MesloLGS Nerd Font Regular 14
 i3-wm.bar.font:         MesloLGS Nerd Font Regular 15
-gtk.font_name:          MesloLGS Nerd Font Regular 15
+gtk.font_name:          MesloLGS Nerd Font Regular 12
 
 ! i3
 i3-wm.alt: Mod1
