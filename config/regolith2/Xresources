@@ -24,16 +24,16 @@ i3-wm.binding.left: j
 i3-wm.binding.right: k
 i3-wm.binding.ws_prev_on_output2: h
 i3-wm.binding.ws_next_on_output2: l
-i3-wm.workspace.10.name: 10:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.11.name: 11:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.12.name: 12:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.15.name: 15:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font Regular 15'> ﭮ </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.17.name: 17:<span font_desc='MesloLGS Nerd Font Regular 15'> 17 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.18.name: 18:<span font_desc='MesloLGS Nerd Font Regular 15'> 18 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.19.name: 19:<span font_desc='MesloLGS Nerd Font Regular 15'> 19 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+i3-wm.workspace.10.name: 10:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.11.name: 11:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.12.name: 12:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.15.name: 15:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font Regular 15'> 󰭹 </span><span font_desc='MesloLGS Nerd Font Regular 5'> </span>
+i3-wm.workspace.17.name: 17:<span font_desc='MesloLGS Nerd Font Regular 15'> 17 </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.18.name: 18:<span font_desc='MesloLGS Nerd Font Regular 15'> 18 </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
+i3-wm.workspace.19.name: 19:<span font_desc='MesloLGS Nerd Font Regular 15'> 19 </span><span font_desc='MesloLGS Nerd Font Regular 8'> </span>
 i3-wm.workspace.10.key: t
 i3-wm.workspace.11.key: w
 i3-wm.workspace.12.key: s
