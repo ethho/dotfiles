@@ -16,5 +16,5 @@ assign [class="discord"] $ws16
 # Additional custom keybinds
 ###############################################################################
 
-bindsym $mod+Shift+$i3-wm.binding.ws_next_on_output2 move container to workspace next; workspace next
-bindsym $mod+Shift+$i3-wm.binding.ws_prev_on_output2 move container to workspace prev; workspace prev
+bindsym $mod+Shift+$wm.binding.ws_next_on_output2 move container to workspace next; workspace next
+bindsym $mod+Shift+$wm.binding.ws_prev_on_output2 move container to workspace prev; workspace prev
