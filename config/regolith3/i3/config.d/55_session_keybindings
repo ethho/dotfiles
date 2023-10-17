@@ -10,7 +10,7 @@ bindsym $mod+$wm.binding.exit_app [con_id="__focused__"] kill
 set_from_resource $wm.binding.kill_app wm.binding.kill_app q
 bindsym $mod+$alt+$wm.binding.kill_app [con_id="__focused__"] exec --no-startup-id kill -9 $(xdotool getwindowfocus getwindowpid)
 
-## Session // Reload i3 Config // <><Shift> c ##
+## Session // Reload WM Config // <><Shift> c ##
 set_from_resource $wm.binding.reload wm.binding.reload Shift+c
 # TODO
 # bindsym $mod+$wm.binding.reload reload
@@ -20,7 +20,7 @@ set_from_resource $wm.binding.refresh wm.binding.refresh Shift+r
 set_from_resource $wm.program.refresh_ui wm.program.refresh_ui /usr/bin/regolith-look refresh
 bindsym $mod+$wm.binding.refresh exec --no-startup-id $wm.program.refresh_ui
 
-## Session // Restart i3 // <><Ctrl> r ##
+## Session // Restart WM // <><Ctrl> r ##
 set_from_resource $wm.binding.restart wm.binding.restart Ctrl+r
 bindsym $mod+$wm.binding.restart restart
 
