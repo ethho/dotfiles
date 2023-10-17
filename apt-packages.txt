@@ -23,10 +23,14 @@ iputils-ping
 fonts-nerd-font-sourcecodepro
 fonts-nerd-font-meslo
 fonts-nerd-font-hack
+i3xrocks-memory
+i3xrocks-battery
+i3xrocks-rofication
 # pipewire-media-session (?)
 # code
 # cargo
 # bat
+# exa
 # rg
 # mamba
 # google-chrome
