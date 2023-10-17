@@ -9,12 +9,26 @@ evince
 fonts-opensymbol
 zsh
 python3-pip
+python3-venv
 tmux
-xclip
-pipewire-media-session
+pipx
 timeshift
 nodejs
 npm
 cmake
 pandoc
+diodon
+gnome-tweaks
 iputils-ping
+fonts-nerd-font-sourcecodepro
+fonts-nerd-font-meslo
+fonts-nerd-font-hack
+# pipewire-media-session (?)
+# vscode
+# cargo
+# bat
+# rg
+# mamba
+# google-chrome
+# tldr
+# sudo apt install $(cat apt-packages.txt | grep -iv '^#')
