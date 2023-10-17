@@ -24,7 +24,7 @@ fonts-nerd-font-sourcecodepro
 fonts-nerd-font-meslo
 fonts-nerd-font-hack
 # pipewire-media-session (?)
-# vscode
+# code
 # cargo
 # bat
 # rg

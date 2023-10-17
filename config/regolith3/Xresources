@@ -45,7 +45,6 @@ wm.workspace.16.key: d
 ! i3 bar
 wm.bar.separatorchar: " "
 wm.bar.workspace_min_width: 36
-i3xrocks.separator_block_width: 25
 
+!regolith.look.path: /usr/share/regolith-look/gruvbox
 regolith.look.path: /usr/share/regolith-look/gruvbox
-!regolith.look.path: /usr/share/regolith-look/nevil
