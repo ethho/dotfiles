@@ -2,50 +2,50 @@
 gnome.terminal.font:    MesloLGS Nerd Font Regular 15
 rofi.font:              MesloLGS Nerd Font Regular 15
 i3xrocks.value.font:    MesloLGS Nerd Font Regular 14
-i3-wm.bar.font:         MesloLGS Nerd Font Regular 15
+wm.bar.font:         MesloLGS Nerd Font Regular 15
 gtk.font_name:          MesloLGS Nerd Font Regular 15
 
 ! i3
-i3-wm.alt: Mod1
-i3-wm.mod: Mod4
-i3-wm.binding.settings:  Mod1+Ctrl+Shift+c
-i3-wm.binding.display:   Mod1+Ctrl+Shift+d
-i3-wm.binding.wifi:      Mod1+Ctrl+Shift+w
-i3-wm.binding.bluetooth: Mod1+Ctrl+Shift+b
-i3-wm.binding.layout_mode: Mod1+Ctrl+Shift+t
-i3-wm.bar.position: top
-i3-wm.workspace.auto_back_and_forth: yes
-i3-wm.gaps.inner.size: 0
-i3-wm.gaps.outer.size: 0
-i3-wm.gaps.smart: off
-i3-wm.binding.up:
-i3-wm.binding.down:
-i3-wm.binding.left: j
-i3-wm.binding.right: k
-i3-wm.binding.ws_prev_on_output2: h
-i3-wm.binding.ws_next_on_output2: l
-i3-wm.workspace.10.name: 10:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.11.name: 11:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.12.name: 12:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.15.name: 15:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font Regular 15'> ﭮ </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.17.name: 17:<span font_desc='MesloLGS Nerd Font Regular 15'> 17 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.18.name: 18:<span font_desc='MesloLGS Nerd Font Regular 15'> 18 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.19.name: 19:<span font_desc='MesloLGS Nerd Font Regular 15'> 19 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
-i3-wm.workspace.10.key: t
-i3-wm.workspace.11.key: w
-i3-wm.workspace.12.key: s
-i3-wm.workspace.13.key: m
-i3-wm.workspace.14.key: c
-i3-wm.workspace.15.key: z
-i3-wm.workspace.16.key: d
+wm.alt: Mod1
+wm.mod: Mod4
+wm.binding.settings:  Mod1+Ctrl+Shift+c
+wm.binding.display:   Mod1+Ctrl+Shift+d
+wm.binding.wifi:      Mod1+Ctrl+Shift+w
+wm.binding.bluetooth: Mod1+Ctrl+Shift+b
+wm.binding.layout_mode: Mod1+Ctrl+Shift+t
+wm.bar.position: top
+wm.workspace.auto_back_and_forth: yes
+wm.gaps.inner.size: 0
+wm.gaps.outer.size: 0
+wm.gaps.smart: off
+wm.binding.up:
+wm.binding.down:
+wm.binding.left: j
+wm.binding.right: k
+wm.binding.ws_prev_on_output2: h
+wm.binding.ws_next_on_output2: l
+wm.workspace.10.name: 10:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.11.name: 11:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.12.name: 12:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.15.name: 15:<span font_desc='MesloLGS Nerd Font Regular 15'>  </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font Regular 15'> ﭮ </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.17.name: 17:<span font_desc='MesloLGS Nerd Font Regular 15'> 17 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.18.name: 18:<span font_desc='MesloLGS Nerd Font Regular 15'> 18 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.19.name: 19:<span font_desc='MesloLGS Nerd Font Regular 15'> 19 </span><span font_desc='MesloLGS Nerd Font 8'> </span>
+wm.workspace.10.key: t
+wm.workspace.11.key: w
+wm.workspace.12.key: s
+wm.workspace.13.key: m
+wm.workspace.14.key: c
+wm.workspace.15.key: z
+wm.workspace.16.key: d
 
 ! i3 bar
-i3-wm.bar.separatorchar: " "
-i3-wm.bar.workspace_min_width: 36
+wm.bar.separatorchar: " "
+wm.bar.workspace_min_width: 36
 i3xrocks.separator_block_width: 25
 
-!regolith.look.path: /usr/share/regolith-look/gruvbox
-regolith.look.path: /usr/share/regolith-look/nevil
+regolith.look.path: /usr/share/regolith-look/gruvbox
+!regolith.look.path: /usr/share/regolith-look/nevil
