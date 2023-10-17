@@ -53,6 +53,7 @@ set -o vi
 export CLICOLOR=1
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/nvim-linux64/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
