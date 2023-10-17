@@ -6,6 +6,7 @@
 # grep StartupWMClass /usr/share/applications/slack.desktop
 assign [class="Todoist"] $ws10
 assign [class="Firefox"] $ws11
+for_window [class="Google Chrome"] move to workspace $ws11
 assign [class="Slack"] $ws12
 assign [class="Thunderbird"] $ws13
 assign [class="Code"] $ws14

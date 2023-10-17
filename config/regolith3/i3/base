@@ -63,6 +63,15 @@ set_from_resource $ws7_key  wm.workspace.07.key 7
 set_from_resource $ws8_key  wm.workspace.08.key 8
 set_from_resource $ws9_key  wm.workspace.09.key 9
 set_from_resource $ws10_key wm.workspace.10.key 0
+set_from_resource $ws11_key wm.workspace.11.key "11"
+set_from_resource $ws12_key wm.workspace.12.key "12"
+set_from_resource $ws13_key wm.workspace.13.key "13"
+set_from_resource $ws14_key wm.workspace.14.key "14"
+set_from_resource $ws15_key wm.workspace.15.key "15"
+set_from_resource $ws16_key wm.workspace.16.key "16"
+set_from_resource $ws17_key wm.workspace.17.key "17"
+set_from_resource $ws18_key wm.workspace.18.key "18"
+set_from_resource $ws19_key wm.workspace.19.key "19"
 
 ###############################################################################
 # Colors and Fonts
