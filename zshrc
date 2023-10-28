@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/nvim-linux64/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -69,20 +70,20 @@ eval "$(starship init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/eho/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/eho/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/eho/mambaforge/etc/profile.d/conda.sh" ]; then
-        . "/home/eho/mambaforge/etc/profile.d/conda.sh"
+    if [ -f "/home/eho/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/eho/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/eho/mambaforge/bin:$PATH"
+        export PATH="/home/eho/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "/home/eho/mambaforge/etc/profile.d/mamba.sh" ]; then
-    . "/home/eho/mambaforge/etc/profile.d/mamba.sh"
+if [ -f "/home/eho/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/home/eho/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
