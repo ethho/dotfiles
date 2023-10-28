@@ -33,8 +33,6 @@ gimp
 python3-tk
 libreoffice
 gpick
-mysql
-mysql-server
 # pipewire-media-session (?)
 # code
 # cargo
