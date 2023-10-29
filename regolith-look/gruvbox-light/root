@@ -6,15 +6,15 @@
 ! -- Look name
 ! --------------------------------------------
 
-regolith.look: gruvbox-light
+regolith.look: gruvbox
 
 ! --------------------------------------------
-! -- Wallpaper
+! -- Wallpaper 
 ! --------------------------------------------
 
 ! -- Specify either a complete file path to an image
 
-regolith.wallpaper.file: /usr/share/regolith-look/gruvbox-light/desert_5.jpg
+regolith.wallpaper.file: /usr/share/regolith-look/gruvbox/gruvbox-dark-regolith2-noText-GMFranceschini.svg
 regolith.wallpaper.options: zoom
 
 !-- *Or* specify a color
@@ -24,10 +24,10 @@ regolith.wallpaper.color.primary:
 !-- If specifying a primary color, optional additional settings
 
 regolith.wallpaper.color.secondary:
-regolith.wallpaper.color.shading.type:
+regolith.wallpaper.color.shading.type: 
 
 ! --------------------------------------------
-! -- Lockscreen Wallpaper
+! -- Lockscreen Wallpaper 
 ! --------------------------------------------
 
 !-- the following keys can be set to specify the lockscreen background, as above with desktop wallpaper
@@ -35,7 +35,7 @@ regolith.wallpaper.color.shading.type:
 ! -- Specify either a complete file path to an image
 ! -- and (optionally) options how to display the file
 
-regolith.lockscreen.wallpaper.file: /usr/share/regolith-look/gruvbox-light/desert_5.jpg
+regolith.lockscreen.wallpaper.file: /usr/share/regolith-look/gruvbox/gruvbox-dark-regolith2-noText-GMFranceschini.svg
 regolith.lockscreen.wallpaper.options: zoom
 
 !-- *Or* specify a color
@@ -51,7 +51,7 @@ regolith.lockscreen.wallpaper.color.shading.type:
 ! -- Theme elements
 ! --------------------------------------------
 
-gtk.theme_name: Gruvbox-Light
+gtk.theme_name: Gruvbox
 gtk.icon_theme_name: Moka
 
 ! --------------------------------------------
@@ -71,14 +71,14 @@ gtk.monospace_font_name: gtk_monospace_font_name
 ! --------------------------------------------
 
 ! Gruvbox colors - https://github.com/morhetz/gruvbox
-#define color_base03   #fbf1c7
-#define color_base02   #ebdbb2
-#define color_base01   #d5c4a1
-#define color_base00   #bdae93
-#define color_base0    #7c6f64
-#define color_base1    #665c54
-#define color_base2    #504945
-#define color_base3    #3c3836
+#define color_base03   #282828
+#define color_base02   #3c3836
+#define color_base01   #504945
+#define color_base00   #665c54
+#define color_base0    #a89984
+#define color_base1    #bdae93
+#define color_base2    #d5c4a1
+#define color_base3    #ebdbb2
 #define color_gray     #928374
 #define color_red      #cc241d
 #define color_green    #98971a
@@ -99,12 +99,12 @@ gtk.monospace_font_name: gtk_monospace_font_name
 ! -- Component resources
 ! --------------------------------------------
 
-#include "/usr/share/regolith-look/gruvbox-light/i3xrocks"
-#include "/usr/share/regolith-look/gruvbox-light/i3-wm"
-#include "/usr/share/regolith-look/gruvbox-light/gnome-terminal"
+#include "/usr/share/regolith-look/gruvbox/i3xrocks"
+#include "/usr/share/regolith-look/gruvbox/wm"
+#include "/usr/share/regolith-look/gruvbox/gnome-terminal"
 
 ! --------------------------------------------
-! -- Loader Path - Path to script responsible
+! -- Loader Path - Path to script responsible 
 ! -- for configuring UI from Xres values
 ! --------------------------------------------
 
