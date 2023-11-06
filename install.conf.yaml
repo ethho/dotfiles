@@ -42,3 +42,10 @@
         stdout: true
         stderr: true
         quiet: false
+    -
+        command: echo "gsettings set org.gnome.desktop.input-sources xkb-options \"['caps:escape']\""
+        description: Reminder for how to set xkb options in Gnome
+        stdin: true
+        stdout: true
+        stderr: true
+        quiet: false
