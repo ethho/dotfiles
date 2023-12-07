@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cur_scale="$(gsettings get org.gnome.desktop.interface text-scaling-factor)"
+
+if [[ $cur_scale == "$1" ]]; then
+  new_scale=$2
+else
+  new_scale=$1
+fi
+gsettings set org.gnome.desktop.interface text-scaling-factor ${new_scale}
+i3-msg -q restart
+echo $new_scale
+
