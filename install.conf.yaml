@@ -21,6 +21,7 @@
     ~/.config/jrnl: config/jrnl
     ~/.local/share/i3blocks-modules: i3blocks-modules
     ~/.local/bin/jitter.py: bin/jitter.py
+    ~/.local/bin/log-float-time.py: bin/log-float-time.py
     ~/.config/nvim/lua/user: config/astronvim
 
     # Regolith-specific
@@ -29,6 +30,7 @@
     /etc/regolith/i3/config: config/regolith3/i3/base # Fails, copy manually
     # /etc/regolith/i3/config: config/regolith2/i3/base # Fails, copy manually
     /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light # Fails, copy manually
+    /usr/share/regolith-look/default_loader.sh: regolith-look/default_loader.sh # Fails, copy manually
     # ~/.config/regolith/picom: config/picom
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
 
