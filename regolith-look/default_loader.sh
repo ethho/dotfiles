@@ -15,6 +15,13 @@ load_look() {
         gsettings set org.gnome.desktop.interface gtk-theme "${GTK_THEME}"
     fi
 
+    # Also need to set gtk.color_scheme in
+    # theme config: /usr/share/regolith-look/nevil/root
+    COLOR_SCHEME=$($RESOURCE_GETTER gtk.color_scheme || :)
+    if [[ -n ${COLOR_SCHEME:-} ]]; then
+        gsettings set org.gnome.desktop.interface color-scheme "${COLOR_SCHEME}"
+    fi
+
     ICON_THEME=$($RESOURCE_GETTER gtk.icon_theme_name || :)
     if [[ -n ${ICON_THEME:-} ]]; then
         gsettings set org.gnome.desktop.interface icon-theme "${ICON_THEME}"
