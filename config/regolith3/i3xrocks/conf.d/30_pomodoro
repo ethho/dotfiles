@@ -1,0 +1,4 @@
+# Pomodoro timer from https://github.com/rkashapov/i3blocks-pomodoro
+[pomodoro]
+command=~/.local/share/i3blocks-modules/pomodoro
+interval=1
