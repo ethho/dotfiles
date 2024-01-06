@@ -1,4 +1,5 @@
-# Pomodoro timer from https://github.com/rkashapov/i3blocks-pomodoro
 [pomodoro]
-command=~/.local/share/i3blocks-modules/pomodoro
-interval=1
+full_text=Error
+command=~/repos/i3blocks-pomodoro/pomodoro
+format=json
+interval=5
