@@ -1,7 +1,8 @@
-[include]
-    path = ~/.gitconfig.local
+[user]
+    name = Ethan Ho
+    email = 53266718+ethho@users.noreply.github.com
 [core]
-	editor = nvim
+    editor = nvim
 [color]
     ui = true
 [alias]
@@ -35,4 +36,4 @@
     required = true
     clean = git-lfs clean -- %f
 [pull]
-	rebase = false
+    rebase = false
