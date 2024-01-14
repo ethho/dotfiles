@@ -20,6 +20,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- Control comma opens terminal
+    -- ["<C-s>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
