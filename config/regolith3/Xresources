@@ -6,7 +6,7 @@ wm.bar.font:            MesloLGS Nerd Font Regular 15
 gtk.font_name:          MesloLGS Nerd Font Regular 15
 
 ! picom
-regolith.compositor.picom.config: /home/eho/.config/regolith3/picom/config
+regolith.compositor.picom.config: /home/eho/.config/picom/config
 
 ! i3
 wm.alt: Mod1
