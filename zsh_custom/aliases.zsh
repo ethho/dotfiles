@@ -18,7 +18,7 @@ alias ll="exa --long -a --group-directories-first --header --icons --git"
 alias lt="exa --tree -a --group-directories-first --header --icons --git --level=3"
 alias llt="exa --tree -a --group-directories-first --header --icons --git"
 alias jqb="jq | bat -l json"
-
+alias cg="cargo"
 
 # apt
 alias install="sudo apt install"

@@ -2,6 +2,9 @@
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/nvim-linux64/bin:$PATH
+export PATH=$PATH:$HOME/cockroach-v23.1.12.linux-amd64/
+export PATH=$PATH:$HOME/cockroach-sql-v23.1.12.linux-amd64/
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -87,3 +90,7 @@ if [ -f "/home/eho/miniforge3/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
