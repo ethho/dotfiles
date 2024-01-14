@@ -29,8 +29,7 @@
     ~/.config/regolith3: config/regolith3
     /etc/regolith/i3/config: config/regolith3/i3/base # Fails, copy manually
     # /etc/regolith/i3/config: config/regolith2/i3/base # Fails, copy manually
-    /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light # Fails, copy manually
-    /usr/share/regolith-look/default_loader.sh: regolith-look/default_loader.sh # Fails, copy manually
+    /usr/share/regolith-look/default_loader.sh: config/regolith3/looks/default_loader.sh # Fails, copy manually
     # ~/.config/regolith/picom: config/picom
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
 
