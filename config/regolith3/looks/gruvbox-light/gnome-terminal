@@ -17,3 +17,8 @@ gnome.terminal.color15:   color_base2
 
 gnome.terminal.font:      gtk_monospace_font_name
 gnome.terminal.scrollbar: never
+
+! -- Optional Configuration
+!gnome.terminal.audible-bell:                       true/false
+gnome.terminal.use-transparent-background:         false
+!gnome.terminal.background-transparency-percent:    0 - 99

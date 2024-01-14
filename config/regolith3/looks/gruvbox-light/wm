@@ -11,7 +11,7 @@
 #define QUOTE(x) Q(x)
 #define glyph typeface_bar_glyph_workspace
 
-ilia.stylesheet: /usr/share/regolith-look/gruvbox-light/ilia.css
+ilia.stylesheet: /usr/share/regolith-look/gruvbox/ilia.css
 
 wm.bar.font: gtk_monospace_font_name
 wm.bar.position: i3wm_bar_position
