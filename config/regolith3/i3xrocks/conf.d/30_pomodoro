@@ -1,5 +1,5 @@
 [pomodoro]
 full_text=Error
-command=~/repos/i3blocks-pomodoro/pomodoro
+command=~/.local/bin/i3blocks-pomodoro
 format=json
 interval=5

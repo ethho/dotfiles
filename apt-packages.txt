@@ -5,6 +5,7 @@ autoconf
 pdftk
 pinta
 showfoto
+krop
 evince
 fonts-opensymbol
 zsh
