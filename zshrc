@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/nvim-linux64/bin:$PATH
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/cockroach-v23.1.12.linux-amd64/
 export PATH=$PATH:$HOME/cockroach-sql-v23.1.12.linux-amd64/
 
