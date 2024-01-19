@@ -1,13 +1,8 @@
 #!/bin/bash
 
 cur_scale="$(gsettings get org.gnome.desktop.interface text-scaling-factor)"
-
-if [[ $cur_scale == "$1" ]]; then
-  new_scale=$2
-else
-  new_scale=$1
-fi
+new_scale="""$(python3 -c "print($2 if abs($1 - ${cur_scale}) < 0.01 else $1)")"""
+echo "Changing from $cur_scale to $new_scale"
 gsettings set org.gnome.desktop.interface text-scaling-factor ${new_scale}
 i3-msg -q restart
-echo $new_scale
 

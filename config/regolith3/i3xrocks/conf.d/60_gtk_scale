@@ -1,5 +1,5 @@
 # Restart i3 on click
 [restart]
 full_text=xresource:i3xrocks.label.on
-command=~/.local/share/i3blocks-modules/gtk-scale 0.75 1.1
+command=~/.local/share/i3blocks-modules/gtk-scale 0.6 0.75
 #interval=0
