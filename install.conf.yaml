@@ -23,6 +23,7 @@
     ~/.local/bin/jitter.py: bin/jitter.py
     ~/.local/bin/log-float-time.py: bin/log-float-time.py
     ~/.config/nvim/lua/user: config/astronvim
+    ~/.config/systemd: config/systemd
 
     # Regolith-specific
     ~/.config/regolith2: config/regolith2
@@ -32,10 +33,6 @@
     /usr/share/regolith-look/default_loader.sh: config/regolith3/looks/default_loader.sh # Fails, copy manually
     ~/.config/picom: config/picom
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
-
-    # User systemd services
-    # ~/.config/systemd: config/systemd
-    # ~/.local/bin/keep-presence-daemon: bin/keep-presence-daemon
 
 - create:
     - ~/.vim/undodir
