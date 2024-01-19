@@ -8,3 +8,6 @@
 [submodule "zsh_custom/plugins/zsh-vim-mode"]
 	path = zsh_custom/plugins/zsh-vim-mode
 	url = git@github.com:softmoth/zsh-vim-mode.git
+[submodule "i3blocks-pomodoro"]
+	path = i3blocks-pomodoro
+	url = git@github.com:ethho/i3blocks-pomodoro.git
