@@ -3,7 +3,7 @@ Description=Keep Presence Daemon
 
 [Service]
 Environment="PATH=/home/eho/.local/bin/"
-ExecStart=/home/eho/.local/bin/keep-presence -s 240 -p 10 -c
+ExecStart=/home/eho/.local/bin/keep-presence -s 120 -p 10 -c
 RestartSec=5
 ; User=root
 ; Group=root
