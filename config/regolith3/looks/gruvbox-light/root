@@ -9,12 +9,12 @@
 regolith.look: gruvbox-light
 
 ! --------------------------------------------
-! -- Wallpaper
+! -- Wallpaper 
 ! --------------------------------------------
 
 ! -- Specify either a complete file path to an image
 
-regolith.wallpaper.file: /usr/share/regolith-look/gruvbox-light/desert_5.jpg
+regolith.wallpaper.file: /home/eho/.config/regolith3/looks/gruvbox-light/desert_5.jpg
 regolith.wallpaper.options: zoom
 
 !-- *Or* specify a color
@@ -24,10 +24,10 @@ regolith.wallpaper.color.primary:
 !-- If specifying a primary color, optional additional settings
 
 regolith.wallpaper.color.secondary:
-regolith.wallpaper.color.shading.type:
+regolith.wallpaper.color.shading.type: 
 
 ! --------------------------------------------
-! -- Lockscreen Wallpaper
+! -- Lockscreen Wallpaper 
 ! --------------------------------------------
 
 !-- the following keys can be set to specify the lockscreen background, as above with desktop wallpaper
@@ -35,7 +35,7 @@ regolith.wallpaper.color.shading.type:
 ! -- Specify either a complete file path to an image
 ! -- and (optionally) options how to display the file
 
-regolith.lockscreen.wallpaper.file: /usr/share/regolith-look/gruvbox-light/desert_5.jpg
+regolith.lockscreen.wallpaper.file: /home/eho/.config/regolith3/looks/gruvbox-light/desert_5.jpg
 regolith.lockscreen.wallpaper.options: zoom
 
 !-- *Or* specify a color
@@ -51,7 +51,8 @@ regolith.lockscreen.wallpaper.color.shading.type:
 ! -- Theme elements
 ! --------------------------------------------
 
-gtk.theme_name: Gruvbox-Light
+gtk.theme_name: GruvboxLight
+gtk.color_scheme: default
 gtk.icon_theme_name: Moka
 
 ! --------------------------------------------
@@ -99,12 +100,12 @@ gtk.monospace_font_name: gtk_monospace_font_name
 ! -- Component resources
 ! --------------------------------------------
 
-#include "/usr/share/regolith-look/gruvbox-light/i3xrocks"
-#include "/usr/share/regolith-look/gruvbox-light/i3-wm"
-#include "/usr/share/regolith-look/gruvbox-light/gnome-terminal"
+#include "/usr/share/regolith-look/gruvbox/i3xrocks"
+#include "/usr/share/regolith-look/gruvbox/wm"
+#include "/usr/share/regolith-look/gruvbox/gnome-terminal"
 
 ! --------------------------------------------
-! -- Loader Path - Path to script responsible
+! -- Loader Path - Path to script responsible 
 ! -- for configuring UI from Xres values
 ! --------------------------------------------
 

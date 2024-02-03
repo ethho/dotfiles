@@ -13,6 +13,7 @@ disabled = true
 symbol = "  "
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "bold yellow"
+disabled = true
 
 [buf]
 symbol = " "
@@ -60,6 +61,11 @@ symbol = " "
 
 [julia]
 symbol = " "
+
+[kubernetes]
+symbol = "󱃾 "
+style = "green"
+disabled = false
 
 [lua]
 symbol = " "

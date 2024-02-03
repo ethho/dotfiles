@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+"""
+Different color depending on status of
+user systemd service keep-presence.service.
+"""
+
+import os
+import sys
+import json
+from typing import Dict, List, Any, Optional
+from dataclasses import dataclass, field
+from pathlib import Path
+import datetime
+from subprocess import call, check_output
+from time import sleep
+
+
+def emit(full_text, short_text, color, background=None, flush=True):
+    d = {
+        'full_text': full_text,
+        'short_text': short_text,
+        'color': color,
+    }
+    if background:
+        d['background'] = background
+    print(json.dumps(d), flush=flush)
+
+
+def err(text):
+    print(text, file=sys.stderr, flush=False)
+
+
+def notify(text):
+    call(["notify-send", "Pomodoro", text])
+
+
+def _now() -> int:
+    return int(datetime.datetime.now().timestamp())
+
+
+def xrescat(name, default) -> str:
+    """In bash: xrescat i3xrocks.value.font "Source Code Pro Medium 13")"""
+    return check_output(["xrescat", name, default]).decode("utf-8").strip()
+
+
+class ColorEnum:
+    orange = xrescat("i3xrocks.warning", "#FF8000")
+    red = xrescat("i3xrocks.error.color", "#FF0000")
+    green = xrescat("gnome.terminal.color2", "#00FF00")
+    white = xrescat("i3xrocks.value.color", "#FFFFFF")
+
+
+def get_button() -> Optional[int]:
+    but = os.environ.get('BLOCK_BUTTON', '').strip()
+    return int(but) if but else None
+
+
+def main(service_name: str = 'keep-presence.service', user: str = '1'):
+    if int(user) == 1:
+        service_name = f'--user {service_name}'
+    elif int(user) == 0:
+        service_name = f'--system {service_name}'
+    toggle = True if get_button() else False
+
+    try:
+        status = check_output(f'systemctl status {service_name} | grep Active', shell=True).decode("utf-8").strip()
+        if 'inactive' in status:
+            if toggle:
+                call(f'systemctl start {service_name}', shell=True)
+            emit('  ', '  ', ColorEnum.red)
+        elif 'active' in status:
+            if toggle:
+                call(f'systemctl stop {service_name}', shell=True)
+            emit('  ', '  ', ColorEnum.green)
+        else:
+            raise Exception(f'Unknown status: {status}')
+    except Exception as e:
+        err(e)
+        emit('Error', 'Error', ColorEnum.orange)
+
+
+if __name__ == "__main__":
+    main(*sys.argv[1:])

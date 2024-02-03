@@ -1,0 +1,5 @@
+[pomodoro]
+full_text=Error
+command=~/.local/bin/i3blocks-pomodoro
+format=json
+interval=5

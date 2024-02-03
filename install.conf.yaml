@@ -19,16 +19,20 @@
     ~/.ipython/profile_default/ipython_config.py: ipython_config.py
     ~/.config/starship.toml: config/starship.toml
     ~/.config/jrnl: config/jrnl
+    ~/.local/share/i3blocks-modules: i3blocks-modules
     ~/.local/bin/jitter.py: bin/jitter.py
+    # ~/.local/bin/log-float-time.py: bin/log-float-time.py
+    ~/.local/bin/i3blocks-pomodoro: i3blocks-pomodoro/pomodoro
     ~/.config/nvim/lua/user: config/astronvim
+    ~/.config/systemd: config/systemd
 
     # Regolith-specific
     ~/.config/regolith2: config/regolith2
     ~/.config/regolith3: config/regolith3
     /etc/regolith/i3/config: config/regolith3/i3/base # Fails, copy manually
     # /etc/regolith/i3/config: config/regolith2/i3/base # Fails, copy manually
-    /usr/share/regolith-look/gruvbox-light: regolith-look/gruvbox-light # Fails, copy manually
-    # ~/.config/regolith/picom: config/picom
+    /usr/share/regolith-look/default_loader.sh: config/regolith3/looks/default_loader.sh # Fails, copy manually
+    ~/.config/picom: config/picom
     # ~/.config/rofi/config.rasi: config/rofi/config.rasi
 
 - create:
@@ -38,6 +42,13 @@
     -
         command: echo "grep -vE '^#' apt-packages.txt | xargs sudo apt install -y"
         description: Reminder for how to apt install many
+        stdin: true
+        stdout: true
+        stderr: true
+        quiet: false
+    -
+        command: echo "gsettings set org.gnome.desktop.input-sources xkb-options \"['caps:escape']\""
+        description: Reminder for how to set xkb options in Gnome
         stdin: true
         stdout: true
         stderr: true

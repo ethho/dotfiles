@@ -1,0 +1,12 @@
+[Unit]
+Description=Keep Presence Daemon
+
+[Service]
+Environment="PATH=/home/eho/.local/bin/"
+ExecStart=/home/eho/.local/bin/keep-presence -s 120 -p 10 -c
+RestartSec=5
+; User=root
+; Group=root
+
+[Install]
+WantedBy=graphical.target

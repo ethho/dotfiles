@@ -1,0 +1,6 @@
+[pomodoro]
+full_text=Error
+command=~/.local/share/i3blocks-modules/keep-presence-indicator
+format=json
+interval=5
+

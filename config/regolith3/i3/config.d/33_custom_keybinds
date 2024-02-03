@@ -4,11 +4,13 @@
 
 # Assign from StartupWMClass
 # grep StartupWMClass /usr/share/applications/slack.desktop
+# For progressive web apps (installed from Chrome):
+# grep Messages ~/.local/share/applications/
 assign [class="Todoist"] $ws10
 assign [class="Firefox"] $ws11
 for_window [class="Google Chrome"] move to workspace $ws11
 assign [class="Slack"] $ws12
-assign [class="Thunderbird"] $ws13
+# assign [name="Thunderbird"] $ws13
 assign [class="Code"] $ws14
 assign [class="Zoom"] $ws15
 assign [class="discord"] $ws16

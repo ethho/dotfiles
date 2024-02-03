@@ -1,7 +1,7 @@
 alias g="git"
 alias clr="clear"
-alias b="bat"
-alias bp="bat -p"
+alias b="bat --theme=base16-256"
+alias bp="bat -p --theme=base16-256"
 alias tf="terraform"
 alias minstall="mamba install -c conda-forge"
 alias mact="mamba activate"
@@ -18,7 +18,8 @@ alias ll="exa --long -a --group-directories-first --header --icons --git"
 alias lt="exa --tree -a --group-directories-first --header --icons --git --level=3"
 alias llt="exa --tree -a --group-directories-first --header --icons --git"
 alias jqb="jq | bat -l json"
-
+alias cg="cargo"
+alias kcl="kubectl"
 
 # apt
 alias install="sudo apt install"

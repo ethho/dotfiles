@@ -10,8 +10,4 @@ return {
   --   end,
   -- },
   "sainnhe/gruvbox-material",
-  -- {
-  --   "github/copilot.vim",
-  --   lazy = false
-  -- }
 }

@@ -1,0 +1,7 @@
+exa
+bat
+--locked starship
+fd-find
+xsv
+# cargo install $(cat cargo-packages.txt | grep -iv '^#')
+
