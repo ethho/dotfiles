@@ -21,3 +21,11 @@ assign [class="discord"] $ws16
 
 bindsym $mod+Shift+$wm.binding.ws_next_on_output2 move container to workspace next; workspace next
 bindsym $mod+Shift+$wm.binding.ws_prev_on_output2 move container to workspace prev; workspace prev
+
+###############################################################################
+# Floating Window for Certain Types
+###############################################################################
+
+for_window [class="zoom"] floating enable
+for_window [class="zoom" title="Zoom - Licensed Account"] floating disable
+for_window [class="zoom" title="Zoom Meeting"] floating disable
