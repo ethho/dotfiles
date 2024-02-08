@@ -26,6 +26,6 @@ bindsym $mod+Shift+$wm.binding.ws_prev_on_output2 move container to workspace pr
 # Floating Window for Certain Types
 ###############################################################################
 
-for_window [class="zoom"] floating enable
-for_window [class="zoom" title="Zoom - Licensed Account"] floating disable
-for_window [class="zoom" title="Zoom Meeting"] floating disable
+for_window [class="(.*join\?action\=join.*|.*zoom.*)"] floating enable
+for_window [class="(.*join\?action\=join.*|.*zoom.*)" title="Zoom - Licensed Account"] floating disable
+for_window [class="(.*join\?action\=join.*|.*zoom.*)" title="Zoom Meeting"] floating disable
