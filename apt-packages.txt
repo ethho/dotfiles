@@ -5,7 +5,6 @@ autoconf
 pdftk
 pinta
 showfoto
-krop
 evince
 fonts-opensymbol
 zsh
@@ -19,29 +18,21 @@ npm
 cmake
 pandoc
 diodon
-# gnome-tweaks
-neofetch
-ninja-build
-python3-sip
-python3-venv
+gnome-tweaks
 iputils-ping
 fonts-nerd-font-sourcecodepro
 fonts-nerd-font-meslo
 fonts-nerd-font-hack
-fonts-material-design-icons-iconfont
-pulseaudio-module-bluetooth
-gimp
-python3-tk
-libreoffice
-gpick
+i3xrocks-memory
+i3xrocks-battery
+i3xrocks-rofication
 # pipewire-media-session (?)
 # code
 # cargo
 # bat
+# exa
 # rg
 # mamba
 # google-chrome
 # tldr
-# Symbols Nerd Font (https://www.nerdfonts.com/font-downloads)
 # sudo apt install $(cat apt-packages.txt | grep -iv '^#')
-
