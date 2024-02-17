@@ -30,10 +30,10 @@ wm.binding.ws_next_on_output2: l
 wm.workspace.10.name: 10:<span font_desc='MesloLGS Nerd Font 15'>\  </span><span font_desc='MesloLGS Nerd Font 6'>\ </span>
 wm.workspace.11.name: 11:<span font_desc='MesloLGS Nerd Font 15'>  </span><span font_desc='MesloLGS Nerd Font 12'>\ </span>
 wm.workspace.12.name: 12:<span font_desc='MesloLGS Nerd Font 15'>  </span><span font_desc='MesloLGS Nerd Font 10'>\ </span>
-wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font 15'>\ \ 󰻞 </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
-wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font 15'>\ \ 󰨞 </span><span font_desc='MesloLGS Nerd Font 10'>\ </span>
+wm.workspace.13.name: 13:<span font_desc='MesloLGS Nerd Font 15'> 󰻞 </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
+wm.workspace.14.name: 14:<span font_desc='MesloLGS Nerd Font 15'> 󰨞 </span><span font_desc='MesloLGS Nerd Font 10'>\ </span>
 wm.workspace.15.name: 15:<span font_desc='MesloLGS Nerd Font 15'>  </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
-wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font 15'>\ \ 󰙯\ </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
+wm.workspace.16.name: 16:<span font_desc='MesloLGS Nerd Font 15'> 󰙯\ </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
 wm.workspace.17.name: 17:<span font_desc='MesloLGS Nerd Font 15'> 17 </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
 wm.workspace.18.name: 18:<span font_desc='MesloLGS Nerd Font 15'> 18 </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>
 wm.workspace.19.name: 19:<span font_desc='MesloLGS Nerd Font 15'> 19 </span><span font_desc='MesloLGS Nerd Font 8'>\ </span>

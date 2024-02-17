@@ -3,7 +3,6 @@ git
 automake
 autoconf
 pdftk
-pinta
 showfoto
 evince
 fonts-opensymbol
