@@ -24,7 +24,7 @@
     # ~/.local/bin/log-float-time.py: bin/log-float-time.py
     ~/.local/bin/i3blocks-pomodoro: i3blocks-pomodoro/pomodoro
     ~/.config/nvim/lua/user: config/astronvim
-    ~/.config/systemd: config/systemd
+    ~/.config/systemd/user/keep-presence.service: config/systemd/user/keep-presence.service
     /usr/share/X11/xkb/symbols/custom_65: config/xkb/custom_65
 
     # Regolith-specific

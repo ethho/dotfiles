@@ -3,5 +3,7 @@ bat
 --locked starship
 fd-find
 xsv
+bottom
+ripgrep
 # cargo install $(cat cargo-packages.txt | grep -iv '^#')
 
