@@ -25,6 +25,7 @@
     ~/.local/bin/i3blocks-pomodoro: i3blocks-pomodoro/pomodoro
     ~/.config/nvim/lua/user: config/astronvim
     ~/.config/systemd: config/systemd
+    /usr/share/X11/xkb/symbols/custom_65: config/xkb/custom_65
 
     # Regolith-specific
     ~/.config/regolith2: config/regolith2

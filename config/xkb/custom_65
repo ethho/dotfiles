@@ -1,0 +1,12 @@
+default partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "keychron_k6_custom" {
+    name[Group1] = "KeyChron K6 Custom";
+    include "us"
+    // Adapted from https://niklasfasching.de/posts/custom-keyboard-layout/
+
+    // replace caps lock with escape
+    replace key <CAPS> { [ Escape, Escape ] };
+
+    // replace escape with grave / tilde
+    replace key <ESC> { [ grave, asciitilde ] };
+};
