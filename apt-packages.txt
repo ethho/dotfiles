@@ -17,6 +17,7 @@ npm
 cmake
 pandoc
 diodon
+fzf
 gnome-tweaks
 iputils-ping
 fonts-nerd-font-sourcecodepro
