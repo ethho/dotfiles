@@ -1,5 +1,6 @@
 build-essential
 git
+git-extras
 automake
 autoconf
 pdftk
