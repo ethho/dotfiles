@@ -37,3 +37,4 @@ i3xrocks-rofication
 # google-chrome
 # tldr
 # sudo apt install $(cat apt-packages.txt | grep -iv '^#')
+fzf
