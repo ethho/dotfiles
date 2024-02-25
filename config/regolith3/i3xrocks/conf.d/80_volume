@@ -1,5 +1,5 @@
 # volume
 #
 # Display Volume
-[volume]
-interval=5
+#[volume]
+#interval=5
