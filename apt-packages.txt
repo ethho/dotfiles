@@ -26,6 +26,7 @@ fonts-nerd-font-hack
 i3xrocks-memory
 i3xrocks-battery
 i3xrocks-rofication
+i3xrocks-volume
 i3xrocks-cpu-usage
 i3xrocks-keyboard-layout
 # pipewire-media-session (?)
