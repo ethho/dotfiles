@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Usage:
+# REMOTE_IP='10.0.0.99' REMOTE_USER='eho' DRY_RUN=0 regholith-rsync Desktop/ Documents/ .zsh_history
+
+set -e
+
+DIRS_LIST=$@
+if [ -z "${DIRS_LIST}" ]; then
+  DIRS_LIST="Desktop"
+fi
+if [ -z "${DRY_RUN}" ]; then
+  DRY_RUN=1
+fi
+if [ -z "${REMOTE_USER}" ]; then
+  REMOTE_USER='eho'
+fi
+if [ -z "${REMOTE_IP}" ]; then
+  read -p 'Enter the remote IP: ' REMOTE_IP
+fi
+
+ARGS="""
+--exclude ".pytest_cache" \
+--exclude "venv" \
+--exclude ".DS_Store" \
+--exclude "__pycache__" \
+"""
+
+if [ $DRY_RUN -eq 1 ]; then
+  ARGS="${ARGS} -n "
+fi
+
+for d in $DIRS_LIST; do
+  local="/home/${USER}/$d"
+  rem="/home/${REMOTE_USER}/$d"
+  echo ""
+  echo "--------------------------------"
+  if [[ -d $local && ("${local: -1}" != "/" || "${rem: -1}" != "/")]]; then
+    echo "Path is a dir but local=${local} does not end with a slash. Skipping..."
+    continue
+  fi
+  echo "Syncing $d from remote..."
+  rsync -avz $ARGS \
+    ${REMOTE_USER}@${REMOTE_IP}:$rem \
+    $local
+
+  echo "Syncing $d from local..."
+  rsync -avz $ARGS \
+    $local \
+    ${REMOTE_USER}@${REMOTE_IP}:$rem
+done

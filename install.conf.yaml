@@ -21,6 +21,7 @@
     ~/.config/jrnl: config/jrnl
     ~/.local/share/i3blocks-modules: i3blocks-modules
     ~/.local/bin/jitter.py: bin/jitter.py
+    ~/.local/bin/regholith-rsync: bin/regholith-rsync
     # ~/.local/bin/log-float-time.py: bin/log-float-time.py
     ~/.local/bin/i3blocks-pomodoro: i3blocks-pomodoro/pomodoro
     ~/.config/nvim/lua/user: config/astronvim
