@@ -16,11 +16,12 @@ alias nvimf="fzf --print0 | xargs -0 -o nvim"
 alias open="xdg-open"
 alias ls="exa --group-directories-first --header --icons --git"
 alias ll="exa --long -a --group-directories-first --header --icons --git"
-alias lt="exa --tree -a --group-directories-first --header --icons --git --level=3"
+alias lt="exa --tree -a --group-directories-first --header --icons --git --level=3 -I='.git'"
 alias llt="exa --tree -a --group-directories-first --header --icons --git"
 alias jqb="jq | bat -l json"
 alias cg="cargo"
 alias kcl="kubectl"
+alias awsl="localstack"
 
 # apt
 alias install="sudo apt install"
