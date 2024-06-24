@@ -10,4 +10,15 @@ return {
   --   end,
   -- },
   "sainnhe/gruvbox-material",
+  {
+    "ruifm/gitlinker.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    event = "BufRead",
+    config = function()
+      require("gitlinker").setup({
+      -- default mapping to call url generation with action_callback
+        mappings = "<leader>gy"
+      })
+    end,
+  },
 }
