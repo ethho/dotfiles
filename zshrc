@@ -32,7 +32,7 @@ plugins=(
     docker
     z
     zsh-autosuggestions
-    # zsh-syntax-highlighting
+    zsh-syntax-highlighting
     zsh-vi-mode
 )
 
