@@ -3,6 +3,7 @@
     email = 53266718+ethho@users.noreply.github.com
 [core]
     editor = nvim
+    pager = less -FX
 [color]
     ui = true
 [alias]

@@ -22,6 +22,8 @@ alias jqb="jq | bat -l json"
 alias cg="cargo"
 alias kcl="kubectl"
 alias awsl="localstack"
+alias ck="cookiecutter"
+alias pmi="pulumi"
 
 # apt
 alias install="sudo apt install"
