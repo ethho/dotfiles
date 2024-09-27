@@ -5,8 +5,7 @@ export PATH=$HOME/.local/nvim-linux64/bin:$PATH
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/cockroach-v23.1.12.linux-amd64/
 export PATH=$PATH:$HOME/cockroach-sql-v23.1.12.linux-amd64/
-export PATH=$PATH:$HOME/.pulumi/bin
-
+export PATH=$PATH:$HOME/.pulumi/bin/
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

@@ -13,7 +13,7 @@ disabled = true
 symbol = "  "
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "bold yellow"
-disabled = true
+disabled = false
 
 [buf]
 symbol = " "
