@@ -22,6 +22,7 @@ alias llt="exa --tree -a --group-directories-first --header --icons --git"
 alias jqb="jq | bat -l json"
 alias cg="cargo"
 alias kcl="kubectl"
+alias pmi="pulumi"
 
 # apt
 alias install="sudo apt install"

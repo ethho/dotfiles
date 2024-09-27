@@ -5,6 +5,7 @@ export PATH=$HOME/.local/nvim-linux64/bin:$PATH
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/cockroach-v23.1.12.linux-amd64/
 export PATH=$PATH:$HOME/cockroach-sql-v23.1.12.linux-amd64/
+export PATH=$PATH:$HOME/.pulumi/bin/
 
 
 # Path to your oh-my-zsh installation.
@@ -95,3 +96,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/eho/.pulumi/bin
